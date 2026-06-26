@@ -10,11 +10,27 @@ Run SWOT, OKR, First Principles, Pre-Mortem, RICE, and 49 more — directly in y
 
 ---
 
+## Who it's for
+
+**Engineers** making architecture, build-vs-buy, or technical strategy decisions.
+
+**Product managers** running prioritization, roadmap planning, or stakeholder alignment.
+
+**Founders** choosing go-to-market strategy, evaluating pivots, or stress-testing plans before committing.
+
+**Consultants and strategists** who need structured analysis fast without pulling up a slide deck.
+
+Any role that reaches for a framework when thinking through a hard problem.
+
+---
+
 ## Install
 
 ```
 /plugin marketplace add tupe12334/instinct
 ```
+
+If this saves you time, [star the repo](https://github.com/tupe12334/instinct/stargazers) — it helps others find it.
 
 ---
 
