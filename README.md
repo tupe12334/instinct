@@ -10,5 +10,10 @@ skills/
 ├── bcg-matrix/
 ├── swot/
 ├── the-project-portfolio-matrix/
-└── confidence-calibration/
+├── feedback-analysis/
+├── the-GROW-model/
+├── SMART/
+├── PURE/
+├── CLEAR/
+└── SMEAC/
 ```
