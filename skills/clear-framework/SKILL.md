@@ -1,5 +1,5 @@
 ---
-name: clear
+name: clear-framework
 description: "Set goals that are Collaborative, Limited, Emotional, Appreciable, Refinable — built for dynamic environments."
 version: 1.0.0
 platforms: [linux, macos, windows]
