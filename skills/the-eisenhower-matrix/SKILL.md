@@ -69,19 +69,34 @@ Most people live in Q1 and Q3 — reactive, urgent-driven. High performers live 
 When presenting an Eisenhower analysis:
 
 ```
-TASK LIST: [context]
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║  TASK LIST: [context / situation]                                                   ║
+╚════════════════════════════════════════════════════════════════════════════════════╝
 
-Q1 — DO NOW
-- [task]: [why urgent + important]
+                              ◄──────────── URGENCY ─────────────────►
+                                    URGENT               NOT URGENT
 
-Q2 — SCHEDULE
-- [task]: [why important, suggested time block]
+                       ┌──────────────────────────┬──────────────────────────────┐
+  ▲  IMPORTANT         │  ● Q1 — DO NOW            │  ● Q2 — SCHEDULE             │
+  │                    │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │
+  │                    │  • [task]                 │  • [task]                    │
+  │                    │    ↳ [why urgent +        │    ↳ [why important,         │
+  │                    │      important]           │      suggested time block]   │
+  │                    │  • [task]                 │  • [task]                    │
+  │                    │    ↳ [why]                │    ↳ [time block]            │
+  │                    ├──────────────────────────┼──────────────────────────────┤
+  ▼  NOT IMPORTANT     │  ○ Q3 — DELEGATE          │  ○ Q4 — ELIMINATE            │
+                       │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │
+                       │  • [task]                 │  • [task]                    │
+                       │    ↳ [delegate to /       │    ↳ [why cutting it]        │
+                       │      batch approach]      │  • [task]                    │
+                       │  • [task]                 │    ↳ [why cutting it]        │
+                       │    ↳ [to whom]            │                              │
+                       └──────────────────────────┴──────────────────────────────┘
 
-Q3 — DELEGATE
-- [task]: [suggested delegate or batch approach]
-
-Q4 — ELIMINATE
-- [task]: [why cutting it]
-
-RECOMMENDATION: [top priority and rationale]
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║  RECOMMENDATION  ►  [top priority action and rationale]                             ║
+╚════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The ● filled circle marks the high-leverage quadrants (Q1, Q2); ○ open circle marks the lower-priority ones (Q3, Q4). The ↳ line under each bullet captures the one-sentence rationale — urgency + importance evidence for Q1, time-block suggestion for Q2, delegation target or batch strategy for Q3, and the specific reason for cutting in Q4.

@@ -81,46 +81,35 @@ Pains with no reliever = unaddressed risk. Gains with no creator = missed opport
 ## Output Format
 
 ```
-VALUE PROPOSITION CANVAS: [Product / Segment]
-Customer Segment: [name]
-
---- CUSTOMER PROFILE ---
-
-JOBS (ranked by importance)
-1. [job] — [functional/social/emotional]
-2. ...
-
-PAINS (ranked by severity: extreme / moderate)
-1. [pain] — [extreme/moderate]
-2. ...
-
-GAINS (ranked by importance: required / expected / desired)
-1. [gain] — [required/expected/desired/unexpected]
-2. ...
-
---- VALUE MAP ---
-
-PRODUCTS & SERVICES
-- [feature or offering]
-- ...
-
-PAIN RELIEVERS → PAIN ADDRESSED
-- [reliever] → relieves: [pain #]
-- ...
-
-GAIN CREATORS → GAIN ADDRESSED
-- [creator] → creates: [gain #]
-- ...
-
---- FIT ASSESSMENT ---
-Top pains covered: [list]
-Top gains covered: [list]
-Critical gaps: [unaddressed top pains/gains]
-Waste (no matching need): [relievers/creators with no customer match]
-
-FIT STATUS: Strong / Partial / Weak
-Next action: [what to validate, build, or cut]
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║     VALUE PROPOSITION CANVAS  ·  [Product / Segment]  ·  Customer Segment: [segment name]              ║
+╠════════════════════════════════════════════╦══════════════╦════════════════════════════════════════════╣
+║                  VALUE MAP                 ║              ║            CUSTOMER PROFILE                ║
+╠════════════════════════════════════════════╣              ╠════════════════════════════════════════════╣
+║  GAIN CREATORS                             ║  ◄──FIT──►   ║  GAINS                                     ║
+║  ● [gain creator 1]    → creates: [gain #] ║              ║  ● [gain 1]                    required     ║
+║  ● [gain creator 2]    → creates: [gain #] ║              ║  ● [gain 2]                    expected     ║
+║  ● [gain creator 3]    → creates: [gain #] ║              ║  ● [gain 3]                    desired      ║
+╠════════════════════════════════════════════╣              ╠════════════════════════════════════════════╣
+║  PRODUCTS & SERVICES                       ║              ║  CUSTOMER JOBS                             ║
+║  ● [product / service 1]                   ║              ║  ● [job 1]                     functional   ║
+║  ● [product / service 2]                   ║              ║  ● [job 2]                     social       ║
+║  ● [product / service 3]                   ║              ║  ● [job 3]                     emotional    ║
+╠════════════════════════════════════════════╣              ╠════════════════════════════════════════════╣
+║  PAIN RELIEVERS                            ║  ◄──FIT──►   ║  PAINS                                     ║
+║  ● [pain reliever 1]  → relieves: [pain #] ║              ║  ● [pain 1]                    extreme      ║
+║  ● [pain reliever 2]  → relieves: [pain #] ║              ║  ● [pain 2]                    moderate     ║
+║  ● [pain reliever 3]  → relieves: [pain #] ║              ║  ● [pain 3]                    extreme      ║
+╠════════════════════════════════════════════╩══════════════╩════════════════════════════════════════════╣
+║  FIT ASSESSMENT                                                                                          ║
+║  Top pains covered:   [pain #1, pain #2, ...]          Top gains covered:  [gain #1, gain #2, ...]      ║
+║  Critical gaps:       [unaddressed top pains/gains]    Waste (no match):   [items with no customer need] ║
+║                                                                                                          ║
+║  FIT STATUS:  ○ Strong   ○ Partial   ● Weak            Next action: [what to validate, build, or cut]   ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The left panel (Value Map) shows what you offer — gain creators paired to customer gains, products/services at center, and pain relievers paired to customer pains. The right panel (Customer Profile) shows what customers care about, ranked by importance. Use `→ creates: [gain #]` and `→ relieves: [pain #]` to make each fit link explicit; any top-ranked pain or gain with no matching arrow is a product risk or missed opportunity.
 
 ## Common Mistakes
 

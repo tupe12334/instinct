@@ -55,53 +55,70 @@ After 6+ feedback cycles, look for patterns:
 ## Output Format — Prediction Record
 
 ```
-FEEDBACK RECORD
-Date: [YYYY-MM-DD]
-Decision/Action: [description]
-Expected Outcome: [prediction]
-By When: [date for review]
-Key Assumptions:
-  1. [assumption]
-  2. [assumption]
-Success Criteria: [measurable indicators]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                                   FEEDBACK RECORD                                      ║
+╠═══════════════════════╦════════════════════════════════════════════════════════════════╣
+║  Date                 ║  [YYYY-MM-DD]                                                  ║
+╠═══════════════════════╬════════════════════════════════════════════════════════════════╣
+║  Decision / Action    ║  [description of what you are deciding or doing]               ║
+╠═══════════════════════╬════════════════════════════════════════════════════════════════╣
+║  Expected Outcome     ║  [what you predict will happen, and by when]                   ║
+╠═══════════════════════╬════════════════════════════════════════════════════════════════╣
+║  Review By            ║  [YYYY-MM-DD — target 9–12 months from now]                    ║
+╠═══════════════════════╬════════════════════════════════════════════════════════════════╣
+║  Key Assumptions      ║  1. [assumption — what must be true for the prediction]        ║
+║                       ║  2. [assumption]                                               ║
+╠═══════════════════════╬════════════════════════════════════════════════════════════════╣
+║  Success Criteria     ║  [measurable indicators — how you will know it matched]        ║
+╚═══════════════════════╩════════════════════════════════════════════════════════════════╝
 ```
+
+Use this card to document each significant decision *before* acting. Store it somewhere searchable so you can retrieve it at review time.
 
 ## Output Format — Review Record
 
 ```
-FEEDBACK REVIEW
-Original Date: [YYYY-MM-DD] | Review Date: [YYYY-MM-DD]
-Decision/Action: [original description]
-Expected: [original prediction]
-Actual: [what happened]
-Accuracy: [on track / better / worse]
-Variance: [explanation of gap]
-Lesson: [what this reveals about your judgment/skills]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                                   FEEDBACK REVIEW                                      ║
+╠═════════════════════════════════════════════╦══════════════════════════════════════════╣
+║  PREDICTION  ●  Recorded: [orig-date]       ║  OUTCOME  ●  Reviewed: [review-date]    ║
+╠═════════════════════════════════════════════╬══════════════════════════════════════════╣
+║  Decision: [original description]           ║  Actual:   [what happened]              ║
+║  Expected: [original prediction]            ║  Accuracy: ○ on track                  ║
+║                                             ║            ○ better than expected       ║
+║                                             ║            ○ worse than expected        ║
+╠═════════════════════════════════════════════╩══════════════════════════════════════════╣
+║  Variance  ►  [explanation of the gap between prediction and reality]                  ║
+╠════════════════════════════════════════════════════════════════════════════════════════╣
+║  Lesson    ►  [what this reveals about your judgment or skill in this area]            ║
+╚════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Fill in the left panel from your original Prediction Record; fill in the right panel at review time. The Lesson row is the most important — extract the meta-insight about your own judgment, not just what happened.
 
 ## Output Format — Pattern Analysis
 
 ```
-FEEDBACK PATTERN ANALYSIS
-Period: [start] — [end]
-Cycles analyzed: [N]
-
-CONFIRMED STRENGTHS (predictions consistently accurate or better)
-- [area]: [pattern observed]
-
-CONFIRMED WEAKNESSES (predictions consistently off)
-- [area]: [pattern observed, remediation or avoidance plan]
-
-BLIND SPOTS (confidently wrong)
-- [area]: [what you assumed vs what happened, corrective action]
-
-TIME SINKS (high effort, mediocre results)
-- [area]: [stop / delegate / automate recommendation]
-
-PRIORITY ACTIONS:
-1. [highest-leverage change]
-2. [second action]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  FEEDBACK PATTERN ANALYSIS          Period: [start date] — [end date]   │  N = [n]    ║
+╠═════════════════════════════════════════════╦══════════════════════════════════════════╣
+║  [+] CONFIRMED STRENGTHS                    ║  [-] CONFIRMED WEAKNESSES               ║
+║      predictions consistently accurate      ║      predictions consistently off       ║
+╠═════════════════════════════════════════════╬══════════════════════════════════════════╣
+║  ● [area]: [pattern observed]               ║  ● [area]: [pattern + remediation plan] ║
+║  ● [area]: [pattern observed]               ║  ● [area]: [pattern + remediation plan] ║
+╠═════════════════════════════════════════════╬══════════════════════════════════════════╣
+║  [!] BLIND SPOTS                            ║  [~] TIME SINKS                         ║
+║      confidently wrong                      ║      high effort, mediocre results       ║
+╠═════════════════════════════════════════════╬══════════════════════════════════════════╣
+║  ● [area]: [assumed → actual,               ║  ● [area]: [stop / delegate / automate] ║
+║            corrective action]               ║  ● [area]: [stop / delegate / automate] ║
+╠═════════════════════════════════════════════╩══════════════════════════════════════════╣
+║  PRIORITY ACTIONS  ►  1. [highest-leverage change]  ►  2. [second action]              ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The four quadrants map to Drucker's original categories: double down on [+] Strengths, remediate or route around [-] Weaknesses, actively correct [!] Blind Spots (wrong confidence is the most dangerous), and stop investing in [~] Time Sinks.
 
 ## Cadence
 

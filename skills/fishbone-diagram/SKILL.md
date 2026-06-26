@@ -69,45 +69,57 @@ The diagram generates hypotheses, not conclusions. Test the top candidates with 
 ## Output Format
 
 ```
-FISHBONE DIAGRAM
-Problem: [precise problem statement — measurable if possible]
-Date: [date] | Team: [participants]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  FISHBONE DIAGRAM (Ishikawa / Cause-and-Effect)                                          ║
+║  Problem : [precise problem statement — measurable if possible]                          ║
+║  Date    : [date]                                    Team: [participants]                 ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-PEOPLE
-  - [cause 1]
-      → [sub-cause if known]
-  - [cause 2]
+   PEOPLE                    PROCESS                  TECHNOLOGY
+   ──────                    ───────                  ──────────
+   ● [cause 1]               ● [cause 1]              ● [cause 1]
+     └─► [sub-cause]           └─► [sub-cause]          └─► [sub-cause]
+   ● [cause 2]               ● [cause 2]              ● [cause 2]
+        \                         |                       /
+         \                        |                      /
+          \                       |                     /
+           \                      |                    /
+────────────\─────────────────────|───────────────────/──────────────────────►┐
+             \                    |                  /                    ╔════╧════╗
+              \                   |                 /                     ║        ║
+               \                  |                /                      ║[PROBLEM║
+                \                 |               /                       ║  HEAD] ║
+                 \                |              /                        ║        ║
+──────────────────\───────────────|─────────────/────────────────────────╚════════╝
+                   \              |            /
+                    \             |           /
+                     \            |          /
+   ● [cause 1]        \      ● [cause 1]    /        ● [cause 1]
+     └─► [sub-cause]   \      └─► [sub-cause]          └─► [sub-cause]
+   ● [cause 2]          \    ● [cause 2]    \          ● [cause 2]
+   ──────────            \   ────────────    \         ──────────────
+   ENVIRONMENT         MATERIALS / DATA     MANAGEMENT / POLICY
 
-PROCESS
-  - [cause 1]
-      → [sub-cause if known]
-  - [cause 2]
 
-TECHNOLOGY
-  - [cause 1]
-  - [cause 2]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  PRIORITIZED ROOT CAUSE CANDIDATES  (dot-vote results)                                   ║
+╠═══╦═══════════════════════════════════════╦══════════════════╦══════════════════════════╣
+║ # ║ Cause                                 ║ Category         ║ Status                   ║
+╠═══╬═══════════════════════════════════════╬══════════════════╬══════════════════════════╣
+║ 1 ║ [cause]                               ║ [category]       ║ Confirmed / Likely / ?   ║
+║ 2 ║ [cause]                               ║ [category]       ║ Confirmed / Likely / ?   ║
+║ 3 ║ [cause]                               ║ [category]       ║ Confirmed / Likely / ?   ║
+╚═══╩═══════════════════════════════════════╩══════════════════╩══════════════════════════╝
 
-ENVIRONMENT
-  - [cause 1]
-  - [cause 2]
-
-MATERIALS / DATA
-  - [cause 1]
-  - [cause 2]
-
-MANAGEMENT / POLICY
-  - [cause 1]
-  - [cause 2]
-
-PRIORITIZED ROOT CAUSE CANDIDATES (dot-vote results)
-1. [cause] — Category: [X] — Status: [Confirmed / Likely / Unverified]
-2. [cause] — Category: [X] — Status: [Confirmed / Likely / Unverified]
-3. [cause] — Category: [X] — Status: [Confirmed / Likely / Unverified]
-
-NEXT ACTIONS
-- Verify [candidate 1] by: [data source / experiment / interview]
-- Verify [candidate 2] by: [data source / experiment / interview]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  NEXT ACTIONS                                                                            ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  ► Verify [candidate 1] by: [data source / experiment / interview]                       ║
+║  ► Verify [candidate 2] by: [data source / experiment / interview]                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The spine (horizontal line) runs left-to-right toward the Problem Head box. Upper bones (People, Process, Technology) angle down from above; lower bones (Environment, Materials/Data, Management/Policy) angle up from below. Each bullet is a direct cause; `└─►` sub-branches are one level of "why" — go deeper with Five Whys on a single branch if needed. The priority table captures dot-vote outcomes; mark each as Confirmed, Likely, or Unverified before acting.
 
 ## Common Mistakes
 

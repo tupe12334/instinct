@@ -90,36 +90,51 @@ Write the final smart goal, share with stakeholders, and schedule review checkpo
 ## Output Format
 
 ```
-smart GOAL ANALYSIS
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                      S  M  A  R  T     G O A L     A N A L Y S I S                       ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  Raw Goal ►  [original statement]                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-Raw Goal: [original statement]
+                                          │
+                                          ▼
+┌─────────────────────────────────────────────┬────────────────────────────────────────────┐
+│  S — Specific                               │  M — Measurable                            │
+├─────────────────────────────────────────────┼────────────────────────────────────────────┤
+│  Who:        [who is responsible]           │  Metric:    [what to measure]              │
+│  What:       [what to accomplish]           │  Baseline:  [current value]                │
+│  Where:      [where it happens]             │  Target:    [goal value]                   │
+│  Conditions: [constraints that apply]       │  Tracking:  [how / frequency]              │
+└─────────────────────────────────────────────┴────────────────────────────────────────────┘
+┌─────────────────────────────────────────────┬────────────────────────────────────────────┐
+│  A — Achievable                             │  R — Relevant                              │
+├─────────────────────────────────────────────┼────────────────────────────────────────────┤
+│  Basis:     [evidence, precedent]           │  Alignment: [which objective / mission]    │
+│  Resources: [available vs. required]        │  Timing:    [is now the right time?]       │
+│  Risks:     [blockers or constraints]       │  Conflicts: [competing priorities]         │
+└─────────────────────────────────────────────┴────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│  T — Time-bound                                                                          │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│  Deadline: [YYYY-MM-DD]                                                                  │
+│                                                                                          │
+│  ○──────────────────────●───────────────────────●────────────────────────────────────◆   │
+│  Start                [date]               [date]                               Deadline │
+│                   [milestone 1]            [milestone 2]                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 
-S — Specific
-[Rewritten with who/what/where/conditions]
-
-M — Measurable
-Metric: [what to measure]
-Baseline: [current value]
-Target: [goal value]
-Tracking method: [how/frequency]
-
-A — Achievable
-Basis for achievability: [evidence, precedent, resource check]
-Risks to achievability: [blockers]
-
-R — Relevant
-Alignment: [which objective/mission this serves]
-Priority check: [is now the right time?]
-
-T — Time-bound
-Deadline: [YYYY-MM-DD]
-Milestones:
-  - [date]: [checkpoint]
-  - [date]: [checkpoint]
-
-FINAL smart GOAL:
-"[Complete, refined goal statement that satisfies all 5 criteria]"
+                                          │
+                                          ▼
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  ● FINAL SMART GOAL                                                                      ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                          ║
+║  "[Complete, refined goal statement that satisfies all 5 criteria]"                      ║
+║                                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+S/M occupy the top two quadrants (who/what/where/conditions vs. metric/baseline/target/tracking) and A/R occupy the bottom two (evidence/resources/risks vs. alignment/timing/conflicts). T spans the full width with a left-to-right milestone timeline — ○ marks the start, ● marks each checkpoint, and ◆ marks the hard deadline. The final double-border box holds the complete refined goal statement that must satisfy all five criteria simultaneously.
 
 ## Quick Diagnostic
 

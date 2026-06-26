@@ -113,38 +113,54 @@ Only after the buyer has named the problem and described the benefit do you posi
 ## Output Format
 
 ```
-SPIN CALL PLAN: [prospect name / role / company]
-
-PRE-CALL RESEARCH
-Known situation: [what you already know — stack, size, recent news]
-Hypothesized problems: [2–3 guesses at their pain points]
-
-SITUATION QUESTIONS (pick 2–4)
-1. [question]
-2. [question]
-3. [question]
-
-PROBLEM QUESTIONS (per hypothesized problem)
-Problem A: [name it]
-  - "[question to surface it]"
-  - "[follow-up if they minimize it]"
-
-Problem B: [name it]
-  - "[question to surface it]"
-
-IMPLICATION QUESTIONS (2–3 per confirmed problem)
-Problem A implications:
-  - "[consequence for revenue / team / customer]"
-  - "[downstream effect on another stakeholder]"
-
-NEED-PAYOFF QUESTIONS (1–2 per problem)
-  - "[if solved, what changes for you?]"
-  - "[what would that be worth?]"
-
-SOLUTION BRIDGE
-Confirmed need: [buyer's own words from Need-Payoff]
-Product link: [feature or capability that directly addresses it]
+╔═══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  SPIN CALL PLAN  ►  [prospect name / role / company]                                         ║
+╠═══════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                               ║
+║  ┌─────────────┐      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐             ║
+║  │      S      │─────►│      P      │─────►│      I      │─────►│      N      │             ║
+║  │  Situation  │      │   Problem   │      │ Implication │      │ Need-Payoff │             ║
+║  │   (facts)   │      │   (pain)    │      │   (cost)    │      │   (value)   │             ║
+║  │  ● low val  │      │  ● med val  │      │  ● HI val   │      │  ● MAX val  │             ║
+║  └─────────────┘      └─────────────┘      └─────────────┘      └─────────────┘             ║
+║                                                                                               ║
+╠════════════════════════════╦══════════════════════════════════════════════════════════════════╣
+║  PRE-CALL RESEARCH         ║  Known situation:                                                ║
+║  ─────────────────────     ║  [what you already know — stack, size, recent news]              ║
+║  Hypothesized problems:    ╠══════════════════════════════════════════════════════════════════╣
+║  ● [pain point guess A]    ║  SITUATION QUESTIONS  (pick 2–4)                                 ║
+║  ● [pain point guess B]    ║  1. [question — factual context you need]                        ║
+║  ● [pain point guess C]    ║  2. [question — factual context you need]                        ║
+║                            ║  3. [question — factual context you need]                        ║
+╠════════════════════════════╩══════════════════════════════════════════════════════════════════╣
+║                                                                                               ║
+║  PROBLEM QUESTIONS                                                                            ║
+║  ┌───────────────────────────────────────────┐  ┌───────────────────────────────────────┐    ║
+║  │  Problem A: [name it]                     │  │  Problem B: [name it]                 │    ║
+║  │  ├─ "[question to surface it]"            │  │  ├─ "[question to surface it]"        │    ║
+║  │  └─ "[follow-up if they minimize it]"     │  │  └─ "[follow-up if minimize it]"      │    ║
+║  └───────────────────────────────────────────┘  └───────────────────────────────────────┘    ║
+║                          │                                        │                           ║
+║                          ▼                                        ▼                           ║
+║  IMPLICATION QUESTIONS                                                                        ║
+║  ┌───────────────────────────────────────────┐  ┌───────────────────────────────────────┐    ║
+║  │  Problem A implications:                  │  │  Problem B implications:              │    ║
+║  │  ├─ "[consequence for revenue / team]"    │  │  ├─ "[consequence for revenue]"       │    ║
+║  │  └─ "[downstream effect on stakeholder]"  │  │  └─ "[downstream stakeholder]"        │    ║
+║  └───────────────────────────────────────────┘  └───────────────────────────────────────┘    ║
+║                          │                                        │                           ║
+║                          └───────────────────────┬───────────────┘                           ║
+║                                                  ▼                                            ║
+╠═════════════════════════════════════════════════════╦═════════════════════════════════════════╣
+║  NEED-PAYOFF QUESTIONS                              ║  SOLUTION BRIDGE                       ║
+║  ├─ "[if solved, what changes for you?]"            ║  Confirmed need:                       ║
+║  └─ "[what would that be worth?]"                   ║  └─ [buyer's own words from N-Payoff]  ║
+║                                                     ║  Product link:                         ║
+║                                                     ║  └─ [feature / capability that fits]   ║
+╚═════════════════════════════════════════════════════╩═════════════════════════════════════════╝
 ```
+
+Each column of the flow header maps directly to one phase of the call. The two-column PRE-CALL panel keeps research context visible alongside the questions it informs. Problem and Implication boxes are paired side-by-side to show parallel tracks; arrows feed both down into a single Need-Payoff funnel, which resolves into the Solution Bridge on the right.
 
 ## Common Mistakes
 

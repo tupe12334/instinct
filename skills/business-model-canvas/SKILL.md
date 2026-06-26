@@ -77,48 +77,39 @@ List all significant costs. Then ask: do the revenue streams plausibly exceed th
 ## Output Format
 
 ```
-BUSINESS MODEL CANVAS: [Company / Product / Venture name]
-
-CUSTOMER SEGMENTS
-- [Segment A]: [size or descriptor]
-- [Segment B]: [size or descriptor]
-
-VALUE PROPOSITIONS
-- For [Segment A]: [specific problem solved / gain created]
-- For [Segment B]: [specific problem solved / gain created]
-
-CHANNELS
-- Awareness: [how customers discover you]
-- Purchase: [how they buy]
-- Delivery: [how they receive value]
-
-CUSTOMER RELATIONSHIPS
-- [Segment A]: [relationship type + rationale]
-- [Segment B]: [relationship type + rationale]
-
-REVENUE STREAMS
-- [Stream 1]: [type] — [pricing model] — [estimated % of revenue]
-- [Stream 2]: [type] — [pricing model] — [estimated % of revenue]
-
-KEY RESOURCES
-- [Resource]: [why critical]
-
-KEY ACTIVITIES
-- [Activity]: [why critical]
-
-KEY PARTNERS
-- [Partner]: [what they provide / why not internal]
-
-COST STRUCTURE
-- Fixed: [major items]
-- Variable: [major items]
-- Model type: [cost-driven / value-driven]
-
-VIABILITY CHECK
-- Biggest cost driver: [block]
-- Biggest revenue dependency: [stream]
-- Key assumption to validate: [assumption]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  BUSINESS MODEL CANVAS  ►  [Company / Product / Venture name]                                       ║
+╠══════════════════════╦═══════════════════════╦══════════════════════╦══════════════════════╦══════════════════════╣
+║  KEY PARTNERS        ║  KEY ACTIVITIES       ║  VALUE               ║  CUSTOMER            ║  CUSTOMER            ║
+║                      ║                       ║  PROPOSITIONS        ║  RELATIONSHIPS       ║  SEGMENTS            ║
+║  Who we rely on:     ║  What we must do:     ║                      ║                      ║                      ║
+║  ● [Partner A]:      ║  ► [Activity 1]:      ║  For [Segment A]:    ║  [Seg A]:            ║  ● [Segment A]:      ║
+║    [what provided]   ║    [why critical]     ║  → [problem solved / ║  [relationship type] ║    [size/descriptor] ║
+║  ● [Partner B]:      ║  ► [Activity 2]:      ║    gain created]     ║  [rationale]         ║  ● [Segment B]:      ║
+║    [what provided]   ║    [why critical]     ║                      ║                      ║    [size/descriptor] ║
+║  ● [Partner C]:      ╠═══════════════════════╣  For [Segment B]:    ╠══════════════════════╣                      ║
+║    [what provided]   ║  KEY RESOURCES        ║  → [problem solved / ║  CHANNELS            ║                      ║
+║                      ║                       ║    gain created]     ║                      ║                      ║
+║                      ║  What we must have:   ║                      ║  Awareness:          ║                      ║
+║                      ║  ○ [Resource]:        ║                      ║  → [how discovered]  ║                      ║
+║                      ║    [why critical]     ║                      ║  Purchase:           ║                      ║
+║                      ║  ○ [Resource]:        ║                      ║  → [how they buy]    ║                      ║
+║                      ║    [why critical]     ║                      ║  Delivery:           ║                      ║
+║                      ║  ○ [Resource]:        ║                      ║  → [how value rcvd]  ║                      ║
+║                      ║    [why critical]     ║                      ║                      ║                      ║
+╠══════════════════════╩═══════════════════════╩══════╦═══════════════╩══════════════════════╩══════════════════════╣
+║  COST STRUCTURE                                     ║  REVENUE STREAMS                                           ║
+║                                                     ║                                                            ║
+║  Fixed:    [major items — salaries, rent, infra]    ║  ● [Stream 1]: [type] — [pricing model] — [~% of rev]     ║
+║  Variable: [major items — COGS, transaction fees]   ║  ● [Stream 2]: [type] — [pricing model] — [~% of rev]     ║
+║  Model:    [cost-driven / value-driven]             ║  ● [Stream 3]: [type] — [pricing model] — [~% of rev]     ║
+╠═════════════════════════════════════════════════════╩════════════════════════════════════════════════════════════╣
+║  VIABILITY CHECK                                                                                                 ║
+║  ▲ Biggest cost driver: [block]    ● Biggest revenue dependency: [stream]    ○ Key assumption: [assumption]     ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Read the canvas left-to-right: the left half (Partners → Activities/Resources → Value Props) describes how value is **built**; the right half (Value Props → Relationships/Channels → Segments) describes how value is **delivered**. The bottom row closes the loop — costs flow left, revenue flows right. The Viability Check forces an explicit confrontation between the two.
 
 ## Common Mistakes
 

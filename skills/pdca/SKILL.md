@@ -79,36 +79,39 @@ Write a one-sentence decision. Update standard operating procedures if the chang
 ## Output Format
 
 ```
-PDCA CYCLE: [initiative or problem name]
-Date: [YYYY-MM-DD]
-Cycle #: [N]
-
-PLAN
-Problem statement: [current state vs. target state, metric + gap]
-Root cause: [hypothesis based on analysis]
-Countermeasure: [specific change to test]
-Success criterion: [metric crosses X threshold within Y days]
-Owner: [name/role]
-
-DO
-Pilot scope: [team / environment / duration]
-What was executed: [actual steps taken]
-Deviations from plan: [none / description]
-Data collected: [raw numbers or reference to data source]
-
-CHECK
-Result: [metric value after change]
-vs. Prediction: [expected value]
-Verdict: [Confirmed / Refuted / Inconclusive]
-Reason: [brief explanation]
-Side effects observed: [list or "none"]
-
-ACT
-Decision: [Standardize / Revise / Abandon]
-If standardized: [where process was documented]
-Next cycle target: [new or refined target]
-Key learning: [one sentence takeaway]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  PDCA CYCLE ▸ [initiative or problem name]          Date: [YYYY-MM-DD]   Cycle #: [N]      ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                              ║
+║  ┌────────────────────────────────────────────────┐  ┌──────────────────────────────────┐   ║
+║  │  ① PLAN                                       │  │                       ④ ACT     │   ║
+║  ├────────────────────────────────────────────────┤  ├──────────────────────────────────┤   ║
+║  │  Problem:    [current state vs. target,        │  │  Decision:  [Standardize /       │   ║
+║  │              metric + gap]                     │  │              Revise / Abandon]   │   ║
+║  │  Root cause: [hypothesis from analysis]        │  │  If std'd:  [where documented]   │   ║
+║  │  Counter:    [specific change to test]         │  │  Next tgt:  [new/refined target] │   ║
+║  │  Success:    [metric ≥ X within Y days]        │  │  Key learn: [one sentence]       │   ║
+║  │  Owner:      [name / role]                     │  │                                  │   ║
+║  └────────────────────────┬───────────────────────┘  └────────────────▲─────────────────┘   ║
+║                           │ ▼ PLAN → DO                  CHECK → ACT ▲ │                    ║
+║  ┌────────────────────────▼───────────────────────┐  ┌────────────────┴─────────────────┐   ║
+║  │  ② DO                                         │  │                     ③ CHECK     │   ║
+║  ├────────────────────────────────────────────────┤  ├──────────────────────────────────┤   ║
+║  │  Scope:      [team / env / duration]           │  │  Result:    [metric after chg]   │   ║
+║  │  Executed:   [actual steps taken]              │──►  Predicted: [expected value]     │   ║
+║  │  Deviations: [none / description]              │  │  Verdict:   [Confirmed /         │   ║
+║  │  Data:       [raw numbers / source]            │  │              Refuted /           │   ║
+║  │                                                │  │              Inconclusive]       │   ║
+║  │                                                │  │  Reason:    [brief explanation]  │   ║
+║  │                                                │  │  Side FX:   [list or "none"]     │   ║
+║  └────────────────────────────────────────────────┘  └──────────────────────────────────┘   ║
+║                                                                                              ║
+║  ● ACT → PLAN: if standardized, set a harder target and start the next cycle;               ║
+║    if failed or inconclusive, carry the learning forward and re-enter Plan.                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each quadrant maps to one phase: PLAN defines the hypothesis and success bar, DO runs the bounded pilot, CHECK measures actual vs. predicted outcome, and ACT decides whether to embed the change or revise. The `──►` connector between DO and CHECK shows the data hand-off; the vertical arrows on the left and right flanks show the top-to-bottom and bottom-to-top phase transitions within the cycle.
 
 ## Common Mistakes
 

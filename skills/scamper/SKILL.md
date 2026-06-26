@@ -86,41 +86,80 @@ For the top 3–5 ideas, write a one-paragraph "what this would actually look li
 ## Output Format
 
 ```
-SCAMPER: [subject]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  SCAMPER  ►  [subject]                                                               ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-S — SUBSTITUTE
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  S  ─  SUBSTITUTE   │  What can be swapped out?                                     │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-C — COMBINE
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  C  ─  COMBINE      │  What can be merged or bundled?                               │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-A — ADAPT
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  A  ─  ADAPT        │  What can be borrowed from elsewhere?                         │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-M — MODIFY
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  M  ─  MODIFY       │  What can be magnified, shrunk, or altered?                   │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-P — PUT TO OTHER USES
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  P  ─  PUT TO USE   │  What other contexts could this serve?                        │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-E — ELIMINATE
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  E  ─  ELIMINATE    │  What can be removed without loss of core value?              │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-R — REVERSE
-- [idea]: [brief rationale]
-- [idea]: [brief rationale]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  R  ─  REVERSE      │  What if the order or assumption were flipped?                │
+├─────────────────────┴─────────────────────────────────────────────────────────────  ┤
+│  ▸ [idea 1] : [brief rationale]                                                      │
+│  ▸ [idea 2] : [brief rationale]                                                      │
+│  ▸ [idea 3] : [brief rationale]                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-TOP CANDIDATES (Feasibility x Impact)
-1. [idea] — F:[1-5] x I:[1-5] = [score] — [one sentence on next step]
-2. [idea] — F:[1-5] x I:[1-5] = [score] — [one sentence on next step]
-3. [idea] — F:[1-5] x I:[1-5] = [score] — [one sentence on next step]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  TOP CANDIDATES  ─  Feasibility × Impact                                             ║
+╠═════╦══════════════════════════════════╦═══════════════╦══════╦════════════════════╣
+║  #  ║  Idea                            ║  F  ×  I      ║  Score  ║  Next Step       ║
+╠═════╬══════════════════════════════════╬═══════════════╬═════════╬══════════════════╣
+║  1  ║  [idea]                          ║  [1-5]×[1-5]  ║   [n]   ║  [next step]     ║
+╠═════╬══════════════════════════════════╬═══════════════╬═════════╬══════════════════╣
+║  2  ║  [idea]                          ║  [1-5]×[1-5]  ║   [n]   ║  [next step]     ║
+╠═════╬══════════════════════════════════╬═══════════════╬═════════╬══════════════════╣
+║  3  ║  [idea]                          ║  [1-5]×[1-5]  ║   [n]   ║  [next step]     ║
+╚═════╩══════════════════════════════════╩═══════════════╩═════════╩══════════════════╝
 ```
+
+Each lettered block captures raw ideas for that lens — aim for at least 3 per lens before filtering. The Top Candidates table forces explicit scoring so the highest-leverage ideas rise above gut preference.
 
 ## Common Mistakes
 

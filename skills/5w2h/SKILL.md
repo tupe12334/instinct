@@ -109,46 +109,48 @@ Revisit the 5W2H at each milestone. If any field has changed (scope crept, timel
 ## Output Format
 
 ```
-5W2H: [task or problem name]
-Date: [YYYY-MM-DD]
-Author: [name]
-
-─────────────────────────────────────────────
-WHAT
-[What exactly is being done or solved? What is in scope / out of scope?]
-
-WHY
-[Why does this matter now? What outcome does solving it produce?]
-
-WHERE
-[Which system, region, team, or product area? What is the scope boundary?]
-
-WHEN
-Start:      [date]
-Deadline:   [date]
-Milestones:
-  - [date]: [checkpoint]
-  - [date]: [checkpoint]
-
-WHO
-Owner:       [single accountable person]
-Doers:       [name / team — role]
-Approver(s): [name / role]
-Notify:      [name / role]
-Affected:    [users, customers, teams impacted]
-
-HOW
-[Steps, process, tools, and chosen approach. Include key decision rationale if non-obvious.]
-
-HOW MUCH
-Budget:   [$ amount or "no separate budget"]
-Effort:   [X people × Y days = Z person-days]
-Other:    [infra, licenses, vendor costs]
-
-─────────────────────────────────────────────
-OPEN ITEMS (blockers before execution)
-  - [question]: [who resolves it] by [date]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  5W2H  ·  [task or problem name]                          Date: [YYYY-MM-DD]             ║
+║           Author: [name]                                                                 ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  WHAT ──► WHY ──► WHERE ──► WHEN ──► WHO ──► HOW ──► HOW MUCH                            ║
+╠══════════╦═══════════════════════════════════════════════════════════════════════════════╣
+║          ║                                                                               ║
+║  WHAT  ► ║  [What exactly is being done or solved? What is in scope / out of scope?]     ║
+║          ║                                                                               ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║          ║                                                                               ║
+║  WHY   ► ║  [Why does this matter now? What outcome does solving it produce?]            ║
+║          ║                                                                               ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║          ║                                                                               ║
+║  WHERE ► ║  [Which system, region, team, or product area? What is the scope boundary?]   ║
+║          ║                                                                               ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║          ║  Start:      [date]                                                           ║
+║  WHEN  ► ║  Deadline:   [date]                                                           ║
+║          ║  Milestones: ● [date] → [checkpoint]   ● [date] → [checkpoint]                ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║          ║  Owner:    [single accountable person]                                        ║
+║  WHO   ► ║  Doers:    [name / team — role]                                               ║
+║          ║  Approver: [name / role]          Notify:  [name / role]                      ║
+║          ║  Affected: [users, customers, teams impacted]                                 ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║          ║                                                                               ║
+║  HOW   ► ║  [Steps, process, tools, and chosen approach. Include decision rationale.]    ║
+║          ║                                                                               ║
+╠══════════╬═══════════════════════════════════════════════════════════════════════════════╣
+║  HOW   ► ║  Budget: [$ amount or "no separate budget"]                                   ║
+║  MUCH    ║  Effort: [X people × Y days = Z person-days]                                  ║
+║          ║  Other:  [infra, licenses, vendor costs]                                      ║
+╠══════════╩═══════════════════════════════════════════════════════════════════════════════╣
+║  ▼ OPEN ITEMS — blockers before execution                                                ║
+║    ● [question] ────────────────────────────────► [who resolves it]   by [date]          ║
+║    ● [question] ────────────────────────────────► [who resolves it]   by [date]          ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The left column labels the question being answered; the right column holds your response. The OPEN ITEMS footer is a mandatory blockers list — every unanswered question goes here with a named owner and a resolution deadline before execution begins.
 
 ## Common Mistakes
 

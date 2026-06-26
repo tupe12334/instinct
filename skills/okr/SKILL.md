@@ -78,35 +78,52 @@ Each week, score KRs on a 0.0–1.0 scale (current / target). A score below 0.4 
 ## Output Format
 
 ```
-OKR — [Team / Person] — Q[N] [YEAR]
-
-OBJECTIVE
-"[One-sentence qualitative statement of the outcome]"
-
-KEY RESULTS
-KR 1: [Metric] from [baseline] to [target] by [date]
-      Data source: [where this number lives]
-      Confidence: [%]
-
-KR 2: [Metric] from [baseline] to [target] by [date]
-      Data source: [where this number lives]
-      Confidence: [%]
-
-KR 3: [Metric] from [baseline] to [target] by [date]
-      Data source: [where this number lives]
-      Confidence: [%]
-
-INITIATIVES (bets that drive KRs)
-- [Initiative] → KR [N]
-- [Initiative] → KR [N], KR [N]
-
-WEEKLY SCORE (fill each Monday)
-Week | KR 1 | KR 2 | KR 3 | Blocker
------|------|------|------|--------
- W1  | 0.0  | 0.0  | 0.0  |
- W6  |      |      |      |
-W13  |      |      |      |
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  OKR ▸ [Team / Person]                                               Q[N] [YEAR]        ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                          ║
+║  ╔══════════════════════════════════════════════════════════════════════════════════════╗ ║
+║  ║  OBJECTIVE                                                                           ║ ║
+║  ║  "[One-sentence qualitative statement of the outcome]"                               ║ ║
+║  ╚═══════════════════════════════════════╤════════════════════════════════════════════╝ ║
+║                                          │                                               ║
+║              ┌───────────────────────────┼───────────────────────────┐                  ║
+║              │                           │                           │                  ║
+║              ▼                           ▼                           ▼                  ║
+║  ┌───────────────────────────┐ ┌───────────────────────────┐ ┌───────────────────────────┐ ║
+║  │  KR 1                     │ │  KR 2                     │ │  KR 3                     │ ║
+║  ├───────────────────────────┤ ├───────────────────────────┤ ├───────────────────────────┤ ║
+║  │  [metric]                 │ │  [metric]                 │ │  [metric]                 │ ║
+║  │  [baseline] → [target]    │ │  [baseline] → [target]    │ │  [baseline] → [target]    │ ║
+║  │  by [date]                │ │  by [date]                │ │  by [date]                │ ║
+║  ├───────────────────────────┤ ├───────────────────────────┤ ├───────────────────────────┤ ║
+║  │  src: [data source]       │ │  src: [data source]       │ │  src: [data source]       │ ║
+║  │  conf: [%]                │ │  conf: [%]                │ │  conf: [%]                │ ║
+║  └───────────────────────────┘ └───────────────────────────┘ └───────────────────────────┘ ║
+║                                                                                          ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  INITIATIVES  ▸  bets that move KRs  (not OKRs — track separately)                     ║
+║                                                                                          ║
+║  ●  [Initiative A] ─────────────────────────────────────────────────────────► KR 1     ║
+║  ●  [Initiative B] ─────────────────────────────────────────────────────────► KR 2     ║
+║  ●  [Initiative C] ──────────────────────────────────────────────────────► KR 2, KR 3  ║
+║                                                                                          ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  WEEKLY SCORE  ▸  0.0 = not started  ·  0.4 = mid-quarter trigger  ·  1.0 = achieved   ║
+║                                                                                          ║
+║  ┌──────┬──────────────────┬──────────────────┬──────────────────┬──────────────────┐   ║
+║  │ Week │      KR 1        │      KR 2        │      KR 3        │  Blocker / Note  │   ║
+║  ├──────┼──────────────────┼──────────────────┼──────────────────┼──────────────────┤   ║
+║  │  W1  │      0.0         │      0.0         │      0.0         │                  │   ║
+║  ├──────┼──────────────────┼──────────────────┼──────────────────┼──────────────────┤   ║
+║  │  W6  │                  │                  │                  │ ← rescope if <0.4│   ║
+║  ├──────┼──────────────────┼──────────────────┼──────────────────┼──────────────────┤   ║
+║  │ W13  │                  │                  │                  │                  │   ║
+║  └──────┴──────────────────┴──────────────────┴──────────────────┴──────────────────┘   ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The outer frame holds the full quarter's OKR in one view: the Objective sits at the top and fans out via arrows to each Key Result box (metric, baseline → target, data source, and confidence %); Initiatives below name the work and explicitly map to which KRs they move; the Weekly Score table is filled each Monday using a 0.0–1.0 scale, and any KR below 0.4 at W6 (mid-quarter) triggers an explicit accelerate / rescope / kill decision.
 
 ## Common Mistakes
 

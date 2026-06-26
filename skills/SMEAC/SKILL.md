@@ -111,51 +111,88 @@ smeac briefings should be written and distributed — verbal-only briefings lose
 ## Output Format
 
 ```
-smeac BRIEFING: [operation/project name]
-Date: [YYYY-MM-DD]
-Briefed by: [name/role]
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║  SMEAC BRIEFING  ►  [operation / project name]                                  ║
+║  Date: [YYYY-MM-DD]                        Briefed by: [name / role]            ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 
-─────────────────────────────────────────────
-S — SITUATION
-[Context: what's happening, the problem/opportunity, key constraints, known unknowns]
-
-─────────────────────────────────────────────
-M — MISSION
-[One sentence: who + what + why + by when]
-
-─────────────────────────────────────────────
-E — EXECUTION
-Commander's Intent:
-  [End state — what success looks like even if the plan breaks down]
-
-Concept of Operations:
-  [High-level approach and phases]
-
-Task Assignments:
-  - [Team/Person]: [task] by [date]
-  - [Team/Person]: [task] by [date]
-
-Coordinating Instructions:
-  - [Dependencies, timing rules, shared standards]
-
-Contingencies:
-  - If [condition]: [response]
-
-─────────────────────────────────────────────
-A — ADMINISTRATION / LOGISTICS
-Resources: [budget, tools, access]
-Timeline: [key dates]
-Support: [who provides what]
-Risks: [top risks and mitigations]
-
-─────────────────────────────────────────────
-C — COMMAND / COMMUNICATIONS
-Decision authority: [who decides what]
-Escalation path: [steps]
-Primary contacts: [role → person → channel]
-Update cadence: [frequency and format]
-Reporting: [what, to whom, how often]
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  S  ─  SITUATION                                                                 │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│  Environment  │  [what is happening in the broader market / org / product]       │
+│  ─────────────┼──────────────────────────────────────────────────────────────── │
+│  Problem /    │  [the specific problem or opportunity that triggered this brief] │
+│  Opportunity  │                                                                  │
+│  ─────────────┼──────────────────────────────────────────────────────────────── │
+│  Constraints  │  [time pressure, competition, regulations, budget ceiling]       │
+│  ─────────────┼──────────────────────────────────────────────────────────────── │
+│  Known        │  ● [fact we are sure of]    ● [fact we are sure of]             │
+│  Unknown      │  ○ [assumption / gap]       ○ [assumption / gap]                │
+└──────────────────────────────────────────────────────────────────────────────────┘
+                                          │
+                                          ▼
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  M  ─  MISSION                                                                   │
+├──────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                  │
+│   [Who] will [what action] in order to [why / intended effect] by [when].        │
+│                                                                                  │
+│   WHO ──────► [team / person]        WHAT ──────► [action]                      │
+│   WHY ──────► [intended effect]      BY WHEN ───► [date / milestone]            │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+                                          │
+                                          ▼
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  E  ─  EXECUTION                                                                 │
+├───────────────────────┬──────────────────────────────────────────────────────────┤
+│  Commander's Intent   │  [End state — what success looks like if the plan breaks]│
+├───────────────────────┼──────────────────────────────────────────────────────────┤
+│  Concept of Ops       │  Phase 1 ──► Phase 2 ──► Phase 3 ──► [end state]        │
+│                       │  [approach overview and sequence of effort]              │
+├───────────────────────┼──────────────────────────────────────────────────────────┤
+│  Task Assignments     │  ► [Team / Person A] : [task]  by [date]                │
+│                       │  ► [Team / Person B] : [task]  by [date]                │
+│                       │  ► [Team / Person C] : [task]  by [date]                │
+├───────────────────────┼──────────────────────────────────────────────────────────┤
+│  Coordinating         │  ● [dependency or timing rule]                          │
+│  Instructions         │  ● [shared standard or constraint]                      │
+├───────────────────────┼──────────────────────────────────────────────────────────┤
+│  Contingencies        │  If [condition A]  →  [response A]                      │
+│                       │  If [condition B]  →  [response B]                      │
+└───────────────────────┴──────────────────────────────────────────────────────────┘
+                                          │
+                                          ▼
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  A  ─  ADMINISTRATION / LOGISTICS                                                │
+├──────────────┬───────────────────────┬──────────────────────────────────────────┤
+│  Resources   │  Timeline             │  Risks                                   │
+│  ─────────── │  ─────────────────── │  ──────────────────────────────────────  │
+│  Budget:     │  [milestone] [date]   │  ▲ [risk]  →  [mitigation]              │
+│  [amount]    │  [milestone] [date]   │  ▲ [risk]  →  [mitigation]              │
+│  Tools:      │  [milestone] [date]   │                                          │
+│  [list]      │                       │  Support: [who provides what]            │
+│  Headcount:  │                       │                                          │
+│  [n people]  │                       │                                          │
+└──────────────┴───────────────────────┴──────────────────────────────────────────┘
+                                          │
+                                          ▼
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  C  ─  COMMAND / COMMUNICATIONS                                                  │
+├───────────────────────────────────────┬──────────────────────────────────────────┤
+│  Decision Authority & Escalation      │  Contacts & Channels                    │
+│  ─────────────────────────────────── │  ──────────────────────────────────────  │
+│  [Role / person] decides [domain]     │  [Role]  →  [person]  →  [channel]     │
+│       │                               │  [Role]  →  [person]  →  [channel]     │
+│       ▼                               │                                          │
+│  [Role / person] decides [domain]     │  Update cadence: [frequency & format]  │
+│       │                               │                                          │
+│       ▼                               │  Reporting: [what · to whom · how often]│
+│  [Final escalation point]             │                                          │
+└───────────────────────────────────────┴──────────────────────────────────────────┘
 ```
+
+Each section flows top-to-bottom mirroring the order of the briefing itself — start with Situation (context) to anchor everyone, lock in the Mission statement, then cascade through Execution details, Admin/Logistics support, and finally Command/Comms so everyone knows who decides and how to stay connected.
 
 ## Common Mistakes
 

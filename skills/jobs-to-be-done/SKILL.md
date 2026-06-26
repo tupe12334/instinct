@@ -83,38 +83,49 @@ For each job, answer: does your product address this, partially address it, or i
 ## Output Format
 
 ```
-JTBD ANALYSIS: [product / feature / market]
+╔═════════════════════════════════════════════════════════════════════════════════════╗
+║  JTBD ANALYSIS  ░░  [product / feature / market]                                    ║
+╚═════════════════════════════════════════════════════════════════════════════════════╝
 
-SITUATION
-When: [specific trigger or context]
-Customer: [role or behavior, not demographic]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  SITUATION                                                                          │
+│  When ▸ [specific trigger or context]          Who ▸ [role, not demographic]        │
+└──────────────────────────────────────────┬──────────────────────────────────────────┘
+                                           │
+                           ┌───────────────┼───────────────┐
+                           │               │               │
+                           ▼               ▼               ▼
+┌──────────────────────────┐  ┌──────────────────────────┐  ┌──────────────────────────┐
+│  ● FUNCTIONAL JOB        │  │  ● SOCIAL JOB            │  │  ● EMOTIONAL JOB         │
+│  What to DO              │  │  How to APPEAR           │  │  How to FEEL             │
+├──────────────────────────┤  ├──────────────────────────┤  ├──────────────────────────┤
+│  "[verb] + [object]      │  │  "Be perceived as [X]    │  │  "Feel [X]               │
+│   + [context]"           │  │   by [audience]"         │  │   when [situation]"      │
+├──────────────────────────┤  ├──────────────────────────┤  ├──────────────────────────┤
+│  Hired today:            │  │  Signal needed:          │  │  Anxiety / frustration:  │
+│  [current solution]      │  │  [what validates this]   │  │  [pain point]            │
+├──────────────────────────┤  └──────────────────────────┘  └──────────────────────────┘
+│  Struggling moment:      │
+│  [where it fails them]   │
+└──────────────────────────┘
 
-FUNCTIONAL JOB
-"[verb] + [object] + [context/constraint]"
-Current solution hired: [what they use today]
-Struggling moment: [where it fails them]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  RELATED JOBS                                                                       │
+│                                                                                     │
+│  [before job]  ──────────────────────► ◉ CORE JOB ◉ ──────────────────────► [after]│
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 
-SOCIAL JOB
-"Be perceived as [X] by [audience]"
-Signal needed: [what validates this perception]
-
-EMOTIONAL JOB
-"Feel [X] when [situation]"
-Current anxiety/frustration: [pain point]
-
-RELATED JOBS
-Before: [job that precedes this one]
-After: [job triggered by completion]
-
-PRODUCT IMPLICATIONS
-- [functional gap / feature opportunity]
-- [social signal to add or strengthen]
-- [emotional friction to reduce]
-
-HIRING CRITERIA (why they'd choose your product)
-1. [criterion] — [how your product meets it]
-2. ...
+┌──────────────────────────────────────────┐  ┌──────────────────────────────────────┐
+│  PRODUCT IMPLICATIONS                    │  │  HIRING CRITERIA                     │
+├──────────────────────────────────────────┤  │  (why they'd choose your product)    │
+│  Functional ► [gap / feature opp.]       │  ├──────────────────────────────────────┤
+│  Social     ► [signal to add/strengthen] │  │  1. [criterion] — [how it's met]     │
+│  Emotional  ► [friction to reduce]       │  │  2. [criterion] — [how it's met]     │
+└──────────────────────────────────────────┘  └──────────────────────────────────────┘
 ```
+
+The three job columns (Functional, Social, Emotional) each describe a different dimension of the same hiring decision — fill all three before drawing product conclusions. The Related Jobs timeline and Product Implications sections translate interview findings into concrete roadmap signals.
 
 ## Common Mistakes
 

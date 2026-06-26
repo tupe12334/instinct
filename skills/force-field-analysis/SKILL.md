@@ -74,36 +74,40 @@ For each restraining force rated 3 or higher: name a specific action to reduce i
 ## Output Format
 
 ```
-FORCE FIELD ANALYSIS: [change statement]
-Date: [date]  |  Owner: [name]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  FORCE FIELD ANALYSIS                                                                    ║
+║  Change : [change statement]                                                             ║
+║  Date   : [date]                                          Owner : [name]                 ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-DRIVING FORCES                         RESTRAINING FORCES
-Force                     Score │ Score  Force
-─────────────────────────────── │ ──────────────────────────────
-[driving force 1]           [n] │  [n]   [restraining force 1]
-[driving force 2]           [n] │  [n]   [restraining force 2]
-[driving force 3]           [n] │  [n]   [restraining force 3]
-[driving force 4]           [n] │  [n]   [restraining force 4]
-                                │
-TOTAL DRIVING SCORE:        [n] │  [n]   TOTAL RESTRAINING SCORE
-                                │
-VERDICT: [Proceed / Proceed with conditions / Do not proceed]
+        DRIVING FORCES                     ▼                    RESTRAINING FORCES
+      (push toward change)          PROPOSED CHANGE            (push against change)
+  ──────────────────────────────────────── ║ ────────────────────────────────────────────
+                                           ║
+  [driving force 1]       ●●●●● [5] ─────► ║ ◄───── [5] ●●●●●   [restraining force 1]
+  [driving force 2]       ●●●●○ [4] ────►  ║  ◄──── [4] ●●●●○   [restraining force 2]
+  [driving force 3]       ●●●○○ [3] ───►   ║   ◄─── [3] ●●●○○   [restraining force 3]
+  [driving force 4]       ●●○○○ [2] ──►    ║    ◄── [2] ●●○○○   [restraining force 4]
+                                           ║
+  ──────────────────────────────────────── ║ ────────────────────────────────────────────
+  TOTAL DRIVING : [n]               ◄──── EQUILIBRIUM ────►       TOTAL RESTRAINING : [n]
 
-ACTION PLAN
-Restrainers to weaken:
-1. Force: [restraining force]
-   Action: [specific intervention]
-   Owner: [name]  |  Due: [date]
+  ┌──────────────────────────────────────────────────────────────────────────────────────┐
+  │  VERDICT : [Proceed / Proceed with conditions / Do not proceed]                      │
+  └──────────────────────────────────────────────────────────────────────────────────────┘
 
-2. Force: [restraining force]
-   Action: [specific intervention]
-   Owner: [name]  |  Due: [date]
-
-Drivers to amplify:
-1. Force: [driving force]
-   Action: [specific intervention]
-   Owner: [name]  |  Due: [date]
+  ACTION PLAN
+  ┌──────────────────────────────────────┬──────────────────────────────────┬──────────┬──────────┐
+  │  Force                               │  Intervention                    │  Owner   │  Due     │
+  ├──────────────────────────────────────┼──────────────────────────────────┼──────────┼──────────┤
+  │  ▼ WEAKEN   [restraining force 1]    │  [specific action]               │  [name]  │  [date]  │
+  │  ▼ WEAKEN   [restraining force 2]    │  [specific action]               │  [name]  │  [date]  │
+  ├──────────────────────────────────────┼──────────────────────────────────┼──────────┼──────────┤
+  │  ▲ AMPLIFY  [driving force 1]        │  [specific action]               │  [name]  │  [date]  │
+  └──────────────────────────────────────┴──────────────────────────────────┴──────────┴──────────┘
 ```
+
+The central `║` line is the equilibrium point — forces push toward it from both sides. Filled dots (●) represent score units, open dots (○) represent unused capacity; arrow length mirrors relative strength. The action plan table prioritises restrainers to weaken (▼) above drivers to amplify (▲), reflecting where interventions have the highest leverage.
 
 ## Common Mistakes
 

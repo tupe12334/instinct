@@ -89,27 +89,84 @@ Ship the fix, measure the specific stage metric (not a vanity metric), and re-ch
 ## Output Format
 
 ```
-AARRR AUDIT — [Product / Team] — [Date]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                    AARRR PIRATE METRICS AUDIT                                            ║
+║                    [Product / Team]  ●  [Date]  ●  Period: last [N] days                 ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-FUNNEL SNAPSHOT (last [N] days)
-Stage        | Primary Metric              | Current | Target  | Status
--------------|----------------------------|---------|---------|--------
-Acquisition  | [metric, e.g. signups/mo]  | [value] | [value] | [R/Y/G]
-Activation   | [activation event rate]    | [value] | [value] | [R/Y/G]
-Retention    | [D7 / D30 retention]       | [value] | [value] | [R/Y/G]
-Referral     | [viral coeff / NPS]        | [value] | [value] | [R/Y/G]
-Revenue      | [MRR / LTV:CAC]            | [value] | [value] | [R/Y/G]
+ FUNNEL FLOW & CONVERSION RATES
+ ┌──────────────────────────────────────────────────────────────────────────────────────┐
+ │                                                                                      │
+ │  ╔══════════════════════════════════════════════════════════════════════════════╗    │
+ │  ║  A  ACQUISITION  │  [channel mix: SEO / paid / social / other]              ║    │
+ │  ║                  │  [volume/mo]  ·  CPA: [value]  ·  top channel: [name]    ║    │
+ │  ╚══════════════════════════════════════════════════════════════════════════════╝    │
+ │            │  ▼  conversion  [conv%]  (industry avg ~25–40%)                        │
+ │  ╔══════════════════════════════════════════════════╗                               │
+ │  ║  A  ACTIVATION  │  aha-moment: [activation event]║                               │
+ │  ║                 │  [volume/mo]  ·  rate: [value]  ║                               │
+ │  ╚══════════════════════════════════════════════════╝                               │
+ │            │  ▼  conversion  [conv%]  (industry avg ~20–35%)                        │
+ │  ╔══════════════════════════════╗                                                   │
+ │  ║  R  RETENTION  │  D7: [val]  ║                                                   │
+ │  ║                │  D30: [val] ║                                                   │
+ │  ╚══════════════════════════════╝                                                   │
+ │            │  ▼  conversion  [conv%]  (industry avg ~10–20%)                        │
+ │  ╔══════════════════════════════╗                                                   │
+ │  ║  R  REFERRAL  │  NPS: [val] ║                                                   │
+ │  ║               │  K:   [val] ║                                                   │
+ │  ╚══════════════════════════════╝                                                   │
+ │            │  ▼  conversion  [conv%]                                                │
+ │  ╔══════════════════════════════╗                                                   │
+ │  ║  R  REVENUE  │  MRR: [val] ║                                                    │
+ │  ║              │  LTV: [val] ║                                                    │
+ │  ╚══════════════════════════════╝                                                   │
+ │            │  ▼  GROWTH                                                             │
+ └──────────────────────────────────────────────────────────────────────────────────────┘
 
-BIGGEST LEAK
-Stage: [stage name]
-Root cause: [one sentence]
-Hypothesis: [fix] will move [metric] from [X] to [Y] in [timeframe]
+ FUNNEL SNAPSHOT  ─────────────────────────────────────────────────────────────────────
+ ┌─────────────┬──────────────────────────────────┬───────────┬───────────┬──────────┐
+ │ Stage       │ Primary Metric                   │  Current  │  Target   │  Status  │
+ ├─────────────┼──────────────────────────────────┼───────────┼───────────┼──────────┤
+ │ Acquisition │ [e.g. signups/mo]                │  [value]  │  [value]  │  [R/Y/G] │
+ ├─────────────┼──────────────────────────────────┼───────────┼───────────┼──────────┤
+ │ Activation  │ [activation event rate]          │  [value]  │  [value]  │  [R/Y/G] │
+ ├─────────────┼──────────────────────────────────┼───────────┼───────────┼──────────┤
+ │ Retention   │ [D7 / D30 retention]             │  [value]  │  [value]  │  [R/Y/G] │
+ ├─────────────┼──────────────────────────────────┼───────────┼───────────┼──────────┤
+ │ Referral    │ [viral coeff K / NPS]            │  [value]  │  [value]  │  [R/Y/G] │
+ ├─────────────┼──────────────────────────────────┼───────────┼───────────┼──────────┤
+ │ Revenue     │ [MRR / LTV:CAC]                  │  [value]  │  [value]  │  [R/Y/G] │
+ └─────────────┴──────────────────────────────────┴───────────┴───────────┴──────────┘
 
-NEXT EXPERIMENT
-Owner: [name]
-Deadline: [date]
-Success signal: [specific metric + threshold]
+ FUNNEL SHAPE  (proportional bars — widest gap = biggest leak)
+ ┌──────────────────────────────────────────────────────────────────────────────────────┐
+ │                                                                                      │
+ │  Acquisition ████████████████████████████████████████████████████  [value]  100%   │
+ │              ▼ ─[conv%]──────────────────────────────────────────────────────────   │
+ │  Activation  █████████████████████████████████████               [value]   [xx]%   │
+ │              ▼ ─[conv%]──────────────────────────────────────────────────────────   │
+ │  Retention   ████████████████████████                            [value]   [xx]%   │
+ │              ▼ ─[conv%]──────────────────────────────────────────────────────────   │
+ │  Referral    █████████                                           [value]   [xx]%   │
+ │              ▼ ─[conv%]──────────────────────────────────────────────────────────   │
+ │  Revenue     ████████████████████                                [value]   [xx]%   │
+ │                                                                                      │
+ └──────────────────────────────────────────────────────────────────────────────────────┘
+
+ ┌──────────────────────────────────────────┐  ┌──────────────────────────────────────┐
+ │ ● BIGGEST LEAK                           │  │ ● NEXT EXPERIMENT                    │
+ │                                          │  │                                      │
+ │  Stage      ► [stage name]               │  │  Owner          ► [name]             │
+ │  Root cause ► [why this stage leaks —    │  │  Deadline       ► [date]             │
+ │               one sentence]             │  │  Success signal ► [metric] ≥ [thresh] │
+ │  Hypothesis ► [fix] will move [metric]  │  │  Rollback if    ► [metric] < [floor]  │
+ │               from [X%] → [Y%]          │  │                                      │
+ │               in [timeframe]            │  │                                      │
+ └──────────────────────────────────────────┘  └──────────────────────────────────────┘
 ```
+
+Status key: R = needs urgent attention  ·  Y = watch closely  ·  G = on track. The funnel shape block makes the biggest drop-off visible at a glance — the stage immediately below the widest gap is your highest-leverage fix. The side-by-side boxes at the bottom keep diagnosis and action together so the audit ends with a clear owner and deadline.
 
 ## Common Mistakes
 

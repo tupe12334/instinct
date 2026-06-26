@@ -80,34 +80,52 @@ Each cross-analysis cell should yield 1–3 concrete strategic actions.
 ## Output Format
 
 ```
-SWOT ANALYSIS: [subject]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                          SWOT ANALYSIS: [subject]                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-STRENGTHS
-1. [strength] — [why it matters]
-2. ...
+                        ◄──────── HELPFUL ────────►◄──────── HARMFUL ────────►
 
-WEAKNESSES
-1. [weakness] — [impact if unaddressed]
-2. ...
+                     ┌───────────────────────────────┬───────────────────────────────┐
+                     │        S  STRENGTHS           │        W  WEAKNESSES          │
+   I  N  T  E  R  N  │  ● [strength 1 — why it       │  ● [weakness 1 — impact if    │
+   A  L             │    matters]                   │    unaddressed]               │
+                     │  ● [strength 2 — why it       │  ● [weakness 2 — impact if    │
+                     │    matters]                   │    unaddressed]               │
+                     │  ● [strength 3 — why it       │  ● [weakness 3 — impact if    │
+                     │    matters]                   │    unaddressed]               │
+                     ├───────────────────────────────┼───────────────────────────────┤
+                     │        O  OPPORTUNITIES       │        T  THREATS             │
+   E  X  T  E  R  N  │  ● [opportunity 1 —           │  ● [threat 1 — likelihood     │
+   A  L             │    window/timeline]           │    & severity]                │
+                     │  ● [opportunity 2 —           │  ● [threat 2 — likelihood     │
+                     │    window/timeline]           │    & severity]                │
+                     │  ● [opportunity 3 —           │  ● [threat 3 — likelihood     │
+                     │    window/timeline]           │    & severity]                │
+                     └───────────────────────────────┴───────────────────────────────┘
 
-OPPORTUNITIES
-1. [opportunity] — [window/timeline]
-2. ...
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                        STRATEGIC OPTIONS  (TOWS CROSS-ANALYSIS)                    ║
+╠═══════════════════════╦════════════════════════════╦═══════════════════════════════╣
+║                       ║   O  OPPORTUNITIES         ║   T  THREATS                  ║
+╠═══════════════════════╬════════════════════════════╬═══════════════════════════════╣
+║  S  STRENGTHS         ║ SO ► LEVERAGE              ║ ST ► DEFEND                   ║
+║                       ║  [action exploiting S+O]   ║  [action using S to counter T]║
+╠═══════════════════════╬════════════════════════════╬═══════════════════════════════╣
+║  W  WEAKNESSES        ║ WO ► IMPROVE               ║ WT ► SURVIVE                  ║
+║                       ║  [action fixing W to       ║  [action minimizing exposure] ║
+║                       ║   capture O]               ║                               ║
+╚═══════════════════════╩════════════════════════════╩═══════════════════════════════╝
 
-THREATS
-1. [threat] — [likelihood and severity]
-2. ...
-
-STRATEGIC OPTIONS (TOWS)
-SO (Leverage): [action exploiting S+O]
-ST (Defend): [action using S to counter T]
-WO (Improve): [action addressing W to capture O]
-WT (Survive): [action minimizing exposure]
-
-PRIORITY ACTIONS:
-1. [highest-impact action]
-2. [second action]
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  PRIORITY ACTIONS                                                                   │
+│  1. ▸ [highest-impact action]                                                       │
+│  2. ▸ [second action]                                                               │
+│  3. ▸ [third action]                                                                │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+The 2×2 grid separates internal factors (top) from external ones (bottom), and helpful from harmful (left vs right). The TOWS table below it maps quadrant pairs to concrete strategic moves — this cross-analysis is where actionable strategy emerges.
 
 ## Common Mistakes
 

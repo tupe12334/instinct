@@ -82,36 +82,56 @@ Assess the net value across all orders. A decision that looks positive at the fi
 ## Output Format
 
 ```
-SECOND-ORDER ANALYSIS: [decision being evaluated]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  SECOND-ORDER ANALYSIS  ►  [decision being evaluated]                               ║
+╚════════════════════════════════════╤═══════════════════════════════════════════════╝
+                                     │
+                      ┌──────────────▼──────────────┐
+                      │  DECISION                    │
+                      │  [one-sentence statement     │
+                      │   of the action]             │
+                      └──────────┬──────────┬────────┘
+                                 │          │
+              ┌──────────────────▼──┐    ┌──▼──────────────────┐
+              │  ① 1ST-ORDER EFFECT │    │  ② 1ST-ORDER EFFECT │
+              │  [direct effect]    │    │  [direct effect]    │
+              │  ● [who affected]   │    │  ● [who affected]   │
+              └──┬──────────┬───────┘    └───────────┬──────────┘
+                 │          │                         │
+     ┌───────────▼──┐  ┌────▼──────────┐  ┌──────────▼────────┐
+     │  2ND-ORDER   │  │  2ND-ORDER    │  │  2ND-ORDER        │
+     │  [Actor A]   │  │  [Actor B]    │  │  [Actor C]        │
+     │  reacts by   │  │  reacts by    │  │  reacts by        │
+     │  [response]  │  │  [response]   │  │  [response]       │
+     └──────┬───────┘  └───────────────┘  └───────────────────┘
+            │
+            │  ↓ extend for high-stakes decisions only
+            │
+     ┌──────▼───────┐
+     │  3RD-ORDER   │
+     │  [downstream │
+     │  consequence]│
+     └──────────────┘
 
-DECISION: [one-sentence statement of the action]
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│  FEEDBACK LOOPS                                                                       │
+├──────────────────────────────────────────────────────────────────────────────────────┤
+│  ↻  [Effect X] ────────────────────────────► reinforces ──► [original decision]     │
+│  ↺  [Effect Y] ────────────────────────────► dampens ─────► [original decision]     │
+└──────────────────────────────────────────────────────────────────────────────────────┘
 
-FIRST-ORDER EFFECTS
-1. [Direct effect] — [who/what is immediately affected]
-2. [Direct effect] — [who/what is immediately affected]
-
-SECOND-ORDER EFFECTS
-From effect 1:
-  - [Actor/system] reacts by [specific response]
-  - [Actor/system] reacts by [specific response]
-From effect 2:
-  - [Actor/system] reacts by [specific response]
-
-THIRD-ORDER EFFECTS (if high-stakes)
-  - [downstream consequence of second-order responses]
-
-FEEDBACK LOOPS
-- [Effect X loops back to reinforce/dampen the original decision because...]
-
-NET ASSESSMENT
-Time horizon: [short / medium / long]
-Verdict: [Proceed / Modify / Reject]
-Reason: [1-2 sentences integrating the full chain]
-
-ADJUSTMENTS TO MITIGATE NEGATIVE DOWNSTREAM EFFECTS
-1. [Safeguard or modification to the decision]
-2. [Safeguard or modification to the decision]
+╔══════════════════════════════════════════════╦═══════════════════════════════════════╗
+║  NET ASSESSMENT                              ║  ADJUSTMENTS TO MITIGATE DOWNSIDES    ║
+╠══════════════════════════════════════════════╬═══════════════════════════════════════╣
+║  Time horizon : [short / medium / long]      ║  1. [Safeguard or modification]       ║
+║  Verdict      : [Proceed / Modify / Reject]  ║  2. [Safeguard or modification]       ║
+╠══════════════════════════════════════════════╬═══════════════════════════════════════╣
+║  Reason : [1-2 sentences integrating         ║                                       ║
+║            the full consequence chain]       ║                                       ║
+╚══════════════════════════════════════════════╩═══════════════════════════════════════╝
 ```
+
+The cascade tree shows how each first-order effect fans out into multiple second-order reactions (name the actor and specific response for each node). The bottom table pairs the verdict with concrete safeguards so the decision and its mitigations are visible side-by-side.
 
 ## Common Mistakes
 

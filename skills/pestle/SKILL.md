@@ -70,37 +70,50 @@ Map high-impact factors directly into SWOT (Opportunities / Threats quadrants) o
 ## Output Format
 
 ```
-PESTLE ANALYSIS: [subject — market/product/company]
-SCOPE: [geography, industry segment]
-HORIZON: [timeframe]
-
-POLITICAL
-+ [factor] | Impact: H/M/L | Trajectory: ↑/→/↓ | O/T: [Opportunity/Threat]
-- [factor] | ...
-
-ECONOMIC
-+ [factor] | Impact: H/M/L | Trajectory: ↑/→/↓ | O/T: ...
-
-SOCIAL
-+ [factor] | ...
-
-TECHNOLOGICAL
-+ [factor] | ...
-
-LEGAL
-+ [factor] | ...
-
-ENVIRONMENTAL
-+ [factor] | ...
-
-KEY FINDINGS (top 5 factors by impact)
-1. [factor] — [implication for strategy]
-2. ...
-
-RECOMMENDED ACTIONS
-- [action tied to specific factor] — Owner: [role] | Trigger: [condition]
-- ...
+╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  PESTLE ANALYSIS  ►  [subject — market / product / company]                                            ║
+║  Scope: [geography, industry segment]                                         Horizon: [timeframe]      ║
+╠════════════════╦═══════════════════════════════════════════╦══════════╦═══════════════╦═══════════════╣
+║  DIMENSION     ║  FACTOR                                   ║  IMPACT  ║  TRAJECTORY   ║  TYPE         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ P ─ Political  ║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ E ─ Economic   ║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ S ─ Social     ║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ T ─ Technology ║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ L ─ Legal      ║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╬═══════════════════════════════════════════╬══════════╬═══════════════╬═══════════════╣
+║ E ─ Environment║ ► [factor 1]                              ║  ● High  ║  ↑ Improving  ║  Opportunity  ║
+║                ║ ► [factor 2]                              ║  ● Med   ║  → Stable     ║  Threat       ║
+║                ║ ► [factor 3]                              ║  ○ Low   ║  ↓ Worsening  ║  Both         ║
+╠════════════════╩═══════════════════════════════════════════╩══════════╩═══════════════╩═══════════════╣
+║  ▼ KEY FINDINGS  (top 5 by impact)                                                                     ║
+║  1. [factor] — [implication for strategy]                                                              ║
+║  2. [factor] — [implication for strategy]                                                              ║
+║  3. [factor] — [implication for strategy]                                                              ║
+║  4. [factor] — [implication for strategy]                                                              ║
+║  5. [factor] — [implication for strategy]                                                              ║
+╠════════════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  ▼ RECOMMENDED ACTIONS                                                                                 ║
+║  ► [action tied to specific factor]    Owner: [role]    Trigger: [condition]                           ║
+║  ► [action tied to specific factor]    Owner: [role]    Trigger: [condition]                           ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each dimension block holds 3–5 factors. Impact uses ● High / ● Med / ○ Low; Trajectory shows directional arrow (↑ improving, → stable, ↓ worsening); Type classifies each factor as Opportunity, Threat, or Both for direct feed into SWOT.
 
 ## Common Mistakes
 

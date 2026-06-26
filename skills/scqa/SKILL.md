@@ -119,27 +119,34 @@ Read S → C → Q → A aloud as four consecutive sentences. Each must follow l
 ## Output Format
 
 ```
-SCQA: [document or communication title]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  SCQA  ►  [document or communication title]                                                     ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-S — SITUATION
-[1–3 sentences of accepted, stable context. No argument. No tension yet.]
+  ◄─────────────────────── TENSION BUILDS ───────────────────────────────────────► RELEASES ────►
 
-C — COMPLICATION
-[1–2 sentences introducing the specific event, failure, or change that destabilizes S.
-Include a concrete number, deadline, or named fact.]
+┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
+│ S — SITUATION    │ ───► │ C — COMPLICATION │ ───► │ Q — QUESTION     │ ───► │ A — ANSWER       │
+├──────────────────┤      ├──────────────────┤      ├──────────────────┤      ├──────────────────┤
+│                  │      │                  │      │                  │      │                  │
+│ [1–3 sentences   │      │ [1–2 sentences   │      │ [The single      │      │ [1–2 sentences.  │
+│  of accepted,    │      │  of the specific │      │  question the    │      │  Direct, complete│
+│  stable context. │      │  event, failure, │      │  audience is now │      │  answer to Q.    │
+│  No argument.    │      │  or change that  │      │  asking, written │      │  Your governing  │
+│  No tension yet] │      │  destabilizes S. │      │  from their own  │      │  message.]       │
+│                  │      │  Concrete fact.] │      │  perspective.]   │      │                  │
+└──────────────────┘      └──────────────────┘      └──────────────────┘      └──────────────────┘
+   shared ground    ───►   tension introduced ───►   implied Q stated  ───►   answer first
 
-Q — QUESTION
-[The single question the audience is now asking, written from their perspective.]
-
-A — ANSWER
-[1–2 sentences. The direct, complete answer to Q. This is your governing message.]
-
----
-SUPPORTING STRUCTURE (optional — attach below A)
-1. [First reason or supporting point for A]
-2. [Second reason or supporting point for A]
-3. [Third reason or supporting point for A]
+  ▼  SUPPORTING STRUCTURE  (optional — attach below A)
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │  1.  [First reason or supporting point for A]                            │
+  │  2.  [Second reason or supporting point for A]                           │
+  │  3.  [Third reason or supporting point for A]                            │
+  └──────────────────────────────────────────────────────────────────────────┘
 ```
+
+Each box feeds the next — your Situation sets the stage, the Complication introduces tension that makes the Question inevitable, and the Answer releases that tension by stating your governing message upfront. Attach the Supporting Structure only when the Answer needs explicit backing; it is not part of the SCQA opening itself.
 
 ## Common Mistakes
 

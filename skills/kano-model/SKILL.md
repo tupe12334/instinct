@@ -87,31 +87,59 @@ Assign each feature its majority classification. When results split across segme
 ## Output Format
 
 ```
-KANO ANALYSIS: [product / feature set context]
-
-BASIC (Must-have — ship without debate)
-- [feature]: [why customers expect it] — RISK if absent: [dissatisfaction vector]
-- [feature]: ...
-
-PERFORMANCE (Linear — optimize to beat competitors)
-- [feature]: current=[X], competitor benchmark=[Y] — TARGET: [goal level + rationale]
-- [feature]: ...
-
-DELIGHT (Excitement — differentiation window)
-- [feature]: [why it surprises] — SHELF LIFE: [estimate before it becomes expected]
-- [feature]: ...
-
-INDIFFERENT (Cut or deprioritize)
-- [feature]: [evidence it does not move satisfaction]
-
-REVERSE (Segment risk)
-- [feature]: [which segment dislikes it] — ACTION: [opt-in / remove / scope to segment]
-
-PRIORITY RECOMMENDATION:
-1. Protect basics: [list]
-2. Invest in performance: [top 1-2 with metric target]
-3. Bet on delight: [top 1 with rationale]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  KANO ANALYSIS  ►  [product / feature set context]                                           ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                              ║
+║   SATISFACTION ▲                                                                             ║
+║           HIGH │                                           ╭──── Delight                    ║
+║                │                                    ╭─────╯                                  ║
+║                │                             ╭──────╯      ╭─── Performance                 ║
+║                │                      ╭──────╯         ╭───╯                                ║
+║           ─────┼──────────────────────────────────────────────────► FEATURE absent → present║
+║                │              ╭────────╯   Basic (floor)                                     ║
+║           LOW  │╭─────────────╯                                                              ║
+║   DISSATISF.   ▼                                                                             ║
+║                                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                              ║
+║  ┌────────────────────────────────────────────────────────────────────────────────────────┐  ║
+║  │  ● BASIC   Must-have — ship without debate                                              │  ║
+║  ├────────────────────────────────────────────────────────────────────────────────────────┤  ║
+║  │  ▸ [feature]:  [why customers expect it]               RISK if absent: [dissatisf. vec]│  ║
+║  │  ▸ [feature]:  ...                                                                      │  ║
+║  └────────────────────────────────────────────────────────────────────────────────────────┘  ║
+║                                                                                              ║
+║  ┌────────────────────────────────────────────────────────────────────────────────────────┐  ║
+║  │  ● PERFORMANCE   Linear — optimize to beat competitors                                  │  ║
+║  ├────────────────────────────────────────────────────────────────────────────────────────┤  ║
+║  │  ▸ [feature]:  current=[X], competitor benchmark=[Y]        TARGET: [goal + rationale] │  ║
+║  │  ▸ [feature]:  ...                                                                      │  ║
+║  └────────────────────────────────────────────────────────────────────────────────────────┘  ║
+║                                                                                              ║
+║  ┌────────────────────────────────────────────────────────────────────────────────────────┐  ║
+║  │  ● DELIGHT   Excitement — differentiation window                                        │  ║
+║  ├────────────────────────────────────────────────────────────────────────────────────────┤  ║
+║  │  ▸ [feature]:  [why it surprises]                           SHELF LIFE: [time estimate]│  ║
+║  │  ▸ [feature]:  ...                                                                      │  ║
+║  └────────────────────────────────────────────────────────────────────────────────────────┘  ║
+║                                                                                              ║
+║  ┌──────────────────────────────────────────┐  ┌──────────────────────────────────────────┐  ║
+║  │  ○ INDIFFERENT   Cut or deprioritize      │  │  ○ REVERSE   Segment risk                │  ║
+║  ├──────────────────────────────────────────┤  ├──────────────────────────────────────────┤  ║
+║  │  ▸ [feature]: [no satisfaction impact]   │  │  ▸ [feature]: [which segment dislikes]   │  ║
+║  │                                          │  │     ACTION: [opt-in / remove / scope]    │  ║
+║  └──────────────────────────────────────────┘  └──────────────────────────────────────────┘  ║
+║                                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║  PRIORITY RECOMMENDATION                                                                     ║
+║  1. ► Protect basics:         [list]                                                         ║
+║  2. ► Invest in performance:  [top 1-2 with metric target]                                   ║
+║  3. ► Bet on delight:         [top 1 with rationale]                                         ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Filled circles (●) mark the three primary investment categories; open circles (○) mark categories to deprioritize or avoid. The satisfaction curve at top shows why Basic features only prevent dissatisfaction while Delight features create asymmetric upside — absence is forgiven, presence is rewarded.
 
 ## Common Mistakes
 

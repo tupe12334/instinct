@@ -76,27 +76,29 @@ WOOP is most effective run weekly or per-project milestone, not once per year. R
 ## Output Format
 
 ```
-WOOP PLAN
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                           W O O P   P L A N                                                  ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-Wish:
-[3–6 word goal]
+ ┌───────────────┐     ┌────────────────────┐     ┌────────────────────┐     ┌────────────────────────────────┐
+ │   W — WISH    │     │   O — OUTCOME      │     │  O — OBSTACLE      │     │         P — PLAN               │
+ ├───────────────┤     ├────────────────────┤     ├────────────────────┤     ├────────────────────────────────┤
+ │               │     │                    │     │                    │     │ If [obstacle trigger],         │
+ │  [3–6 word    │ ──► │  [single best      │ ──► │  [primary inner    │ ──► │ then I will [concrete action]. │
+ │   goal]       │     │   result — 2–3     │     │   obstacle —       │     │                                │
+ │               │     │   sentences,       │     │   one behavior     │     ├────────────────────────────────┤
+ │               │     │   specific and     │     │   or feeling       │     │ ▸ Backup Plan (optional):      │
+ │               │     │   vivid]           │     │   pattern]         │     │   If [plan 1 fails /           │
+ │               │     │                    │     │                    │     │   secondary obstacle],         │
+ └───────────────┘     └────────────────────┘     └────────────────────┘     │   then I will [fallback].      │
+                                                                              └────────────────────────────────┘
 
-Outcome:
-[Single best result — 2-3 sentences, specific and vivid]
-
-Obstacle:
-[Primary inner obstacle — one behavior or feeling pattern]
-
-Plan:
-If [obstacle trigger],
-then I will [concrete action].
-
-Backup Plan (optional):
-If [plan 1 fails / secondary obstacle],
-then I will [concrete fallback action].
-
-Review date: [YYYY-MM-DD]
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  Review date: [YYYY-MM-DD]                                                                                    │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+Work left to right: W is short (3–6 words only), O (outcome) is vivid and specific, O (obstacle) is internal not external, and P locks in a concrete if-then trigger-action pair. The P box splits into primary plan (above the separator) and an optional backup plan (below).
 
 ## Common Mistakes
 

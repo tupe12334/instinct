@@ -78,43 +78,96 @@ Each KPI needs one accountable owner. Review the full scorecard monthly; adjust 
 ## Output Format
 
 ```
-BALANCED SCORECARD — [Organization / Team] — [Period]
-Strategic Intent: [1-2 sentences]
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║     B A L A N C E D   S C O R E C A R D   ──   [Organization / Team]   ──   [Period]            ║
+╠═══════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  Strategic Intent: [1–2 sentences describing the core direction and winning aspiration]           ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-FINANCIAL PERSPECTIVE
-┌─────────────────────────┬──────────────────┬──────────┬──────────┬────────────┐
-│ Objective               │ KPI              │ Baseline │ Target   │ Owner      │
-├─────────────────────────┼──────────────────┼──────────┼──────────┼────────────┤
-│ [Grow recurring revenue]│ [ARR growth %]   │ [12%]    │ [25%]    │ [CFO]      │
-│ [Reduce cost to serve]  │ [Support cost/user]│[$4.20] │ [$2.80]  │ [COO]      │
-└─────────────────────────┴──────────────────┴──────────┴──────────┴────────────┘
+                           ┌──────── VISION & STRATEGY ────────┐
+                           │  anchors every objective & metric  │
+                           └─────────────┬─────────────────────┘
+           ┌─────────────┬───────────────┘└──────────────┬───────────────────┐
+           ▼             ▼                                ▼                   ▼
+       FINANCIAL      CUSTOMER                   INTERNAL PROCESS    LEARNING & GROWTH
 
-CUSTOMER PERSPECTIVE
-┌─────────────────────────┬──────────────────┬──────────┬──────────┬────────────┐
-│ Objective               │ KPI              │ Baseline │ Target   │ Owner      │
-├─────────────────────────┼──────────────────┼──────────┼──────────┼────────────┤
-│ [...]                   │ [...]            │ [...]    │ [...]    │ [...]      │
-└─────────────────────────┴──────────────────┴──────────┴──────────┴────────────┘
+┌───────────────────────────────────────────┬───────────────────────────────────────────┐
+│  ◈  FINANCIAL                             │  ◈  CUSTOMER                              │
+│  "How do we appear to shareholders?"      │  "How do customers see us?"               │
+│                                           │                                           │
+│  ► [Grow recurring revenue]               │  ► [Improve onboarding experience]        │
+│  ► [Reduce cost to serve]                 │  ► [Increase retention rate]              │
+│  ► [Expand operating margin]              │  ► [Lift Net Promoter Score]              │
+├───────────────────────────────────────────┼───────────────────────────────────────────┤
+│  ◈  INTERNAL PROCESS                      │  ◈  LEARNING & GROWTH                    │
+│  "Which processes must we excel at?"      │  "How do we sustain improvement?"         │
+│                                           │                                           │
+│  ► [Shorten release cycle]                │  ► [Close critical skill gaps]            │
+│  ► [Reduce defect rate]                   │  ► [Improve employee engagement]          │
+│  ► [Improve support resolution time]      │  ► [Modernize data infrastructure]        │
+└───────────────────────────────────────────┴───────────────────────────────────────────┘
 
-INTERNAL PROCESS PERSPECTIVE
-┌─────────────────────────┬──────────────────┬──────────┬──────────┬────────────┐
-│ Objective               │ KPI              │ Baseline │ Target   │ Owner      │
-├─────────────────────────┼──────────────────┼──────────┼──────────┼────────────┤
-│ [...]                   │ [...]            │ [...]    │ [...]    │ [...]      │
-└─────────────────────────┴──────────────────┴──────────┴──────────┴────────────┘
+─────────────────────────────────────── DETAIL TABLES ───────────────────────────────────────────
 
-LEARNING & GROWTH PERSPECTIVE
-┌─────────────────────────┬──────────────────┬──────────┬──────────┬────────────┐
-│ Objective               │ KPI              │ Baseline │ Target   │ Owner      │
-├─────────────────────────┼──────────────────┼──────────┼──────────┼────────────┤
-│ [...]                   │ [...]            │ [...]    │ [...]    │ [...]      │
-└─────────────────────────┴──────────────────┴──────────┴──────────┴────────────┘
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  ▲  FINANCIAL PERSPECTIVE  ─  Lagging indicators; shows whether strategy is creating value       ║
+╠══════════════════════════════╦══════════════════════════╦════════════╦════════════╦══════════════╣
+║  Objective                   ║  KPI                     ║  Baseline  ║  Target    ║  Owner       ║
+╠══════════════════════════════╬══════════════════════════╬════════════╬════════════╬══════════════╣
+║  [Grow recurring revenue]    ║  [ARR growth %]          ║  [12%]     ║  [25%]     ║  [CFO]       ║
+║  [Reduce cost to serve]      ║  [Support cost/user]     ║  [$4.20]   ║  [$2.80]   ║  [COO]       ║
+║  [Expand operating margin]   ║  [EBITDA margin]         ║  [8%]      ║  [15%]     ║  [CFO]       ║
+╚══════════════════════════════╩══════════════════════════╩════════════╩════════════╩══════════════╝
 
-STRATEGY MAP (cause-and-effect links)
-Learning & Growth → Internal Process → Customer → Financial
-[Objective A] ──► [Objective C] ──► [Objective E] ──► [Objective G]
-[Objective B] ──► [Objective D] ──► [Objective F]
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  ●  CUSTOMER PERSPECTIVE  ─  Links customer outcomes to financial results                        ║
+╠══════════════════════════════╦══════════════════════════╦════════════╦════════════╦══════════════╣
+║  Objective                   ║  KPI                     ║  Baseline  ║  Target    ║  Owner       ║
+╠══════════════════════════════╬══════════════════════════╬════════════╬════════════╬══════════════╣
+║  [Improve onboarding exp.]   ║  [Time-to-value, days]   ║  [14d]     ║  [5d]      ║  [CPO]       ║
+║  [Increase retention rate]   ║  [12-month retention %]  ║  [72%]     ║  [88%]     ║  [CX Lead]   ║
+║  [Lift Net Promoter Score]   ║  [NPS]                   ║  [+22]     ║  [+50]     ║  [CX Lead]   ║
+╚══════════════════════════════╩══════════════════════════╩════════════╩════════════╩══════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  ⚙  INTERNAL PROCESS PERSPECTIVE  ─  Leading indicators; where the org must excel               ║
+╠══════════════════════════════╦══════════════════════════╦════════════╦════════════╦══════════════╣
+║  Objective                   ║  KPI                     ║  Baseline  ║  Target    ║  Owner       ║
+╠══════════════════════════════╬══════════════════════════╬════════════╬════════════╬══════════════╣
+║  [Shorten release cycle]     ║  [Deploy frequency/wk]   ║  [1×/wk]   ║  [5×/wk]   ║  [VP Eng]    ║
+║  [Reduce defect rate]        ║  [Bugs per release]      ║  [18]      ║  [< 4]     ║  [QA Lead]   ║
+║  [Improve support resolution]║  [Median resolution hrs] ║  [28h]     ║  [8h]      ║  [COO]       ║
+╚══════════════════════════════╩══════════════════════════╩════════════╩════════════╩══════════════╝
+
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  ◆  LEARNING & GROWTH PERSPECTIVE  ─  Root-cause layer; people, systems, and culture            ║
+╠══════════════════════════════╦══════════════════════════╦════════════╦════════════╦══════════════╣
+║  Objective                   ║  KPI                     ║  Baseline  ║  Target    ║  Owner       ║
+╠══════════════════════════════╬══════════════════════════╬════════════╬════════════╬══════════════╣
+║  [Close critical skill gaps] ║  [Skill coverage %]      ║  [55%]     ║  [90%]     ║  [CHRO]      ║
+║  [Improve employee engage.]  ║  [Engagement score]      ║  [6.1/10]  ║  [8.5/10]  ║  [CHRO]      ║
+║  [Modernize data infra.]     ║  [Data pipeline uptime]  ║  [91%]     ║  [99.5%]   ║  [CTO]       ║
+╚══════════════════════════════╩══════════════════════════╩════════════╩════════════╩══════════════╝
+
+────────────────────────────────────── STRATEGY MAP ─────────────────────────────────────────────
+  Cause-and-effect chain: Learning & Growth (root) ──► Internal Process ──► Customer ──► Financial
+
+  LEARNING & GROWTH         INTERNAL PROCESS          CUSTOMER                FINANCIAL
+  ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐    ┌──────────────────┐
+  │ [Close skill     │ ──►  │ [Shorten release │ ──►  │ [Improve         │    │ [Grow recurring  │
+  │  gaps]           │      │  cycle]          │      │  onboarding]     │ ──►│  revenue]        │
+  └──────────────────┘      └──────────────────┘      └──────────────────┘    └──────────────────┘
+  ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐    ┌──────────────────┐
+  │ [Improve         │ ──►  │ [Reduce defect   │ ──►  │ [Lift NPS]       │ ──►│ [Expand          │
+  │  engagement]     │      │  rate]           │      │                  │    │  margin]         │
+  └──────────────────┘      └──────────────────┘      └──────────────────┘    └──────────────────┘
+  ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
+  │ [Modernize data  │ ──►  │ [Improve support │ ──►  │ [Increase        │
+  │  infra.]         │      │  resolution]     │      │  retention]      │
+  └──────────────────┘      └──────────────────┘      └──────────────────┘
 ```
+
+The 2x2 overview grid shows all four perspectives at a glance with their guiding question and objective bullets. The detail tables capture the full KPI specification (baseline, target, owner) needed for accountability. The Strategy Map traces each cause-and-effect chain row by row — every row should be traceable from a capability investment on the left to a financial outcome on the right.
 
 ## Common Mistakes
 

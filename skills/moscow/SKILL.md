@@ -68,24 +68,39 @@ Share the classified list with all stakeholders. Get explicit sign-off on the Wo
 ## Output Format
 
 ```
-MOSCOW ANALYSIS: [release / sprint / milestone name]
-DELIVERY CONSTRAINT: [deadline, team size, or budget]
-
-MUST HAVE — [count items]
-- [requirement]: [one-line rationale — why release fails without it]
-
-SHOULD HAVE — [count items]
-- [requirement]: [workaround if skipped + target follow-on]
-
-COULD HAVE — [count items]
-- [requirement]: [value if included, dropped if capacity is tight]
-
-WON'T HAVE (this release) — [count items]
-- [requirement]: [brief reason for deferral]
-
-CAPACITY CHECK: Musts = [X]% of estimated capacity. [OK / RISK: reason]
-RECOMMENDATION: [1-2 sentences on overall scope health or risks]
+╔═════════════════════════════════════════════════════════════════════════════════════════╗
+║  MOSCOW ANALYSIS  ►  [release / sprint / milestone name]                               ║
+║  DELIVERY CONSTRAINT: [deadline, team size, or budget]                                 ║
+╠═════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                         ║
+║  ┌── M ──────────────────── MUST HAVE ───────────────────── [n] items ───────────────┐ ║
+║  │  ● [requirement]  →  [why release fails without it]                               │ ║
+║  │  ● [requirement]  →  [why release fails without it]                               │ ║
+║  └───────────────────────────────────────────────────────────────────────────────────┘ ║
+║                                           ▼                                             ║
+║  ┌── S ──────────────────── SHOULD HAVE ─────────────────── [n] items ───────────────┐ ║
+║  │  ► [requirement]  →  [workaround if skipped]  ·  [target follow-on]               │ ║
+║  │  ► [requirement]  →  [workaround if skipped]  ·  [target follow-on]               │ ║
+║  └───────────────────────────────────────────────────────────────────────────────────┘ ║
+║                                           ▼                                             ║
+║  ┌── C ──────────────────── COULD HAVE ──────────────────── [n] items ───────────────┐ ║
+║  │  ○ [requirement]  →  [value if included; first to drop under pressure]             │ ║
+║  │  ○ [requirement]  →  [value if included; first to drop under pressure]             │ ║
+║  └───────────────────────────────────────────────────────────────────────────────────┘ ║
+║                                           ▼                                             ║
+║  ┌── W ──────────────── WON'T HAVE (this release) ────────── [n] items ───────────────┐ ║
+║  │  – [requirement]  →  [brief reason for deferral]                                   │ ║
+║  │  – [requirement]  →  [brief reason for deferral]                                   │ ║
+║  └───────────────────────────────────────────────────────────────────────────────────┘ ║
+║                                                                                         ║
+╠═════════════════════════════════════════════════════════════════════════════════════════╣
+║  CAPACITY CHECK  │  Musts = [X]% of estimated capacity  │  [OK / RISK: reason]         ║
+╠═════════════════════════════════════════════════════════════════════════════════════════╣
+║  RECOMMENDATION  │  [1-2 sentences on overall scope health or risks]                   ║
+╚═════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each stacked bucket flows downward from highest priority (M) to explicitly deferred (W). The capacity check line flags whether Musts alone fit within available capacity — if the percentage is above ~60%, treat it as a planning risk before locking scope.
 
 ## Common Mistakes
 

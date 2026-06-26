@@ -84,22 +84,42 @@ Place each item in the correct quadrant.
 ## Output Format
 
 ```
-BCG MATRIX ANALYSIS: [portfolio context]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  BCG MATRIX ANALYSIS: [portfolio context]                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-STARS (Invest)
-- [item]: growth=[X%], share=[Y] — [rationale]
+                               RELATIVE MARKET SHARE
+                        HIGH ◄────────────────────────────► LOW
+                      ┌───────────────────────────┬───────────────────────────┐
+               HIGH   │       ★  STARS             │   ?  QUESTION MARKS       │
+                      │  ─────────────────────── │  ───────────────────────  │
+  M                   │  ● [item]                  │  ● [item]                  │
+  A   MARKET          │    growth=[X%], share=[Y]  │    growth=[X%], share=[Y]  │
+  R   GROWTH          │    → [rationale]           │    → RECOMMEND: [build/    │
+  K   RATE            │  ● [item]                  │      harvest/exit + why]   │
+  E                   │    growth=[X%], share=[Y]  │  ● [item]                  │
+  T                   │    → [rationale]           │    growth=[X%], share=[Y]  │
+                      │                            │    → RECOMMEND: [...]      │
+  G                   │  ▸ ACTION: Invest           │  ▸ ACTION: Decide          │
+  R                   ├───────────────────────────┼───────────────────────────┤
+  O                   │      $  CASH COWS          │      ✕  DOGS               │
+  W    LOW            │  ─────────────────────── │  ───────────────────────  │
+  T                   │  ● [item]                  │  ● [item]                  │
+  H                   │    growth=[X%], share=[Y]  │    growth=[X%], share=[Y]  │
+                      │    → [rationale]           │    → [exit plan or         │
+                      │  ● [item]                  │      rationale for keeping]│
+                      │    growth=[X%], share=[Y]  │  ● [item]                  │
+                      │    → [rationale]           │    growth=[X%], share=[Y]  │
+                      │                            │    → [exit plan or ...]    │
+                      │  ▸ ACTION: Harvest/Milk    │  ▸ ACTION: Divest          │
+                      └───────────────────────────┴───────────────────────────┘
 
-CASH COWS (Harvest)
-- [item]: growth=[X%], share=[Y] — [rationale]
-
-QUESTION MARKS (Decide)
-- [item]: growth=[X%], share=[Y] — RECOMMENDATION: [build/harvest/exit + why]
-
-DOGS (Divest)
-- [item]: growth=[X%], share=[Y] — [exit plan or rationale for keeping]
-
-PORTFOLIO HEALTH: [overall assessment and resource allocation recommendation]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  PORTFOLIO HEALTH: [overall assessment and resource allocation recommendation]           ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each quadrant lists items with their growth rate, relative market share score, and a one-line rationale or recommendation. The Portfolio Health footer summarises cross-quadrant cash flow balance and the single most important reallocation decision.
 
 ## Limitations
 

@@ -84,40 +84,35 @@ Draft the positioning statement (see Output Format). Test it against three quest
 ## Output Format
 
 ```
-STP ANALYSIS: [product / brand / initiative]
-
-SEGMENTATION
-Basis used: [demographic / geographic / psychographic / behavioral]
-Segments identified:
-  A. [Segment name]: [1-sentence description, estimated size]
-  B. [Segment name]: [1-sentence description, estimated size]
-  C. [Segment name]: [1-sentence description, estimated size]
-
-TARGETING
-Scoring (1–5 per criterion):
-
-Segment      | Size/Growth | Competitive Gap | Our Fit | Cost to Serve | TOTAL
--------------|-------------|-----------------|---------|---------------|------
-[Segment A]  |      X      |        X        |    X    |       X       |  XX
-[Segment B]  |      X      |        X        |    X    |       X       |  XX
-
-Selected segment(s): [Name(s)] — [one-line rationale]
-Coverage strategy: [Undifferentiated / Differentiated / Concentrated]
-
-POSITIONING
-Frame of reference: [category the product competes in]
-Key benefit: [primary value delivered]
-Reason to believe: [evidence, feature, or proof point]
-
-Positioning statement:
-"For [target segment], [brand/product] is the [frame of reference] that [key benefit]
- because [reason to believe]."
-
-Competitive differentiation check:
-- [Competitor A] owns: [their position]
-- [Competitor B] owns: [their position]
-- Our open space: [what is unclaimed and relevant]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  STP ANALYSIS: [product / brand / initiative]                                                                ║
+╠════════════════════════════════╦═════╦══════════════════════════════════════╦═════╦══════════════════════════╣
+║  ① SEGMENTATION                ║  ▸  ║  ② TARGETING                         ║  ▸  ║  ③ POSITIONING           ║
+╠════════════════════════════════╬═════╬══════════════════════════════════════╬═════╬══════════════════════════╣
+║  Basis: [demographic /         ║     ║  Scoring (1–5 per criterion):        ║     ║  Frame of reference:     ║
+║          geographic /          ║     ║                                      ║     ║  └► [category]           ║
+║          psychographic /       ║     ║  Seg.       │Sz│Cp│Ft│Cs│ ∑          ║     ║                          ║
+║          behavioral]           ║     ║  ─────────── ┼──┼──┼──┼──┼──         ║     ║  Key benefit:            ║
+║                                ║     ║  [Seg. A]    │  │  │  │  │           ║     ║  └► [primary value]      ║
+║  ┌──────────────────────────┐  ║     ║  [Seg. B]    │  │  │  │  │           ║     ║                          ║
+║  │ A. [Segment name]        │  ║     ║  [Seg. C]    │  │  │  │  │           ║     ║  Reason to believe:      ║
+║  │    [description · size]  │  ║     ║                                      ║     ║  └► [evidence / proof]   ║
+║  ├──────────────────────────┤  ║     ║  Selected: [Name(s)]                 ║     ║                          ║
+║  │ B. [Segment name]        │  ║     ║  ► [one-line rationale]              ║     ║  ╔════════════════════╗  ║
+║  │    [description · size]  │  ║     ║                                      ║     ║  ║"For [target seg.], ║  ║
+║  ├──────────────────────────┤  ║     ║  Coverage strategy:                  ║     ║  ║ [brand] is the     ║  ║
+║  │ C. [Segment name]        │  ║     ║  [ ] Undifferentiated                ║     ║  ║ [frame of ref.]    ║  ║
+║  │    [description · size]  │  ║     ║  [ ] Differentiated                  ║     ║  ║ that [key benefit] ║  ║
+║  └──────────────────────────┘  ║     ║  [ ] Concentrated                    ║     ║  ║ because [RTB]."    ║  ║
+║                                ║     ║                                      ║     ║  ╚════════════════════╝  ║
+╠════════════════════════════════╩═════╩══════════════════════════════════════╩═════╩══════════════════════════╣
+║  COMPETITIVE DIFFERENTIATION CHECK                                                                           ║
+║  ● [Competitor A] owns: [their position]      ● [Competitor B] owns: [their position]                        ║
+║  ○ Our open space: [what is unclaimed and relevant to target segment]                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The three columns flow left to right: Segmentation lists and sizes every candidate segment; Targeting scores them on Size/Growth (Sz), Competitive gap (Cp), Strategic fit (Ft), and Cost-to-serve (Cs), then marks the coverage strategy; Positioning translates the winner into a locked positioning statement and maps the competitive white space at the bottom.
 
 ## Common Mistakes
 

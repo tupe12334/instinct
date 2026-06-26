@@ -80,25 +80,44 @@ Share the scoring table with stakeholders. The score is a conversation starter, 
 ## Output Format
 
 ```
-RICE SCORING: [product area or initiative set]
-TIME WINDOW: [quarter / month / etc.]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  RICE SCORING  ►  [product area or initiative set]          TIME WINDOW: [quarter/month]    ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                              ║
+║    Score  =  ( Reach  ×  Impact  ×  Confidence% )  ÷  Effort        Higher = Higher Pri    ║
+║                   ▲          ▲            ▲                ▲                                 ║
+║              users/period  0.25–3       50–100%       person-months                         ║
+║                                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 
-| Item                  | Reach  | Impact | Confidence | Effort | RICE Score |
-|-----------------------|--------|--------|------------|--------|------------|
-| [Feature A]           | [####] | [#.#]  | [##%]      | [#.#]  | [####]     |
-| [Feature B]           | [####] | [#.#]  | [##%]      | [#.#]  | [####]     |
-| [Feature C]           | [####] | [#.#]  | [##%]      | [#.#]  | [####]     |
+┌──────────────────────────────┬───────────┬────────┬────────────┬────────┬────────────┐
+│  Item                        │   Reach   │ Impact │ Confidence │ Effort │ RICE Score │
+├──────────────────────────────┼───────────┼────────┼────────────┼────────┼────────────┤
+│  [Feature A]                 │  [#,###]  │  [#.#] │   [##%]    │  [#.#] │   [#,###]  │
+├──────────────────────────────┼───────────┼────────┼────────────┼────────┼────────────┤
+│  [Feature B]                 │  [#,###]  │  [#.#] │   [##%]    │  [#.#] │   [#,###]  │
+├──────────────────────────────┼───────────┼────────┼────────────┼────────┼────────────┤
+│  [Feature C]                 │  [#,###]  │  [#.#] │   [##%]    │  [#.#] │   [#,###]  │
+├──────────────────────────────┼───────────┼────────┼────────────┼────────┼────────────┤
+│  [Feature D]                 │  [#,###]  │  [#.#] │   [##%]    │  [#.#] │   [#,###]  │
+└──────────────────────────────┴───────────┴────────┴────────────┴────────┴────────────┘
 
-RANKING (highest to lowest):
-1. [Feature X] — Score: [####] — [one-line rationale]
-2. [Feature Y] — Score: [####] — [one-line rationale]
-3. [Feature Z] — Score: [####] — [one-line rationale]
+  RANKING  (sorted highest → lowest)
+  ┌────┬─────────────────────────┬──────────────┬──────────────────────────────────────────┐
+  │ #  │  Item                   │  RICE Score  │  Rationale                               │
+  ├────┼─────────────────────────┼──────────────┼──────────────────────────────────────────┤
+  │ 1  │  [Feature X]            │   [#,###]    │  [one-line rationale]                    │
+  │ 2  │  [Feature Y]            │   [#,###]    │  [one-line rationale]                    │
+  │ 3  │  [Feature Z]            │   [#,###]    │  [one-line rationale]                    │
+  └────┴─────────────────────────┴──────────────┴──────────────────────────────────────────┘
 
-LOW CONFIDENCE FLAGS:
-- [Item]: needs [user research / data / spike] before committing
-
-RECOMMENDATION: [top 1-2 items to act on next and why]
+  ┌─── LOW CONFIDENCE FLAGS ──────────────────────┐  ┌─── RECOMMENDATION ───────────────────────────┐
+  │  ● [Item]: needs [research / data / spike]    │  │  ► Act next on [top 1–2 items]               │
+  │    before committing                          │  │    because [score + strategic rationale]     │
+  └───────────────────────────────────────────────┘  └──────────────────────────────────────────────┘
 ```
+
+The scoring table is the source of truth — sort it by RICE Score descending before populating the Ranking section. Flag any item with Confidence ≤ 50% in Low Confidence Flags; these need a research spike or experiment before the work is committed.
 
 ## Common Mistakes
 

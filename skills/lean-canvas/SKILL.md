@@ -77,52 +77,45 @@ Choose one metric per stage. At pre-product: number of problem interviews comple
 ## Output Format
 
 ```
-LEAN CANVAS: [Product / Venture name]
-Date: [YYYY-MM-DD]  Stage: [Idea / Pre-revenue / Revenue / Growth]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  LEAN CANVAS  ►  [Product / Venture Name]                  Date: [YYYY-MM-DD]                   ║
+║                                                            Stage: [Idea/Pre-revenue/Revenue/Growth]║
+╠═══════════════════╦═══════════════════╦═══════════════════════╦═══════════════════╦══════════════╣
+║  PROBLEM          ║  SOLUTION         ║   UNIQUE VALUE        ║  UNFAIR           ║  CUSTOMER    ║
+║───────────────────║───────────────────║   PROPOSITION         ║  ADVANTAGE        ║  SEGMENTS    ║
+║ 1. [Problem 1]    ║ 1. [Feature for   ║───────────────────────║───────────────────║──────────────║
+║                   ║    Problem 1]     ║ [One sentence:        ║ [Hard-to-copy     ║ [Specific    ║
+║ 2. [Problem 2]    ║ 2. [Feature for   ║  outcome +            ║  asset — data,    ║  group with  ║
+║                   ║    Problem 2]     ║  differentiator,      ║  network effect,  ║  the pain]   ║
+║ 3. [Problem 3]    ║ 3. [Feature for   ║  written for early    ║  exclusive deal,  ║              ║
+║                   ║    Problem 3]     ║  adopters]            ║  or TBD]          ║  EARLY       ║
+╠═══════════════════╬═══════════════════║                       ╠═══════════════════║  ADOPTERS    ║
+║  EXISTING         ║  KEY METRICS      ║                       ║  CHANNELS         ║──────────────║
+║  ALTERNATIVES     ║───────────────────║                       ║───────────────────║ [Subset with ║
+║───────────────────║ Stage metric:     ║                       ║ Inbound:          ║  most acute  ║
+║ 1. [Alt for P1]   ║  [metric]         ║                       ║  [channel]        ║  pain,       ║
+║ 2. [Alt for P2]   ║  now:[v] → [tgt]  ║                       ║  [proven/untested]║  reachable   ║
+║ 3. [Alt for P3]   ║ North Star:       ║                       ║ Outbound:         ║  now]        ║
+║                   ║  [metric]         ║                       ║  [channel]        ║              ║
+╠═══════════════════╩═══════════════════╩═══════════════════════╩═══════════════════╩══════════════╣
+║  COST STRUCTURE                                 ║  REVENUE STREAMS                              ║
+║─────────────────────────────────────────────────║───────────────────────────────────────────────║
+║  Fixed:    [item 1: $X/mo]  [item 2: $X/mo]     ║  Model:      [subscription / usage / one-time]║
+║  Variable: [item: $X/unit]                      ║  Price:      [$X per mo / per unit]           ║
+║  Burn:     [$X/month]   Runway: [X months]      ║  Target ARPU: [$X]                            ║
+╚═════════════════════════════════════════════════╩═══════════════════════════════════════════════╝
 
-CUSTOMER SEGMENTS
-- Target segment: [specific group]
-- Early adopters: [subset with most acute pain, reachable now]
-
-PROBLEM
-1. [Problem 1] — Existing alternative: [what they use today]
-2. [Problem 2] — Existing alternative: [what they use today]
-3. [Problem 3] — Existing alternative: [what they use today]
-
-UNIQUE VALUE PROPOSITION
-[One sentence: outcome + differentiator, written for early adopters]
-
-SOLUTION
-1. [Feature/capability addressing Problem 1]
-2. [Feature/capability addressing Problem 2]
-3. [Feature/capability addressing Problem 3]
-
-CHANNELS
-- Inbound: [channel] — [status: proven / untested]
-- Outbound: [channel] — [status: proven / untested]
-
-REVENUE STREAMS
-- Model: [subscription / usage-based / one-time / other]
-- Price point: [$/mo or $/unit]
-- Target ARPU: [$]
-
-COST STRUCTURE
-- Fixed: [top 2-3 items + monthly $]
-- Variable: [top 1-2 items + unit cost]
-- Current burn: [$X/month]  Runway: [X months]
-
-KEY METRICS
-- Stage metric: [metric] — current: [value] — target: [value]
-- North Star metric: [metric]
-
-UNFAIR ADVANTAGE
-[Specific, hard-to-copy asset — or "TBD" if not yet established]
-
-RISKIEST ASSUMPTIONS (top 3 to test next)
-1. [Assumption] — Test: [how to validate in <2 weeks]
-2. [Assumption] — Test: [how to validate in <2 weeks]
-3. [Assumption] — Test: [how to validate in <2 weeks]
+  RISKIEST ASSUMPTIONS  ►  top 3 to invalidate next
+  ┌─────┬──────────────────────────────────────────────┬─────────────────────────────────────────┐
+  │  #  │  Assumption                                  │  Test (validate in < 2 weeks)           │
+  ├─────┼──────────────────────────────────────────────┼─────────────────────────────────────────┤
+  │  1  │  [Assumption]                                │  [How to validate]                      │
+  │  2  │  [Assumption]                                │  [How to validate]                      │
+  │  3  │  [Assumption]                                │  [How to validate]                      │
+  └─────┴──────────────────────────────────────────────┴─────────────────────────────────────────┘
 ```
+
+The top canvas grid mirrors the physical Lean Canvas layout: Problem and Solution occupy the left two columns, the Unique Value Proposition spans the full height of the centre column, Unfair Advantage and Channels share the fourth column (top/bottom), and Customer Segments with Early Adopters anchor the right column. Cost Structure and Revenue Streams run across the full bottom strip. Fill the Riskiest Assumptions table with the three beliefs that, if wrong, would kill the business fastest.
 
 ## Common Mistakes
 

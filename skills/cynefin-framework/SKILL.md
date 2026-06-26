@@ -88,33 +88,78 @@ Record your domain assignment explicitly. When outcomes diverge from expectation
 ## Output Format
 
 ```
-CYNEFIN ANALYSIS: [situation or decision being assessed]
-Date: [YYYY-MM-DD]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  CYNEFIN ANALYSIS: [situation or decision being assessed]                 Date: [YYYY-MM-DD] ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 
-SITUATION DESCRIPTION
-[2-4 sentences on what is known, what is unknown, and the stability of cause-and-effect]
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+│  SITUATION DESCRIPTION                                                                       │
+│  [2-4 sentences: what is known, what is unknown, and the stability of cause-and-effect       │
+│   relationships — avoid labeling a domain until the breakdown below]                         │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
 
-DOMAIN BREAKDOWN
-Component / Aspect           Domain        Reasoning
-─────────────────────────── ─────────────  ──────────────────────────────
-[aspect 1]                  [domain]       [one-sentence rationale]
-[aspect 2]                  [domain]       [one-sentence rationale]
-[aspect 3]                  [domain]       [one-sentence rationale]
+   ╔══════════════════════════════════════╦══════════════════════════════════════╗
+   ║           COMPLICATED                ║              COMPLEX                 ║
+   ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║
+   ║  Sense ──► Analyze ──► Respond       ║  Probe ──► Sense ──► Respond         ║
+   ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║
+   ║  ● Expert judgment required          ║  ● Cause & effect only in retrospect ║
+   ║  ● Multiple valid approaches         ║  ● System adapts to interventions    ║
+   ║  ● Good practice (not one best)      ║  ● Safe-to-fail experiments          ║
+   ╠══════════════════════════════════════╬══════════════════════════════════════╣
+   ║             CLEAR                    ║             CHAOTIC                  ║
+   ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║
+   ║  Sense ──► Categorize ──► Respond    ║  Act ──► Sense ──► Respond           ║
+   ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  ║
+   ║  ● Cause & effect are obvious        ║  ● No discernible cause-and-effect   ║
+   ║  ● Best practice applies             ║  ● Act first to establish order      ║
+   ║  ● Automate & delegate               ║  ● Reassess domain once stable       ║
+   ╚══════════════════════════════════════╩══════════════════════════════════════╝
+                         ┌───────────────────────────┐
+                         │         CONFUSED          │
+                         │  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │
+                         │  Decompose ──► assign     │
+                         │  each part to a domain    │
+                         │  above; do not stay here  │
+                         └───────────────────────────┘
 
-PRIMARY DOMAIN: [Clear / Complicated / Complex / Chaotic / Confused]
+   DOMAIN BREAKDOWN
+   ┌────────────────────────────────┬─────────────────┬──────────────────────────────────────────┐
+   │ Component / Aspect             │ Domain          │ Reasoning                                │
+   ├────────────────────────────────┼─────────────────┼──────────────────────────────────────────┤
+   │ [aspect 1]                     │ [domain]        │ [one-sentence rationale]                 │
+   │ [aspect 2]                     │ [domain]        │ [one-sentence rationale]                 │
+   │ [aspect 3]                     │ [domain]        │ [one-sentence rationale]                 │
+   └────────────────────────────────┴─────────────────┴──────────────────────────────────────────┘
 
-PRESCRIBED ACTION PATTERN
-[Sense→Categorize→Respond | Sense→Analyze→Respond |
- Probe→Sense→Respond | Act→Sense→Respond]
+   PRIMARY DOMAIN ──► ● [ Clear / Complicated / Complex / Chaotic / Confused ]
 
-IMMEDIATE NEXT STEPS
-1. [Concrete action matching the domain]
-2. [Concrete action matching the domain]
-3. [Trigger or threshold that would prompt a domain reassessment]
+   PRESCRIBED ACTION PATTERN
+   ┌──────────────────────────────────────────────────────────────────────────────────────────┐
+   │  Clear       →  Sense ──────────► Categorize ──────────► Respond                        │
+   │  Complicated →  Sense ──────────► Analyze    ──────────► Respond                        │
+   │  Complex     →  Probe ──────────► Sense      ──────────► Respond                        │
+   │  Chaotic     →  Act   ──────────► Sense      ──────────► Respond                        │
+   │                                                                                          │
+   │  ► ACTIVE: [full active pattern for the primary domain]                                  │
+   └──────────────────────────────────────────────────────────────────────────────────────────┘
 
-DOMAIN REASSESSMENT TRIGGER
-[Describe the specific signal that would indicate the domain has shifted]
+   IMMEDIATE NEXT STEPS
+   ┌──────────────────────────────────────────────────────────────────────────────────────────┐
+   │  1. ► [Concrete action matching the domain]                                              │
+   │  2. ► [Concrete action matching the domain]                                              │
+   │  3. ▲ [Trigger or threshold that would prompt a domain reassessment]                     │
+   └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+   DOMAIN REASSESSMENT TRIGGER
+   ┌──────────────────────────────────────────────────────────────────────────────────────────┐
+   │  ● Signal:    [specific observable event indicating the domain has shifted]              │
+   │  ● Watch for: [cliff / containment point / emerging pattern / anomaly]                   │
+   │  ● New domain if triggered: [domain] ──► re-run from Step 2                             │
+   └──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+The 2×2 grid maps each domain's action pattern so you can visually confirm the prescribed response logic before acting. The Domain Breakdown table forces explicit per-component reasoning, and the Reassessment Trigger section closes the loop — naming in advance the signal that would invalidate the current diagnosis.
 
 ## Common Mistakes
 

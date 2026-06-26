@@ -60,27 +60,56 @@ Assign an owner, a deadline, and a success metric. A root cause without an owner
 ## Output Format
 
 ```
-FIVE WHYS ANALYSIS
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           FIVE WHYS ANALYSIS                                    ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  PROBLEM  │ [precise description of symptom — what, when, who was affected]     ║
+╚═══════════╧══════════════════════════════════════════════════════════════════════╝
 
-Problem: [precise description of the symptom — what, when, who was affected]
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │  SYMPTOM  ►  [problem restatement]                                          │
+  └───────────────────────────────────┬─────────────────────────────────────────┘
+                                      │ Why?
+                                      ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │  WHY 1    ►  [direct cause of the problem]                                  │
+  └───────────────────────────────────┬─────────────────────────────────────────┘
+                                      │ Why?
+                                      ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │  WHY 2    ►  [cause of Why 1]                                               │
+  └───────────────────────────────────┬─────────────────────────────────────────┘
+                                      │ Why?
+                                      ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │  WHY 3    ►  [cause of Why 2]                                               │
+  └───────────────────────────────────┬─────────────────────────────────────────┘
+                                      │ Why?
+                                      ▼
+  ┌─────────────────────────────────────────────────────────────────────────────┐
+  │  WHY 4    ►  [cause of Why 3]                                               │
+  └───────────────────────────────────┬─────────────────────────────────────────┘
+                                      │ Why?
+                                      ▼
+  ╔═════════════════════════════════════════════════════════════════════════════╗
+  ║  ROOT     ►  [cause of Why 4 — the systemic condition to fix]              ║
+  ║  CAUSE       ● act here                                                     ║
+  ╚═════════════════════════════════════════════════════════════════════════════╝
 
-Why 1: [direct cause of the problem]
-Why 2: [cause of Why 1]
-Why 3: [cause of Why 2]
-Why 4: [cause of Why 3]
-Why 5: [cause of Why 4 — root cause]
+┌──────────────────────────────────┬──────────────────────────────────────────────┐
+│         ROOT CAUSE SUMMARY       │             CORRECTIVE ACTION                │
+├──────────────────────────────────┼───────────┬──────────────┬───────────────────┤
+│ [restate root cause in one clear │  What     │  Owner       │  Due    │  Metric │
+│  sentence]                       ├───────────┼──────────────┼─────────┼─────────┤
+│                                  │ [change]  │ [person/team]│ [date]  │ [signal]│
+└──────────────────────────────────┴───────────┴──────────────┴─────────┴─────────┘
 
-Root Cause: [restate in one clear sentence]
-
-Corrective Action:
-- What: [specific change to make]
-- Owner: [person or team]
-- Due: [date]
-- Success metric: [how you will know it worked]
-
-Secondary Actions (optional):
-- [fix at Why N level to reduce blast radius]
+  Secondary Actions (optional):
+  ├─ Why N level ►  [fix to reduce blast radius at an intermediate link]
+  └─ Why N level ►  [additional hardening action]
 ```
+
+Each row in the causal chain must be a direct cause of the row above it — read the chain bottom-up with "therefore" to verify every link holds. The Root Cause box marks the single point where a corrective action will prevent recurrence; Secondary Actions address intermediate links to limit blast radius if the root fix is delayed.
 
 ## Common Mistakes
 

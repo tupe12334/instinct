@@ -111,33 +111,70 @@ Total: 30–60 minutes. Can be compressed to 10 min for quick check-ins.
 ## Output Format
 
 ```
-GROW SESSION: [topic/person/date]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  GROW SESSION  ►  [topic / person / date]                                               ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-GOAL
-Target: [what they want to achieve]
-Success looks like: [measurable outcome]
-Timeline: [by when]
-Why it matters: [motivation]
+  aspiration ──────────────────────────────────────────────────────────────► commitment
+       │                                                                           │
+       ▼                                                                           ▼
+┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
+│  G  O  A  L      │   │  R  E  A  L  I   │   │  O  P  T  I  O   │   │  W  I  L  L      │
+│                  │──►│  T  Y            │──►│  N  S            │──►│                  │
+│  What do you     │   │                  │   │                  │   │  What will you   │
+│  want?           │   │  Where are       │   │  What could      │   │  actually do?    │
+└──────────────────┘   │  you now?        │   │  you do?         │   └──────────────────┘
+                       └──────────────────┘   └──────────────────┘
 
-REALITY
-Current state: [where they are now, rating X/10]
-Already tried: [previous attempts]
-Key blockers: [what's in the way]
-Resources available: [what they have]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  G ── GOAL                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  Target          │ [what they want to achieve]                                          ║
+║  Success looks   │ [measurable outcome — how will you know you've arrived?]             ║
+║  like            │                                                                      ║
+║  Timeline        │ [by when]                                                            ║
+║  Why it matters  │ [motivation / deeper purpose]                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-OPTIONS GENERATED
-1. [option] — feasibility: [H/M/L], impact: [H/M/L]
-2. [option] — feasibility: [H/M/L], impact: [H/M/L]
-3. [option] — ...
-[selected]: [chosen option and why]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  R ── REALITY                                                                           ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  Current state   │ [where they are now]                            Progress: [X / 10]  ║
+║  Already tried   │ [previous attempts and outcomes]                                     ║
+║  Key blockers    │ [what is in the way]                                                 ║
+║  Resources       │ [what they have available: skills, people, time, tools]              ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-WILL — COMMITMENTS
-Action 1: [what] by [when]
-Action 2: [what] by [when]
-Obstacles anticipated: [risk] → [mitigation]
-Commitment score: [X/10]
-Review checkpoint: [date/method]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  O ── OPTIONS                                                                           ║
+╠════════════════════════════════════════════════╦═════════════════╦════════════════════╣
+║  Option                                        ║  Feasibility    ║  Impact            ║
+╠════════════════════════════════════════════════╬═════════════════╬════════════════════╣
+║  1. [option]                                   ║  H / M / L      ║  H / M / L         ║
+║  2. [option]                                   ║  H / M / L      ║  H / M / L         ║
+║  3. [option]                                   ║  H / M / L      ║  H / M / L         ║
+║  4. [option]                                   ║  H / M / L      ║  H / M / L         ║
+║  5. [option]                                   ║  H / M / L      ║  H / M / L         ║
+╠════════════════════════════════════════════════╩═════════════════╩════════════════════╣
+║  ► SELECTED: [chosen option]  —  Reason: [why this one]                                ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  W ── WILL (Way Forward)                                                                ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  ● Action 1          [what exactly]                               by [date/time]        ║
+║  ● Action 2          [what exactly]                               by [date/time]        ║
+║  ● Action 3          [what exactly]                               by [date/time]        ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  Obstacles           [anticipated risk]              →  [mitigation plan]               ║
+║  Support needed      [who / what]                                                       ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  Commitment score    [X / 10]   (< 8 → revisit Options or Goal)                        ║
+║  Review checkpoint   [date / method]                                                    ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The four bordered sections map directly to the four GROW stages, flowing left to right from aspiration to committed action. The Options table surfaces feasibility and impact side by side so the selected option is easy to justify; the Will section closes with a commitment score as a forcing function — anything below 8 is a signal to loop back.
 
 ## Common Mistakes
 

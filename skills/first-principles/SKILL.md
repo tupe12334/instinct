@@ -64,34 +64,60 @@ Choose the most promising reconstruction. Then deliberately try to break it: wha
 ## Output Format
 
 ```
-FIRST-PRINCIPLES ANALYSIS
-
-Problem: [what you are trying to solve or the belief you are challenging]
-
-Current approach / assumption: [how it is done now or what is assumed]
-
-Decomposition:
-  Element 1: [component] → FACT or ASSUMPTION?
-  Element 2: [component] → FACT or ASSUMPTION?
-  Element 3: [component] → FACT or ASSUMPTION?
-  ...
-
-Verified facts (what is actually, irreducibly true):
-- [fact 1]
-- [fact 2]
-
-Challenged assumptions:
-- [assumption] — because [why it is not necessarily true]
-
-Rebuilt solutions (from facts only):
-  Option A: [description] — enabled by removing [assumption]
-  Option B: [description] — enabled by removing [assumption]
-  Option C: [description] — enabled by removing [assumption]
-
-Selected approach: [option] — [one-sentence rationale]
-
-Stress-test: [what could still break this, and how you addressed it]
+╔═════════════════════════════════════════════════════════════════════════════════════════╗
+║                              FIRST-PRINCIPLES ANALYSIS                                  ║
+╠═════════════════════════════════════════════════════════════════════════════════════════╣
+║  Problem:          [what you are trying to solve or the belief you are challenging]     ║
+║  Current approach: [how it is done now or what is assumed]                              ║
+╚══════════════════════════════════════════╤══════════════════════════════════════════════╝
+                                           │
+                                           ▼  DECOMPOSE — ask "why is this true?" per element
+          ┌────────────────────────────────────────────────────────────────────────────┐
+          │  Element / Component                              Classification            │
+          ├────────────────────────────────────────────────────────────────────────────┤
+          │  [component 1]                             ──►  ● FACT                     │
+          │  [component 2]                             ──►  ○ ASSUMPTION               │
+          │  [component 3]                             ──►  ○ ASSUMPTION               │
+          │  [component N]                             ──►  ● FACT                     │
+          └───────────────────────┬────────────────────────────────┬───────────────────┘
+                                  │                                │
+                  ● KEEP AS FACTS ▼                  ○ CHALLENGE THESE ▼
+          ┌──────────────────────────────────┐   ┌────────────────────────────────────────┐
+          │  VERIFIED TRUTHS                  │   │  CHALLENGED ASSUMPTIONS                │
+          ├──────────────────────────────────┤   ├────────────────────────────────────────┤
+          │  ● [fact 1]                       │   │  ○ [assumption] — because [reason]     │
+          │  ● [fact 2]                       │   │  ○ [assumption] — because [reason]     │
+          │  ● [fact 3]                       │   │  ○ [assumption] — because [reason]     │
+          └──────────────────┬───────────────┘   └──────────────────────┬─────────────────┘
+                             └─────────────────────────┬────────────────┘
+                                                       │
+                                                       ▼  REBUILD — generate solutions from facts only
+          ┌───────────────────────────┐  ┌───────────────────────────┐  ┌───────────────────────────┐
+          │  ▸ OPTION A                │  │  ▸ OPTION B                │  │  ▸ OPTION C                │
+          ├───────────────────────────┤  ├───────────────────────────┤  ├───────────────────────────┤
+          │  [description]             │  │  [description]             │  │  [description]             │
+          │                            │  │                            │  │                            │
+          │  Removes assumption:       │  │  Removes assumption:       │  │  Removes assumption:       │
+          │  [assumption]              │  │  [assumption]              │  │  [assumption]              │
+          └─────────────┬─────────────┘  └──────────────┬────────────┘  └─────────────┬─────────────┘
+                        └───────────────────────┬────────┘                             │
+                                                └──────────────────┬───────────────────┘
+                                                                   │
+                                                                   ▼  SELECT
+                                    ╔══════════════════════════════════════════════════╗
+                                    ║  SELECTED APPROACH                               ║
+                                    ║  → [chosen option]                               ║
+                                    ║  Rationale: [one-sentence rationale]             ║
+                                    ╚═════════════════════════╤════════════════════════╝
+                                                              │
+                                                              ▼  STRESS-TEST
+                                    ┌─────────────────────────────────────────────────┐
+                                    │  Risk:       [what could still break this]      │
+                                    │  Resolution: [how you addressed it]             │
+                                    └─────────────────────────────────────────────────┘
 ```
+
+Read the diagram top-to-bottom as a pipeline: the header anchors the problem, the decomposition table classifies each element as a verified FACT (●) or a challengeable ASSUMPTION (○), the two columns separate what is kept from what is challenged, the three option boxes each rebuild a solution by removing one or more assumptions, and the final selection feeds directly into a stress-test to ensure the chosen solution rests only on verified foundations.
 
 ## Common Mistakes
 

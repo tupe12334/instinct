@@ -100,38 +100,44 @@ smart provides structural rigor (measurability, deadlines). clear provides team 
 ## Output Format
 
 ```
-clear GOAL ANALYSIS
-
-Draft Goal: [original statement]
-
-C — Collaborative
-Who was involved in defining this? [names/roles]
-Who sees their contribution clearly? [check]
-Gap: [anyone key excluded?]
-
-L — Limited
-Scope constraint: [what's explicitly excluded]
-Timeline: [short-horizon deadline]
-Is it focused enough? [yes/no + rationale]
-
-E — Emotional
-Why this matters: [purpose, values connection]
-Who cares about this and why? [team motivation]
-Resonance test: [energizing or just rational?]
-
-A — Appreciable
-Sub-goals / milestones:
-  - Week 1: [deliverable]
-  - Week 2: [deliverable]
-  - [Sprint end]: [deliverable]
-
-R — Refinable
-Review cadence: [weekly / biweekly]
-What triggers a refinement? [conditions]
-Direction (stable): [the core intent that won't change]
-Target (adjustable): [the specific number/scope that may change]
-
-FINAL clear GOAL:
-"[Revised goal statement]"
-Review checkpoint: [date]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  ▶  C · L · E · A · R   G O A L   A N A L Y S I S                                                                           ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  Draft Goal: [original goal statement]                                                                                       ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+                                                               │
+                                                               ▼
+┌──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────┬──────────────────────┐
+│  ● C COLLABORATIVE   │  ● L LIMITED         │  ● E EMOTIONAL       │  ● A APPRECIABLE     │  ● R REFINABLE       │
+│  Did team define it? │  Is scope narrow?    │  Is purpose clear?   │  Are steps small?    │  Review scheduled?   │
+├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┤
+│ Who defined it:      │ Scope (in):          │ Why it matters:      │ ► Milestone 1:       │ Review cadence:      │
+│ [names / roles]      │ [what's included]    │ [purpose, values]    │   [deliverable]      │ [weekly / biweekly]  │
+│                      │                      │                      │                      │                      │
+│ Roles mapped:        │ Scope (out):         │ Who cares:           │ ► Milestone 2:       │ Trigger conditions:  │
+│ [each member's role] │ [what's excluded]    │ [team motivations]   │   [deliverable]      │ [what causes update] │
+│                      │                      │                      │                      │                      │
+│ Shared authorship:   │ Timeline:            │ Resonance test:      │ ► Milestone 3:       │ Direction (stable):  │
+│ [yes / no + note]    │ [deadline]           │ [energize or bore?]  │   [deliverable]      │ [core intent]        │
+│                      │                      │                      │                      │                      │
+│                      │ Focus test:          │                      │ ► Sprint end:        │ Target (adjustable): │
+│                      │ [yes / no + why]     │                      │   [done state]       │ [specific target]    │
+├──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┼──────────────────────┤
+│ Team shaped it?      │ Right use of time?   │ Energize or bore?    │ Clear done state?    │ Review date set?     │
+│ [ ] Yes  [ ] Partial │ [ ] Yes   [ ] No     │ [ ] Energize [ ] Bore│ [ ] Yes   [ ] No     │ [ ] Yes   [ ] No     │
+└──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────┴──────────────────────┘
+           │                        │                        │                        │                        │
+           └────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┘
+                                                               │
+                                                               ▼
+                                         ╔════════════════════════════════════════════╗
+                                         ║  ★  FINAL CLEAR GOAL                       ║
+                                         ╠════════════════════════════════════════════╣
+                                         ║  "[Revised goal statement]"                ║
+                                         ╠════════════════════════════════════════════╣
+                                         ║  Next review:  [date]                      ║
+                                         ║  Owner:        [name / role]               ║
+                                         ╚════════════════════════════════════════════╝
 ```
+
+Work left to right across the five columns, filling every placeholder. The bottom test row acts as a quick pass/fail gate — any unchecked box signals the goal needs rework before converging into the Final CLEAR Goal box with its revised statement, review date, and named owner.

@@ -79,41 +79,62 @@ Forces shift. New regulation can raise entry barriers; a technology shift can ma
 ## Output Format
 
 ```
-PORTER'S FIVE FORCES: [industry / segment]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║               PORTER'S FIVE FORCES  ·  [industry / segment]                                     ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-THREAT OF NEW ENTRANTS: [Low / Medium / High]
-Evidence:
-- [factor 1]
-- [factor 2]
+                     ┌──────────────────────────────────────────────┐
+                     │           THREAT OF NEW ENTRANTS             │
+                     │        Rating: [Low / Medium / High]         │
+                     │  ● [barrier or enabler factor 1]             │
+                     │  ● [barrier or enabler factor 2]             │
+                     └─────────────────────┬────────────────────────┘
+                                           │
+                                           ▼
+┌──────────────────────────────┐  ┌────────┴────────────────────────┐  ┌──────────────────────────────┐
+│       SUPPLIER POWER         │  │      COMPETITIVE RIVALRY        │  │        BUYER POWER           │
+│  Rating: [Low / Med / High]  │─►│    Rating: [Low / Med / High]   │◄─│  Rating: [Low / Med / High]  │
+│                              │  │                                 │  │                              │
+│  ● [factor 1]                │  │  ● [factor 1]                   │  │  ● [factor 1]                │
+│  ● [factor 2]                │  │  ● [factor 2]                   │  │  ● [factor 2]                │
+└──────────────────────────────┘  └────────┬────────────────────────┘  └──────────────────────────────┘
+                                           │
+                                           ▼
+                     ┌─────────────────────┴────────────────────────┐
+                     │            THREAT OF SUBSTITUTES             │
+                     │        Rating: [Low / Medium / High]         │
+                     │  ● [substitute factor 1]                     │
+                     │  ● [substitute factor 2]                     │
+                     └──────────────────────────────────────────────┘
 
-SUPPLIER POWER: [Low / Medium / High]
-Evidence:
-- [factor 1]
-- [factor 2]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  FORCE SUMMARY                                                                                   ║
+╠═══════════════════════════════════╦══════════════════╦════════════════════════════════════════════╣
+║  Force                            ║  Rating          ║  Key Driver                              ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  Threat of New Entrants           ║  [L / M / H]     ║  [single biggest factor]                 ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  Supplier Power                   ║  [L / M / H]     ║  [single biggest factor]                 ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  Buyer Power                      ║  [L / M / H]     ║  [single biggest factor]                 ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  Threat of Substitutes            ║  [L / M / H]     ║  [single biggest factor]                 ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  Competitive Rivalry              ║  [L / M / H]     ║  [single biggest factor]                 ║
+╠═══════════════════════════════════╬══════════════════╬════════════════════════════════════════════╣
+║  OVERALL ATTRACTIVENESS           ║  [Low/Med/High]  ║  Dominant: [force 1], [force 2]          ║
+╚═══════════════════════════════════╩══════════════════╩════════════════════════════════════════════╝
 
-BUYER POWER: [Low / Medium / High]
-Evidence:
-- [factor 1]
-- [factor 2]
-
-THREAT OF SUBSTITUTES: [Low / Medium / High]
-Evidence:
-- [factor 1]
-- [factor 2]
-
-COMPETITIVE RIVALRY: [Low / Medium / High]
-Evidence:
-- [factor 1]
-- [factor 2]
-
-OVERALL ATTRACTIVENESS: [Low / Medium / High]
-Dominant forces: [force 1], [force 2]
-
-STRATEGIC IMPLICATIONS:
-1. [action addressing dominant force 1]
-2. [action addressing dominant force 2]
-3. [action to sustain or build competitive position]
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  STRATEGIC IMPLICATIONS                                                                          │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  1. [action addressing dominant force 1]                                                         │
+│  2. [action addressing dominant force 2]                                                         │
+│  3. [action to sustain or build competitive position]                                            │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+The hub-and-spoke diagram shows directional pressure on the central rivalry box — forces rated High compress margins most. The summary table lets you scan all five ratings at a glance and quickly spot which one or two forces dominate the industry's profit structure.
 
 ## Common Mistakes
 

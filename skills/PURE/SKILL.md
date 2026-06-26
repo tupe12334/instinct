@@ -85,37 +85,55 @@ pure filters for psychological framing and ethics; smart structures the mechanic
 ## Output Format
 
 ```
-pure GOAL ANALYSIS
+╔═════════════════════════════════════════════════════════════════════════════════════╗
+║                        P U R E   G O A L   A N A L Y S I S                         ║
+╚═════════════════════════════════════════════════════════════════════════════════════╝
 
-Draft Goal: [original statement]
-
-P — Positively Stated
-Pass/Fail: [P/F]
-Issue: [if fail, what's negatively framed]
-Rewrite: [positive version]
-
-U — Understood
-Pass/Fail: [P/F]
-Ambiguities: [terms or scope unclear]
-Clarification: [rewrite with definitions]
-
-R — Relevant
-Pass/Fail: [P/F]
-Strategic alignment: [which priority it serves]
-Timing assessment: [is now the right time?]
-
-E — Ethical
-Pass/Fail: [P/F]
-Stakeholders affected: [who else is impacted]
-Trade-offs: [any ethical tensions]
-Verdict: [proceed / modify / reject]
-
-FINAL pure GOAL:
-"[Revised goal that passes all 4 criteria]"
-
-COMBINED SCORE:
-pure: [P✓ U✓ R✓ E✓] | smart: [run separately]
+  DRAFT GOAL  ►  [original statement]
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  P  ·  POSITIVELY STATED                                      [ PASS / FAIL ]       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│  Issue   ►  [if fail, what's negatively framed]                                     │
+│  Rewrite ►  [positive version]                                                      │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  U  ·  UNDERSTOOD                                             [ PASS / FAIL ]       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│  Ambiguities   ►  [terms or scope unclear]                                          │
+│  Clarification ►  [rewrite with definitions]                                        │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  R  ·  RELEVANT                                               [ PASS / FAIL ]       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│  Strategic alignment ►  [which priority it serves]                                  │
+│  Timing assessment   ►  [is now the right time?]                                    │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│  E  ·  ETHICAL                                                [ PASS / FAIL ]       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│  Stakeholders affected ►  [who else is impacted]                                    │
+│  Trade-offs            ►  [any ethical tensions]                                    │
+│  Verdict               ►  [proceed / modify / reject]                               │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+                        │
+                        ▼
+╔═════════════════════════════════════════════════════════════════════════════════════╗
+║  FINAL PURE GOAL:                                                                   ║
+║  "[Revised goal that passes all 4 criteria]"                                        ║
+╠═════════════════════════════════════════════════════════════════════════════════════╣
+║  COMBINED SCORE  ║  PURE  ►  P ✓   U ✓   R ✓   E ✓  │  SMART ►  [run separately]  ║
+╚═════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each box is a criterion gate — the draft goal flows in at the top, passes through all four filters in sequence, and exits at the bottom as a refined, validated goal. Mark each gate PASS or FAIL, then carry only the rewritten version forward to the next criterion.
 
 ## Common Mistakes
 

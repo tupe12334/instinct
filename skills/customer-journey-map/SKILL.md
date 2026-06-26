@@ -70,38 +70,67 @@ For each stage, write the single worst pain point — the one with the highest f
 ## Output Format
 
 ```
-CUSTOMER JOURNEY MAP
-Persona: [name / role / situation]
-Journey: [e.g. "First-time user from signup to first successful export"]
-Date: [date] | Data sources: [interviews / analytics / support tickets / assumed]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  CUSTOMER JOURNEY MAP                                                                            ║
+║  Persona : [name / role / situation]                                                             ║
+║  Journey : [e.g. "First-time user from signup to first successful export"]                       ║
+║  Date    : [date]          Data sources: [interviews / analytics / support tickets / assumed]    ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-STAGE         [Stage 1]        [Stage 2]        [Stage 3]        [Stage 4]
-────────────────────────────────────────────────────────────────────────────
-Actions       [what they do]   [what they do]   [what they do]   [what they do]
+         ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+  STAGE  │   [Stage 1]     │────►│   [Stage 2]     │────►│   [Stage 3]     │────►│   [Stage 4]     │────►│   [Stage 5]     │────►│   [Stage 6]     │
+         └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
+┌────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┐
+│ ACTIONS    │ [what they do]  │ [what they do]  │ [what they do]  │ [what they do]  │ [what they do]  │ [what they do]  │
+│            │                 │                 │                 │                 │                 │                 │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ TOUCH-     │ [channel / UI]  │ [channel / UI]  │ [channel / UI]  │ [channel / UI]  │ [channel / UI]  │ [channel / UI]  │
+│ POINTS     │                 │                 │                 │                 │                 │                 │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ THOUGHTS   │ "[quote or      │ "[quote or      │ "[quote or      │ "[quote or      │ "[quote or      │ "[quote or      │
+│            │  paraphrase]"   │  paraphrase]"   │  paraphrase]"   │  paraphrase]"   │  paraphrase]"   │  paraphrase]"   │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│  EMOTION   │                 │                 │                 │                 │                 │                 │
+│  CURVE     │   ▼ [label]     │   ► [label]     │   ▲ [label]     │   ▼ [label]     │   ▲ [label]     │   ▲ [label]     │
+│            │     (--)        │     (~)         │     (++)        │     (-)         │     (++)        │     (+++)       │
+│            │                 │                 │        ●        │                 │        ●────────●                 │
+│  (+++)     │                 │                 │     ●           │                 │     ●           │                 │
+│  (++ )     │                 │    ●────────────●                 │                 │                 │                 │
+│  (+  )     │                 │ ●               │                 │                 │                 │                 │
+│  (~  )     │                 │                 │                 │                 │                 │                 │
+│  (-  )     │                 │                 │                 │  ●              │                 │                 │
+│  (-- )     │  ●              │                 │                 │                 │                 │                 │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ PAIN       │ [specific       │ [specific       │ [specific       │ [specific       │ [specific       │ [specific       │
+│ POINTS     │  obstacle]      │  obstacle]      │  obstacle]      │  obstacle]      │  obstacle]      │  obstacle]      │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ OPPOR-     │ [action item]   │ [action item]   │ [action item]   │ [action item]   │ [action item]   │ [action item]   │
+│ TUNITY     │                 │                 │                 │                 │                 │                 │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ OWNER      │ [name]          │ [name]          │ [name]          │ [name]          │ [name]          │ [name]          │
+├────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ PRIORITY   │     [H/M/L]     │     [H/M/L]     │     [H/M/L]     │     [H/M/L]     │     [H/M/L]     │     [H/M/L]     │
+└────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────┘
 
-Touchpoints   [channel/UI]     [channel/UI]     [channel/UI]     [channel/UI]
-
-Thoughts      "[quote or       "[quote or       "[quote or       "[quote or
-               paraphrase]"     paraphrase]"     paraphrase]"     paraphrase]"
-
-Emotion       [label] (--)     [label] (~)      [label] (++)     [label] (+)
-
-Pain Point    [specific        [specific        [specific        [specific
-               obstacle]        obstacle]        obstacle]        obstacle]
-
-Opportunity   [action item]    [action item]    [action item]    [action item]
-Owner         [name]           [name]           [name]           [name]
-Priority      [H/M/L]          [H/M/L]          [H/M/L]         [H/M/L]
-
-SUMMARY
-Biggest friction point: [stage + pain]
-Most positive moment: [stage + what drives it]
-Top 3 opportunities ranked by impact:
-1. [opportunity] — Owner: [name] — By: [date]
-2. [opportunity] — Owner: [name] — By: [date]
-3. [opportunity] — Owner: [name] — By: [date]
-Assumed stages (need validation): [list]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  SUMMARY                                                                                         ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  ● Biggest friction point  : [stage] → [pain point description]                                  ║
+║  ● Most positive moment    : [stage] → [what drives the peak emotion]                            ║
+║  ○ Assumed stages (need validation): [list stages where data is missing]                         ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
+║  TOP OPPORTUNITIES  (ranked by impact)                                                           ║
+║  ┌────┬──────────────────────────────────────────┬──────────────┬──────────────┐                 ║
+║  │ #  │ Opportunity                              │ Owner        │ By           │                 ║
+║  ├────┼──────────────────────────────────────────┼──────────────┼──────────────┤                 ║
+║  │ 1  │ [opportunity description]                │ [name]       │ [date]       │                 ║
+║  │ 2  │ [opportunity description]                │ [name]       │ [date]       │                 ║
+║  │ 3  │ [opportunity description]                │ [name]       │ [date]       │                 ║
+║  └────┴──────────────────────────────────────────┴──────────────┴──────────────┘                 ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The stage row at the top shows the linear progression of the journey with directional arrows; trim or expand columns to match your actual number of stages (4–7 is typical). The emotion curve rows use plotted `●` characters to sketch the valence shape — redraw the dot positions to reflect real data so the dips and peaks are immediately visible at a glance.
 
 ## Common Mistakes
 

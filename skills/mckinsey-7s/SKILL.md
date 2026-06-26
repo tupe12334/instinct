@@ -78,30 +78,70 @@ Hard elements are faster to change (restructure, redesign a process). Soft eleme
 ## Output Format
 
 ```
-McKINSEY 7-S ASSESSMENT: [organization / unit]
-TRIGGER: [why this analysis is being done]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  McKINSEY 7-S ASSESSMENT  ·  [organization / unit]                                          ║
+║  TRIGGER: [why this analysis is being done]                                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 
-ELEMENT        | CURRENT STATE                          | REQUIRED STATE                         | GAP
----------------|----------------------------------------|----------------------------------------|--------------------
-Strategy       | [what the strategy actually is today]  | [what it must become]                  | [gap description]
-Structure      | [reporting lines, topology today]      | [required structure]                   | [gap description]
-Systems        | [key processes governing daily work]   | [required processes]                   | [gap description]
-Shared Values  | [observed cultural behaviors]          | [required cultural behaviors]          | [gap description]
-Skills         | [org-level capabilities today]         | [capabilities needed]                  | [gap description]
-Style          | [actual leadership behaviors]          | [required leadership behaviors]        | [gap description]
-Staff          | [headcount composition, talent gaps]   | [required talent profile]              | [gap description]
+  ┌─────────────────────────────────── 7-S ELEMENT MAP ──────────────────────────────────────┐
+  │                                                                                            │
+  │                         ┌────────────────────────────────┐                                │
+  │                         │  ◆ STRATEGY                    │                                │
+  │                         │  [current strategy summary]    │                                │
+  │                         └────────────────┬───────────────┘                                │
+  │                                          │                                                │
+  │        ┌───────────────────────┐         │         ┌───────────────────────┐              │
+  │        │ ◆ STRUCTURE           │◄────────┼────────►│ ◆ SYSTEMS             │              │
+  │        │ [org topology,        │         │         │ [processes,           │              │
+  │        │  reporting lines]     │         │         │  workflows]           │              │
+  │        └──────────┬────────────┘   ┌─────┴─────┐   └────────────┬──────────┘              │
+  │                   └───────────────►│ ● SHARED  │◄───────────────┘                         │
+  │                   ┌───────────────►│   VALUES  │◄───────────────┐                         │
+  │                   │                └─────┬─────┘                │                         │
+  │        ┌──────────┴────────────┐         │         ┌────────────┴──────────┐              │
+  │        │ ● SKILLS              │◄────────┼────────►│ ● STYLE               │              │
+  │        │ [org-level            │         │         │ [leadership           │              │
+  │        │  capabilities]        │         │         │  behaviors]           │              │
+  │        └───────────────────────┘         │         └───────────────────────┘              │
+  │                                 ┌─────────┴─────────┐                                     │
+  │                                 │ ● STAFF            │                                     │
+  │                                 │ [headcount,        │                                     │
+  │                                 │  talent profile]   │                                     │
+  │                                 └────────────────────┘                                     │
+  │                                                                                            │
+  │  ◆ Hard (tangible, faster to change): Strategy · Structure · Systems                       │
+  │  ● Soft (culture-driven, 6–18 months): Shared Values · Skills · Style · Staff              │
+  └────────────────────────────────────────────────────────────────────────────────────────────┘
 
-KEY MISALIGNMENTS:
-1. [element A] ↔ [element B]: [description of conflict and business impact]
-2. ...
+  ┌──────────────────┬──────────────────────────────────────┬───────────────────────────────────┬──────────────────────┐
+  │ ELEMENT          │ CURRENT STATE                         │ REQUIRED STATE                    │ GAP                  │
+  ├──────────────────┼──────────────────────────────────────┼───────────────────────────────────┼──────────────────────┤
+  │ ◆ Strategy       │ [what the strategy actually is today] │ [what it must become]             │ [gap description]    │
+  │ ◆ Structure      │ [reporting lines, topology today]     │ [required structure]              │ [gap description]    │
+  │ ◆ Systems        │ [key processes governing daily work]  │ [required processes]              │ [gap description]    │
+  │ ● Shared Values  │ [observed cultural behaviors]         │ [required cultural behaviors]     │ [gap description]    │
+  │ ● Skills         │ [org-level capabilities today]        │ [capabilities needed]             │ [gap description]    │
+  │ ● Style          │ [actual leadership behaviors]         │ [required leadership behaviors]   │ [gap description]    │
+  │ ● Staff          │ [headcount composition, talent gaps]  │ [required talent profile]         │ [gap description]    │
+  └──────────────────┴──────────────────────────────────────┴───────────────────────────────────┴──────────────────────┘
 
-INTERVENTION PLAN:
-Hard elements (start now):
-- [action] — owner: [role], timeline: [date]
+  ┌──────────────────────────────────────── KEY MISALIGNMENTS ──────────────────────────────────────┐
+  │  1.  [element A]  ◄── ✗ ──►  [element B]  :  [description of conflict and business impact]     │
+  │  2.  [element A]  ◄── ✗ ──►  [element B]  :  [description of conflict and business impact]     │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────┘
 
-Soft elements (start now, expect 6–18 months):
-- [action] — owner: [role], signal of progress: [observable indicator]
+  ┌────────────────────────────────────────────┐   ┌─────────────────────────────────────────────┐
+  │  ◆ HARD ELEMENTS — start now               │   │  ● SOFT ELEMENTS — start now, 6–18 months   │
+  │  (Strategy · Structure · Systems)          │   │  (Shared Values · Skills · Style · Staff)   │
+  ├────────────────────────────────────────────┤   ├─────────────────────────────────────────────┤
+  │  ► [action]                                │   │  ► [action]                                 │
+  │    owner: [role]  ·  by: [date]            │   │    owner: [role]  ·  signal: [indicator]    │
+  │  ► [action]                                │   │  ► [action]                                 │
+  │    owner: [role]  ·  by: [date]            │   │    owner: [role]  ·  signal: [indicator]    │
+  └────────────────────────────────────────────┘   └─────────────────────────────────────────────┘
 ```
+
+The element map shows how all seven components connect through Shared Values at the center — ◆ marks hard elements (faster to change) and ● marks soft elements (longer-horizon culture work). The side-by-side intervention boxes reinforce the sequencing principle: hard-element changes should not outpace soft-element readiness.
 
 ## Common Mistakes
 

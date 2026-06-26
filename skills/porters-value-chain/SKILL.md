@@ -92,52 +92,61 @@ For each activity rated D- or with a high cost share but no offsetting advantage
 ## Output Format
 
 ```
-VALUE CHAIN ANALYSIS: [company / business unit] vs. [primary competitor]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  VALUE CHAIN ANALYSIS  ►  [Company / Business Unit]  vs.  [Primary Competitor]              ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 
-PRIMARY ACTIVITIES
-------------------
-Inbound Logistics
-  Cost share: [~X%]  |  Cost driver: [driver]  |  Differentiation: [D+ / D= / D-]
-  Key sub-activities: [activity 1], [activity 2]
-  Advantage/gap: [1-sentence finding]
+SUPPORT ACTIVITIES (span all primary activities)
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  FIRM INFRASTRUCTURE   │ [key finding — finance, legal, planning, QA]                       ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║  HUMAN RESOURCE MGMT   │ [key finding — recruiting, training, compensation]                 ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║  TECHNOLOGY DEVELOP.   │ [key finding — R&D, process automation, IP]                        ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║  PROCUREMENT           │ [key finding — supplier contracts, purchasing policies]            ║
+╚══════════════╤═══════════════╤═══════════════╤═══════════════╤═══════════════╤══════════════╝
+               │               │               │               │               │
+PRIMARY        ▼               ▼               ▼               ▼               ▼
+ACTIVITIES
+┌──────────────┴──┐  ┌─────────┴───────┐  ┌───┴───────────┐  ┌───┴───────────┐  ┌────┴──────────┐
+│ INBOUND         │  │   OPERATIONS    │  │   OUTBOUND    │  │  MARKETING    │  │   SERVICE     │
+│ LOGISTICS       │  │                 │  │   LOGISTICS   │  │  & SALES      │  │               │
+├─────────────────┤  ├─────────────────┤  ├───────────────┤  ├───────────────┤  ├───────────────┤
+│ Cost: [~X%]     │  │ Cost: [~X%]     │  │ Cost: [~X%]   │  │ Cost: [~X%]   │  │ Cost: [~X%]   │
+│ Driver:[driver] │  │ Driver:[driver] │  │ Driver:[drv]  │  │ Driver:[drv]  │  │ Driver:[drv]  │
+│ Diff:  [D+/=/−] │  │ Diff:  [D+/=/−] │  │ Diff: [D+/=/−]│  │ Diff: [D+/=/−]│  │ Diff: [D+/=/−]│
+├─────────────────┤  ├─────────────────┤  ├───────────────┤  ├───────────────┤  ├───────────────┤
+│ ● [activity 1]  │  │ ● [activity 1]  │  │ ● [activity 1]│  │ ● [activity 1]│  │ ● [activity 1]│
+│ ● [activity 2]  │  │ ● [activity 2]  │  │ ● [activity 2]│  │ ● [activity 2]│  │ ● [activity 2]│
+├─────────────────┤  ├─────────────────┤  ├───────────────┤  ├───────────────┤  ├───────────────┤
+│ ▸ [finding]     │  │ ▸ [finding]     │  │ ▸ [finding]   │  │ ▸ [finding]   │  │ ▸ [finding]   │
+└─────────────────┘  └─────────────────┘  └───────────────┘  └───────────────┘  └───────────────┘
+         │                   │                    │                   │                  │
+         └───────────────────┴────────────────────┴───────────────────┴──────────────────┘
+                                                                                          ══► MARGIN
 
-Operations
-  Cost share: [~X%]  |  Cost driver: [driver]  |  Differentiation: [D+ / D= / D-]
-  Key sub-activities: [activity 1], [activity 2]
-  Advantage/gap: [1-sentence finding]
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+│  KEY LINKAGES                                                                                │
+│  ┌──────────────────┐        ┌──────────────────┐       effect on cost / differentiation    │
+│  │  [Activity A]    │ ──────► │  [Activity B]    │  →  [effect]                             │
+│  └──────────────────┘        └──────────────────┘                                           │
+│  ┌──────────────────┐        ┌──────────────────┐                                           │
+│  │  [Activity C]    │ ──────► │  [Activity D]    │  →  [effect]                             │
+│  └──────────────────┘        └──────────────────┘                                           │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
 
-Outbound Logistics
-  Cost share: [~X%]  |  Cost driver: [driver]  |  Differentiation: [D+ / D= / D-]
-  Key sub-activities: [activity 1], [activity 2]
-  Advantage/gap: [1-sentence finding]
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+│  STRATEGIC OPTIONS                                                                           │
+│  1. ► [action]  —  [activity]  —  [expected impact]                                         │
+│  2. ► [action]  —  [activity]  —  [expected impact]                                         │
+│  3. ► [action]  —  [activity]  —  [expected impact]                                         │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
 
-Marketing & Sales
-  Cost share: [~X%]  |  Cost driver: [driver]  |  Differentiation: [D+ / D= / D-]
-  Key sub-activities: [activity 1], [activity 2]
-  Advantage/gap: [1-sentence finding]
-
-Service
-  Cost share: [~X%]  |  Cost driver: [driver]  |  Differentiation: [D+ / D= / D-]
-  Key sub-activities: [activity 1], [activity 2]
-  Advantage/gap: [1-sentence finding]
-
-SUPPORT ACTIVITIES
-------------------
-Firm Infrastructure:      [key finding]
-HRM:                      [key finding]
-Technology Development:   [key finding]
-Procurement:              [key finding]
-
-KEY LINKAGES
-  - [Activity A] → [Activity B]: [effect on cost or differentiation]
-
-STRATEGIC OPTIONS
-  1. [action — activity — expected impact]
-  2. [action — activity — expected impact]
-  3. [action — activity — expected impact]
-
-COMPETITIVE ADVANTAGE SOURCE: [cost leadership / differentiation / focus — 1 sentence]
+● COMPETITIVE ADVANTAGE SOURCE:  [cost leadership / differentiation / focus — 1 sentence]
 ```
+
+Each column in the primary activities row represents one link in the value chain flowing left to right toward the margin. The D+/D=/D− rating in each column shows your differentiation position versus the named competitor; cost share and driver tell you where to focus investment or cost-reduction effort first.
 
 ## Common Mistakes
 

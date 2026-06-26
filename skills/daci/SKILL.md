@@ -64,31 +64,72 @@ DACI without a date is not a process — it is a conversation. The Driver owns t
 ## Output Format
 
 ```
-DACI: [Decision name — framed as a question or clear choice]
-Date needed by: [YYYY-MM-DD]
-Context: [1-2 sentences on why this decision needs to be made now]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  DACI DECISION RECORD                                                                ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  Decision:    [Decision name — framed as a question or clear choice]                 ║
+║  Date needed: [YYYY-MM-DD]                                                           ║
+║  Context:     [1-2 sentences on why this decision needs to be made now]              ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-─────────────────────────────────────────────────────────
-Role          Person / Team        Notes
-─────────────────────────────────────────────────────────
-Driver        [Name / Role]        [Scope of their process ownership]
-Approver      [Name / Role]        [What authority they hold]
-Contributors  [Name / Role]        [What input they provide]
-              [Name / Role]        [What input they provide]
-Informed      [Name / Team]        [When and how they will be notified]
-─────────────────────────────────────────────────────────
+╔══════╦════════════════════════════════════╦═════════════════════════════════════════╗
+║ ROLE ║ PERSON / TEAM                      ║ NOTES                                   ║
+╠══════╬════════════════════════════════════╬═════════════════════════════════════════╣
+║  D   ║ [Name / Role]                      ║ [Scope of their process ownership]      ║
+║      ║ Driver                             ║                                         ║
+╠══════╬════════════════════════════════════╬═════════════════════════════════════════╣
+║  A   ║ [Name / Role]                      ║ [What authority they hold]              ║
+║      ║ Approver                           ║                                         ║
+╠══════╬════════════════════════════════════╬═════════════════════════════════════════╣
+║  C   ║ [Name / Role]                      ║ [What input they provide]               ║
+║      ╠════════════════════════════════════╬═════════════════════════════════════════╣
+║      ║ [Name / Role]                      ║ [What input they provide]               ║
+╠══════╬════════════════════════════════════╬═════════════════════════════════════════╣
+║  I   ║ [Name / Team]                      ║ [When and how they will be notified]    ║
+╚══════╩════════════════════════════════════╩═════════════════════════════════════════╝
 
-Options under consideration:
-  1. [Option A] — [one-line summary]
-  2. [Option B] — [one-line summary]
+  DECISION FLOW
+  ┌──────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                  │
+  │  ┌──────────────┐  collects input   ┌───────────────────────┐                   │
+  │  │    DRIVER    │◄─────────────────►│    CONTRIBUTORS       │                   │
+  │  │  [name/role] │                   │  ● [name / role]      │                   │
+  │  └──────┬───────┘                   │  ● [name / role]      │                   │
+  │         │                           └───────────────────────┘                   │
+  │         │ synthesizes options & writes recommendation                            │
+  │         ▼                                                                        │
+  │  ┌──────────────┐                                                                │
+  │  │   APPROVER   │─── decides ──► [ Approved / Modified / Rejected ]  on [date]  │
+  │  │  [name/role] │    Rationale: [why]                                            │
+  │  └──────┬───────┘                                                                │
+  │         │                                                                        │
+  │         │ communicates outcome                                                   │
+  │         ▼                                                                        │
+  │  ┌──────────────┐                                                                │
+  │  │   INFORMED   │◄── notified on [date]                                         │
+  │  │  [name/team] │                                                                │
+  │  └──────────────┘                                                                │
+  └──────────────────────────────────────────────────────────────────────────────────┘
 
-Recommendation (Driver): [Option X], because [brief rationale]
+  OPTIONS UNDER CONSIDERATION
+  ┌───┬────────────────────────────────────────────────────────────────────────────┐
+  │ 1 │ [Option A] — [one-line summary]                                            │
+  ├───┼────────────────────────────────────────────────────────────────────────────┤
+  │ 2 │ [Option B] — [one-line summary]                                            │
+  └───┴────────────────────────────────────────────────────────────────────────────┘
 
-Decision (Approver): [Approved / Modified / Rejected] on [date]
-Rationale: [why]
+  DRIVER RECOMMENDATION  ►  [Option X], because [brief rationale]
 
-Notification sent to Informed: [date]
+  ┌──────────────────────────────────────────────────────────────────────────────────┐
+  │  APPROVER DECISION                                                               │
+  │  Status:    [ Approved / Modified / Rejected ]              on [date]            │
+  │  Rationale: [why]                                                                │
+  └──────────────────────────────────────────────────────────────────────────────────┘
+
+  Notification sent to Informed: [date]
 ```
+
+The role table captures who owns each letter of DACI and what each person contributes. The flow diagram shows the sequence: Driver collects input from Contributors, synthesizes a recommendation, hands it to the Approver for the final call, and the outcome is then communicated to the Informed list.
 
 ## Common Mistakes
 

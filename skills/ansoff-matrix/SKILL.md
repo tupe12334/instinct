@@ -82,32 +82,53 @@ Select one primary strategy and at most one secondary. Trying to pursue all four
 ## Output Format
 
 ```
-ANSOFF MATRIX ANALYSIS: [company / product / team context]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  ANSOFF MATRIX ANALYSIS  ►  [company / product / team context]                          ║
+║  GROWTH OBJECTIVE: [one sentence — what you need to achieve and by when]                ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 
-GROWTH OBJECTIVE: [one sentence — what you need to achieve and by when]
+                         ◄─────── P R O D U C T S ────────►
+                         EXISTING PRODUCT        NEW PRODUCT
+                    ┌────────────────────────┬────────────────────────┐
+                    │                        │                        │
+  E  EXISTING  ─►  │  MARKET PENETRATION    │  PRODUCT DEVELOPMENT   │
+  X  MARKET        │  ● [specific action 1] │  ● [product/feature 1] │
+  I               │    Impact:[H/M/L]       │    Impact:[H/M/L]      │
+  S               │    Risk:  [H/M/L]       │    Risk:  [H/M/L]      │
+  T               │  ● [specific action 2] │  ● [product/feature 2] │
+  I               │    Impact:[H/M/L]       │    Impact:[H/M/L]      │
+  N               │    Risk:  [H/M/L]       │    Risk:  [H/M/L]      │
+  G               │                        │                        │
+  │               │  ▲ LOWEST RISK         │  ~ MEDIUM RISK         │
+  M               ├────────────────────────┼────────────────────────┤
+  A               │                        │                        │
+  R  NEW      ─►  │  MARKET DEVELOPMENT    │  DIVERSIFICATION       │
+  K  MARKET        │  ● [action + target    │  ● [specific move —    │
+  E               │    market 1]           │    related/unrelated 1]│
+  T               │    Impact:[H/M/L]       │    Impact:[H/M/L]      │
+  S               │    Risk:  [H/M/L]       │    Risk:  [H/M/L]      │
+                    │  ● [action + target    │  ● [specific move —    │
+  ▼               │    market 2]           │    related/unrelated 2]│
+                    │    Impact:[H/M/L]       │    Impact:[H/M/L]      │
+                    │    Risk:  [H/M/L]       │    Risk:  [H/M/L]      │
+                    │                        │                        │
+                    │  ~ MEDIUM RISK         │  ▼ HIGHEST RISK        │
+                    └────────────────────────┴────────────────────────┘
 
-MARKET PENETRATION (Existing Product / Existing Market)
-- Option 1: [specific action] — Impact: [H/M/L], Risk: [H/M/L]
-- Option 2: [specific action] — Impact: [H/M/L], Risk: [H/M/L]
+  RISK GRADIENT →   ▲ Low ──────────────────────────────────────── High ▼
 
-MARKET DEVELOPMENT (Existing Product / New Market)
-- Option 1: [specific action + target market] — Impact: [H/M/L], Risk: [H/M/L]
-- Option 2: [specific action + target market] — Impact: [H/M/L], Risk: [H/M/L]
-
-PRODUCT DEVELOPMENT (New Product / Existing Market)
-- Option 1: [specific product/feature + customer segment] — Impact: [H/M/L], Risk: [H/M/L]
-- Option 2: [specific product/feature + customer segment] — Impact: [H/M/L], Risk: [H/M/L]
-
-DIVERSIFICATION (New Product / New Market)
-- Option 1: [specific move — related or unrelated] — Impact: [H/M/L], Risk: [H/M/L]
-- Option 2: [specific move — related or unrelated] — Impact: [H/M/L], Risk: [H/M/L]
-
-RECOMMENDED STRATEGY: [quadrant name]
-PRIMARY INITIATIVE: [the specific option chosen]
-RATIONALE: [why this quadrant given current resources, risk tolerance, and objective]
-OWNER: [person or team]
-90-DAY MILESTONE: [concrete, measurable checkpoint]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  DECISION                                                                                ║
+╠══════════╦═══════════════════════════════════════════════════════════════════════════════╣
+║ STRATEGY ║  [chosen quadrant name]                                                       ║
+║ INIT.    ║  [the specific option selected from the matrix above]                         ║
+║ RATIONALE║  [why this quadrant given resources, risk tolerance, and objective]            ║
+║ OWNER    ║  [person or team accountable]                                                  ║
+║ 90-DAY   ║  [concrete, measurable milestone — what done looks like in 90 days]           ║
+╚══════════╩═══════════════════════════════════════════════════════════════════════════════╝
 ```
+
+Each cell holds two concrete options scored on Impact and Risk (H/M/L). The risk gradient runs from Market Penetration (bottom-left, familiar territory) to Diversification (top-right, fully unfamiliar). The Decision block at the bottom forces a single committed choice — fill in only one primary strategy and leave the rest as reference.
 
 ## Common Mistakes
 

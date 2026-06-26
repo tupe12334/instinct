@@ -86,38 +86,64 @@ Pick a 6–12 month target for the NSM. Review it weekly in a fixed ritual: NSM 
 ## Output Format
 
 ```
-NORTH STAR METRIC — [Product / Team] — [Date]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║           NORTH STAR METRIC  ·  [Product / Team]  ·  [Date]                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-CORE VALUE EXCHANGE
-Our product helps [customer segment] achieve [outcome].
+ CORE VALUE EXCHANGE
+ ┌──────────────────────────────────────────────────────────────────────────────────┐
+ │  Our product helps  [customer segment]  achieve  [outcome].                      │
+ └──────────────────────────────────────────────────────────────────────────────────┘
 
-NORTH STAR METRIC
-  Name:        [Metric name]
-  Definition:  [Exact calculation — no ambiguity]
-  Current:     [Value]
-  Target:      [Value] by [Date]
-  Data source: [System / query / dashboard link]
+ ╔══════════════════════════════════════════════════════════════════════════════════╗
+ ║  ★  NORTH STAR METRIC                                                           ║
+ ╠══════════════════════════════════════════════════════════════════════════════════╣
+ ║  Name        │  [Metric name]                                                   ║
+ ║  Definition  │  [Exact calculation — no ambiguity]                              ║
+ ║  Current     │  [Value]          Target  │  [Value]  by  [Date]                 ║
+ ║  Data source │  [System / query / dashboard link]                               ║
+ ╚══════════════════════════════════════════════════════════════════════════════════╝
+                                        │
+          ┌─────────────────────────────┼─────────────────────────────┐
+          │                             │                             │
+          ▼                             ▼                             ▼
+ ┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
+ │  INPUT  ·  Breadth  │    │  INPUT  ·  Depth     │    │  INPUT  · Frequency │
+ ├─────────────────────┤    ├─────────────────────┤    ├─────────────────────┤
+ │ [% users reaching   │    │ [avg actions /       │    │ [D30 retention /    │
+ │  value moment]      │    │  session]            │    │  return rate]       │
+ ├─────────────────────┤    ├─────────────────────┤    ├─────────────────────┤
+ │ Current  [32%]      │    │ Current  [4.1]       │    │ Current  [18%]      │
+ │ Target   [50%]      │    │ Target   [7.0]       │    │ Target   [30%]      │
+ │ Owner    [Growth PM]│    │ Owner    [Core PM]   │    │ Owner    [Retention]│
+ └─────────────────────┘    └─────────────────────┘    └─────────────────────┘
 
-INPUT METRICS
-┌──────────────────────┬──────────────┬──────────┬──────────┬─────────────┐
-│ Input Metric         │ Dimension    │ Current  │ Target   │ Owner       │
-├──────────────────────┼──────────────┼──────────┼──────────┼─────────────┤
-│ [e.g. % users who    │ Breadth      │ [32%]    │ [50%]    │ [Growth PM] │
-│  reach value moment] │              │          │          │             │
-│ [e.g. avg actions    │ Depth        │ [4.1]    │ [7.0]    │ [Core PM]   │
-│  per session]        │              │          │          │             │
-│ [e.g. D30 retention] │ Frequency    │ [18%]    │ [30%]    │ [Retention] │
-└──────────────────────┴──────────────┴──────────┴──────────┴─────────────┘
+ INPUT METRICS — full table
+ ┌──────────────────────────┬─────────────┬──────────┬──────────┬─────────────┐
+ │ Input Metric             │ Dimension   │ Current  │ Target   │ Owner       │
+ ├──────────────────────────┼─────────────┼──────────┼──────────┼─────────────┤
+ │ [metric description]     │ Breadth     │ [32%]    │ [50%]    │ [Growth PM] │
+ │ [metric description]     │ Depth       │ [4.1]    │ [7.0]    │ [Core PM]   │
+ │ [metric description]     │ Frequency   │ [18%]    │ [30%]    │ [Retention] │
+ │ [metric description]     │ Efficiency  │ [value]  │ [target] │ [owner]     │
+ └──────────────────────────┴─────────────┴──────────┴──────────┴─────────────┘
 
-GUARDRAIL METRICS
-- [Metric]: must stay [above / below] [threshold]
-- [Metric]: must stay [above / below] [threshold]
+ GUARDRAIL METRICS  (must not be damaged while chasing the NSM)
+ ┌───────────────────────────────────────────────────────────┐
+ │  ● [Metric]  ──►  must stay  [above / below]  [threshold] │
+ │  ● [Metric]  ──►  must stay  [above / below]  [threshold] │
+ └───────────────────────────────────────────────────────────┘
 
-WEEKLY REVIEW LOG
-Date       | NSM    | Trend | Key Input Move        | Action
------------|--------|-------|-----------------------|-------
-[YYYY-MM-DD]| [val] | [+/-] | [Input X moved Y%]    | [...]
+ WEEKLY REVIEW LOG
+ ┌─────────────┬──────────┬───────┬───────────────────────────┬─────────────────┐
+ │ Date        │ NSM      │ Trend │ Key Input Move             │ Action          │
+ ├─────────────┼──────────┼───────┼───────────────────────────┼─────────────────┤
+ │ [YYYY-MM-DD]│ [value]  │  ▲ +  │ [Input X moved +Y%]        │ [action taken]  │
+ │ [YYYY-MM-DD]│ [value]  │  ▼ -  │ [Input Y dropped Z%]       │ [action taken]  │
+ └─────────────┴──────────┴───────┴───────────────────────────┴─────────────────┘
 ```
+
+The starred box is the single NSM with its precise definition and targets. The three boxes below it are its primary input metrics (leading levers); add or remove columns as your decomposition requires. Guardrail metrics sit beside the NSM — they constrain optimisation. The weekly log is a running audit trail; copy one row per review ritual.
 
 ## Common Mistakes
 

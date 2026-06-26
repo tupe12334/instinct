@@ -82,42 +82,56 @@ For each top-ranked failure mode, define: (a) a concrete change to the plan that
 ## Output Format
 
 ```
-PRE-MORTEM: [Project or initiative name]
-Session date: [date]  |  Imagined failure date: [date]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  PRE-MORTEM  ►  [Project or initiative name]                                         ║
+╠════════════════════════════════════════╦═════════════════════════════════════════════╣
+║  Session date : [date]                 ║  Imagined failure date : [date]             ║
+╚════════════════════════════════════════╩═════════════════════════════════════════════╝
 
-FAILURE NARRATIVES (all submissions, clustered)
+  ▼  FAILURE NARRATIVES — all submissions, clustered by category  ▼
 
-[Category: Execution]
-- [Specific failure story 1 — be concrete about what went wrong]
-- [Specific failure story 2]
+  ┌───────────────────────────────────────────┬───────────────────────────────────────────┐
+  │  EXECUTION                                │  ASSUMPTIONS                              │
+  ├───────────────────────────────────────────┼───────────────────────────────────────────┤
+  │  ● [specific failure story 1 — concrete   │  ● [specific failure story 3 — concrete   │
+  │    account of what went wrong]            │    account of what went wrong]            │
+  │  ● [specific failure story 2]             │  ● [specific failure story 4]             │
+  ├───────────────────────────────────────────┼───────────────────────────────────────────┤
+  │  EXTERNAL                                 │  TEAM / PROCESS                           │
+  ├───────────────────────────────────────────┼───────────────────────────────────────────┤
+  │  ● [specific failure story 5]             │  ● [specific failure story 6]             │
+  │  ● [add more as collected]                │  ● [add more as collected]                │
+  └───────────────────────────────────────────┴───────────────────────────────────────────┘
 
-[Category: Assumptions]
-- [Specific failure story 3]
-- [Specific failure story 4]
+  ▼  RANKED RISKS — ordered by team vote  ▼
 
-[Category: External]
-- [Specific failure story 5]
+  ╔═════╦══════════════════════════════════════════════════════╦═══════╦════════════╗
+  ║  #  ║  Failure Mode                                        ║ Votes ║  Severity  ║
+  ╠═════╬══════════════════════════════════════════════════════╬═══════╬════════════╣
+  ║  1  ║  [highest-voted failure mode]                        ║  [n]  ║  High      ║
+  ╠═════╬══════════════════════════════════════════════════════╬═══════╬════════════╣
+  ║  2  ║  [second failure mode]                               ║  [n]  ║  High/Med  ║
+  ╠═════╬══════════════════════════════════════════════════════╬═══════╬════════════╣
+  ║  3  ║  [third failure mode]                                ║  [n]  ║  Med/Low   ║
+  ╚═════╩══════════════════════════════════════════════════════╩═══════╩════════════╝
 
-[Category: Team/Process]
-- [Specific failure story 6]
+  ▼  MITIGATION ACTIONS — one block per top-ranked risk  ▼
 
-RANKED RISKS (by team vote)
-#  | Failure Mode                        | Votes | Severity
-1  | [highest-voted failure mode]        |  [n]  | [High/Med/Low]
-2  | [second failure mode]               |  [n]  | [High/Med/Low]
-3  | [third failure mode]                |  [n]  | [High/Med/Low]
-
-MITIGATION ACTIONS
-1. Risk: [failure mode]
-   Mitigation: [specific plan change]
-   Owner: [name]
-   Done when: [measurable condition]
-
-2. Risk: [failure mode]
-   Mitigation: [specific plan change]
-   Owner: [name]
-   Done when: [measurable condition]
+  ┌─ Risk #1 ─────────────────────────────────────────────────────────────────────────┐
+  │  Failure   ► [highest-voted failure mode]                                         │
+  │  Mitigation► [specific change to the plan that reduces this risk]                 │
+  │  Owner     ► [name]                                                               │
+  │  Done when ► [measurable condition confirming the risk is addressed]              │
+  └───────────────────────────────────────────────────────────────────────────────────┘
+  ┌─ Risk #2 ─────────────────────────────────────────────────────────────────────────┐
+  │  Failure   ► [second failure mode]                                                │
+  │  Mitigation► [specific change to the plan that reduces this risk]                 │
+  │  Owner     ► [name]                                                               │
+  │  Done when ► [measurable condition confirming the risk is addressed]              │
+  └───────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+The 2×2 failure-narrative grid ensures coverage across all four blind-spot categories before any group discussion begins. The ranked risks table reflects the team's collective vote — only the top items (typically 3–5) should have mitigation blocks, keeping the action list focused and owned.
 
 ## Common Mistakes
 

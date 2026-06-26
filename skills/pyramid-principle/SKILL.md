@@ -78,34 +78,54 @@ Read bottom-up: do the evidence items add up to each key line? Read top-down: do
 ## Output Format
 
 ```
-PYRAMID STRUCTURE: [document or presentation title]
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║  PYRAMID STRUCTURE: [document or presentation title]                             ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 
-GOVERNING IDEA
-[One complete sentence — your recommendation or conclusion]
+                    ┌────────────────────────────────────────┐
+                    │           GOVERNING IDEA               │
+                    │  [One complete sentence — your         │
+                    │   recommendation or conclusion]        │
+                    └───────────────┬────────────────────────┘
+                                    │
+          ┌─────────────────────────┼──────────────────────────┐
+          │                         │                          │
+          ▼                         ▼                          ▼
+┌─────────────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+│    KEY POINT A      │  │    KEY POINT B      │  │    KEY POINT C      │
+│                     │  │                     │  │                     │
+│ [Full sentence      │  │ [Full sentence      │  │ [Full sentence      │
+│  assertion — a      │  │  assertion — a      │  │  assertion — a      │
+│  claim, not a       │  │  claim, not a       │  │  claim, not a       │
+│  label]             │  │  label]             │  │  label]             │
+└──────────┬──────────┘  └──────────┬──────────┘  └──────────┬──────────┘
+           │                        │                         │
+     ┌─────┴──────┐           ┌─────┴──────┐           ┌─────┴──────┐
+     │ ● [E1: specific data]  │ ● [E1: specific data]  │ ● [E1: specific data]
+     │ ● [E2: specific data]  │ ● [E2: specific data]  │ ● [E2: specific data]
+     │ ● [E3: specific fact]  │ ● [E3: specific fact]  │ ● [E3: specific fact]
+     └────────────┘           └────────────┘           └────────────┘
 
-KEY POINT A: [Full sentence assertion]
-  Evidence 1: [specific data or fact]
-  Evidence 2: [specific data or fact]
-  Evidence 3: [specific data or fact]
-
-KEY POINT B: [Full sentence assertion]
-  Evidence 1: [specific data or fact]
-  Evidence 2: [specific data or fact]
-  Evidence 3: [specific data or fact]
-
-KEY POINT C: [Full sentence assertion]
-  Evidence 1: [specific data or fact]
-  Evidence 2: [specific data or fact]
-  Evidence 3: [specific data or fact]
-
-HORIZONTAL LOGIC CHECK
-- Grouping type: [deductive / inductive / sequential]
-- MECE check: [do key points overlap? are there gaps?]
-
-VERTICAL LOGIC CHECK
-- Bottom-up: Key Point A + B + C → [does it prove the governing idea?]
-- Top-down: Governing idea → [does each key point answer "why"?]
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║  LOGIC CHECKS                                                                    ║
+╠═══════════════════════════════════╦══════════════════════════════════════════════╣
+║  HORIZONTAL (MECE)                ║  VERTICAL (So What? / Why So?)               ║
+║                                   ║                                              ║
+║  Grouping type:                   ║  Bottom-up ▲                                 ║
+║  [deductive / inductive /         ║  Key Point A + B + C                         ║
+║   sequential]                     ║  → [does it prove the governing idea?]       ║
+║                                   ║                                              ║
+║  Overlap check:                   ║  Top-down ▼                                  ║
+║  [do any key points make the      ║  Governing idea                              ║
+║   same claim?]                    ║  → [does each key point answer "why"?]       ║
+║                                   ║                                              ║
+║  Gap check:                       ║                                              ║
+║  [are there logical gaps that     ║                                              ║
+║   leave the idea unsupported?]    ║                                              ║
+╚═══════════════════════════════════╩══════════════════════════════════════════════╝
 ```
+
+Read the pyramid top-down to communicate (answer first, then reasons, then proof). Run it bottom-up to validate (evidence proves key points; key points together prove the governing idea). The logic-check panel must pass before the document is ready.
 
 ## Common Mistakes
 

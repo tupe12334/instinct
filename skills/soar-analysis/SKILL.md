@@ -74,32 +74,40 @@ Translate each aspiration into 1–3 measurable outcomes. Attach a target value 
 ## Output Format
 
 ```
-SOAR ANALYSIS: [subject]
+╔═══════════════════════════════════════════════════════════════════════════════════════════╗
+║  SOAR ANALYSIS  ▸  [subject]                                                              ║
+╠═══════════════════════════════════╦═══════════════════════════════════════════════════════╣
+║  S  STRENGTHS                     ║  A  ASPIRATIONS                                       ║
+║     what we have today            ║     where we want to be                               ║
+║  ─────────────────────────────    ║  ──────────────────────────────────────────────────   ║
+║  ● [strength 1]                   ║  ● [future-state statement, present tense]             ║
+║    └─ [evidence / proof point]    ║  ● [future-state statement, present tense]             ║
+║  ● [strength 2]                   ║  ● [future-state statement, present tense]             ║
+║    └─ [evidence / proof point]    ║                                                       ║
+║  ● [strength 3]                   ║                                                       ║
+║    └─ [evidence / proof point]    ║                                                       ║
+╠═══════════════════════════════════╬═══════════════════════════════════════════════════════╣
+║  O  OPPORTUNITIES                 ║  R  RESULTS                                           ║
+║     what's possible now           ║     how we know we succeeded                          ║
+║  ─────────────────────────────    ║  ──────────────────────────────────────────────────   ║
+║  ● [opportunity 1]                ║  Asp 1 ─► [metric] = [target] by [date]               ║
+║    └─ [why now / time window]     ║  Asp 2 ─► [metric] = [target] by [date]               ║
+║  ● [opportunity 2]                ║  Asp 3 ─► [metric] = [target] by [date]               ║
+║    └─ [which strength amplified]  ║                                                       ║
+║  ● [opportunity 3]                ║                                                       ║
+║    └─ [why now / time window]     ║                                                       ║
+╚═══════════════════════════════════╩═══════════════════════════════════════════════════════╝
 
-STRENGTHS
-1. [strength] — [evidence or proof point]
-2. [strength] — [evidence or proof point]
-3. ...
-
-OPPORTUNITIES
-1. [opportunity] — [why now / time window]
-2. [opportunity] — [which strength it amplifies]
-3. ...
-
-ASPIRATIONS
-1. [future-state statement in present tense]
-2. [future-state statement in present tense]
-3. ...
-
-RESULTS (success metrics)
-Aspiration 1: [metric] = [target] by [date]
-Aspiration 2: [metric] = [target] by [date]
-...
-
-PRIORITY ACTIONS:
-1. [concrete next step that moves toward the first result]
-2. [concrete next step that moves toward the second result]
+┌───────────────────────────────────────────────────────────────────────────────────────────┐
+│  PRIORITY ACTIONS                                                                         │
+├───────────────────────────────────────────────────────────────────────────────────────────┤
+│  1 ▸ [concrete next step that moves toward Result 1]                                      │
+│  2 ▸ [concrete next step that moves toward Result 2]                                      │
+│  3 ▸ [concrete next step that moves toward Result 3]                                      │
+└───────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+Each quadrant follows the 2×2 SOAR grid: left column captures the present state (Strengths, Opportunities), right column captures the future state (Aspirations, Results). Every Aspiration in the top-right must trace directly to at least one measurable Result in the bottom-right via the `Asp N ─►` arrows, and every Opportunity should name the Strength it amplifies in its `└─` sub-bullet.
 
 ## Common Mistakes
 

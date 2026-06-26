@@ -61,26 +61,45 @@ Share the draft. The most productive disagreements surface here. If two people b
 ## Output Format
 
 ```
-RACI MATRIX: [project / initiative name]
-Date: [YYYY-MM-DD]
+╔═════════════════════════════════════════════════════════════════════════════════════════╗
+║  RACI MATRIX  ●  [Project / Initiative Name]                    Date: [YYYY-MM-DD]     ║
+╠═══════════════════════╦═══════════════╦═══════════════╦═══════════════╦════════════════╣
+║        TASK           ║   [Role 1]    ║   [Role 2]    ║   [Role 3]    ║   [Role 4]     ║
+╠═══════════════════════╬═══════════════╬═══════════════╬═══════════════╬════════════════╣
+║  [Task 1]             ║       R       ║       A       ║       C       ║       I        ║
+╠═══════════════════════╬═══════════════╬═══════════════╬═══════════════╬════════════════╣
+║  [Task 2]             ║       A       ║       R       ║       I       ║       C        ║
+╠═══════════════════════╬═══════════════╬═══════════════╬═══════════════╬════════════════╣
+║  [Task 3]             ║       C       ║       R       ║       A       ║       ─        ║
+╠═══════════════════════╬═══════════════╬═══════════════╬═══════════════╬════════════════╣
+║  [Task 4]             ║       I       ║       C       ║       R       ║       A        ║
+╠═══════════════════════╬═══════════════╬═══════════════╬═══════════════╬════════════════╣
+║  [Task 5]             ║       R       ║       I       ║       C       ║       A        ║
+╚═══════════════════════╩═══════════════╩═══════════════╩═══════════════╩════════════════╝
 
-              [Role 1]   [Role 2]   [Role 3]   [Role 4]
-─────────────────────────────────────────────────────────
-[Task 1]        R          A          C          I
-[Task 2]        A          R          I          C
-[Task 3]        C          R          A          -
-[Task 4]        I          C          R          A
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  LEGEND                                                                                 │
+├────────┬────────────────────────────────────────────────────────────────────────────────┤
+│   R    │  Responsible  ►  Does the work; may be multiple people per task                │
+│   A    │  Accountable  ►  Owns the outcome; exactly ONE per task (never share this)     │
+│   C    │  Consulted    ►  Must be asked before action; two-way communication            │
+│   I    │  Informed     ►  Notified after action; one-way communication                  │
+│   ─    │  No involvement                                                                │
+└────────┴────────────────────────────────────────────────────────────────────────────────┘
 
-Legend:
-  R = Responsible (does the work)
-  A = Accountable (owns outcome, single per task)
-  C = Consulted (input required before action)
-  I = Informed (notified after action)
-  - = No involvement
-
-NOTES:
-- [Any clarifications on split responsibilities or escalation paths]
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│  VALIDATION CHECKS                                                                      │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  ► Each row has exactly ONE  A  ──────────────────────── [ ] confirmed                  │
+│  ► Each row has at least one R  ──────────────────────── [ ] confirmed                  │
+│  ► No cell is blank             ──────────────────────── [ ] confirmed                  │
+│  ► No column is all I with no R or C  ────────────────── [ ] confirmed                  │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│  NOTES: [Any clarifications on split responsibilities or escalation paths]              │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+Each row maps one task to exactly one owner (A) — scan down the A column to see the full accountability chain. The validation checklist at the bottom should be completed before sharing the matrix with stakeholders.
 
 ## Common Mistakes
 

@@ -67,34 +67,42 @@ A valid Blue Ocean move satisfies all three: **Focus** (your new curve concentra
 ## Output Format
 
 ```
-ERRC GRID: [company / product / initiative name]
-CONTEXT: [market or industry being disrupted, one sentence]
-
-ELIMINATE
-- [Factor 1]: [why it is industry inertia with no real buyer value]
-- [Factor 2]: [why it is industry inertia with no real buyer value]
-
-REDUCE (to what level?)
-- [Factor 1]: from [current level] to [target level] — [rationale]
-- [Factor 2]: from [current level] to [target level] — [rationale]
-
-RAISE (above what ceiling?)
-- [Factor 1]: from [current level] to [target level] — [buyer evidence for willingness to pay]
-- [Factor 2]: from [current level] to [target level] — [buyer evidence for willingness to pay]
-
-CREATE (factors that do not exist in this industry today)
-- [Factor 1]: [what it is and which underserved need or non-customer it targets]
-- [Factor 2]: [what it is and which underserved need or non-customer it targets]
-
-NEW VALUE CURVE TAGLINE: [one sentence a non-customer would understand]
-
-FOCUS CHECK: The curve concentrates on — [2-3 factors where we dominate]
-DIVERGENCE CHECK: Versus the industry standard we differ most on — [specific factors]
-COST IMPACT: Eliminate + Reduce free up — [estimated cost delta, even if rough]
-VALUE IMPACT: Raise + Create deliver — [what buyer problem is solved that was not before]
-
-NEXT ACTION: [who validates which Create factor, by when]
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  ERRC GRID  ►  [company / product / initiative name]                                     ║
+║  CONTEXT:      [market or industry being disrupted, one sentence]                        ║
+╠══════════════════════════════════════════╦═══════════════════════════════════════════════╣
+║  ✂  ELIMINATE                            ║  ▲  RAISE  (above what ceiling?)              ║
+║  ────────────────────────────────────    ║  ───────────────────────────────────────────  ║
+║  ● [Factor 1]                            ║  ● [Factor 1]: [current lvl] → [target lvl]  ║
+║      [why industry inertia / no value]   ║      [buyer willingness-to-pay evidence]      ║
+║  ● [Factor 2]                            ║  ● [Factor 2]: [current lvl] → [target lvl]  ║
+║      [why industry inertia / no value]   ║      [buyer willingness-to-pay evidence]      ║
+╠══════════════════════════════════════════╬═══════════════════════════════════════════════╣
+║  ▼  REDUCE  (to what level?)             ║  ★  CREATE  (new to this industry)            ║
+║  ────────────────────────────────────    ║  ───────────────────────────────────────────  ║
+║  ● [Factor 1]: [current] → [target]      ║  ● [Factor 1]: [what it is]                  ║
+║      [rationale for floor chosen]        ║      [underserved need / non-customer]        ║
+║  ● [Factor 2]: [current] → [target]      ║  ● [Factor 2]: [what it is]                  ║
+║      [rationale for floor chosen]        ║      [underserved need / non-customer]        ║
+╠══════════════════════════════════════════╩═══════════════════════════════════════════════╣
+║    ◄─── COST SIDE  (Eliminate + Reduce) ──────── VALUE SIDE  (Raise + Create) ───►      ║
+╠══════════════════════════════════════════════════════════════════════════════════════════╣
+║  NEW VALUE CURVE TAGLINE                                                                 ║
+║  ❝  [one sentence a non-customer would immediately understand]  ❞                       ║
+╠════════════════════════════╦═══════════════════════════╦═════════════════════════════════╣
+║  FOCUS CHECK               ║  DIVERGENCE CHECK         ║  COST IMPACT                   ║
+║  Curve concentrates on:    ║  Differs most vs industry  ║  Eliminate + Reduce free up:  ║
+║  ● [dominant factor 1]     ║  ● [factor X]             ║  → [estimated cost delta]      ║
+║  ● [dominant factor 2]     ║  ● [factor Y]             ║                                ║
+║  ● [dominant factor 3]     ║  ● [factor Z]             ║  VALUE IMPACT                  ║
+║                            ║                           ║  Raise + Create deliver:       ║
+║                            ║                           ║  → [buyer problem now solved]  ║
+╠════════════════════════════╩═══════════════════════════╩═════════════════════════════════╣
+║  NEXT ACTION  ►  [who validates which Create factor, by when]                            ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The top half of the grid is the 2x2 ERRC canvas — left column drives cost reduction, right column drives value creation. The bottom strip validates that the new curve satisfies Blue Ocean's three criteria (Focus, Divergence, Compelling tagline) and surfaces the single most important next validation step.
 
 ## Common Mistakes
 

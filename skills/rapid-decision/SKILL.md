@@ -64,38 +64,71 @@ Recommend gathers Input, incorporates Agree constraints, checks P feasibility, a
 ## Output Format
 
 ```
-RAPID DECISION: [decision statement as a clear question]
-Date: [YYYY-MM-DD]
-Target decision date: [YYYY-MM-DD]
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║  RAPID DECISION  ►  [decision statement as a clear question]                     ║
+║  Opened: [YYYY-MM-DD]   ·   Target decision date: [YYYY-MM-DD]                  ║
+╚═══════════════════════════════════════════════════════════════════════════════════╝
 
-─────────────────────────────────────────────
-ROLES
+╔═════════════════════════════════════ ROLES ══════════════════════════════════════╗
+║                                                                                  ║
+║  ┌───────────────────┐  ┌───────────────────┐  ┌──────────────────┐             ║
+║  │  I — INPUT        │  │  R — RECOMMEND    │  │  A — AGREE       │             ║
+║  │───────────────────│  │───────────────────│  │──────────────────│             ║
+║  │ [Name]            │  │ [Name, Title]     │  │ [Name, Title]    │             ║
+║  │  Q: [question]    │→►│                   │→►│ Veto: [domain]   │             ║
+║  │                   │  │                   │  │                  │             ║
+║  │ [Name]            │  │                   │  │                  │             ║
+║  │  Q: [question]    │  │                   │  │                  │             ║
+║  └───────────────────┘  └───────────────────┘  └──────────────────┘             ║
+║                                                         │                        ║
+║                                                         ▼                        ║
+║                                          ┌──────────────────────────────────┐   ║
+║                                          │  D — DECIDE   ◄── FINAL CALL    │   ║
+║                                          │──────────────────────────────────│   ║
+║                                          │  [Name, Title]                   │   ║
+║                                          └──────────────────────────────────┘   ║
+║                                                         │                        ║
+║                                                         ▼ executes               ║
+║                                          ┌──────────────────────────────────┐   ║
+║                                          │  P — PERFORM                     │   ║
+║                                          │──────────────────────────────────│   ║
+║                                          │  [Name or team]                  │   ║
+║                                          │  Feasibility confirmed by: [date]│   ║
+║                                          └──────────────────────────────────┘   ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 
-  D — Decide:     [Name, Title]
-  R — Recommend:  [Name, Title]
-  A — Agree:      [Name, Title] — scope of veto: [domain]
-  P — Perform:    [Name or team] — consulted on feasibility by [date]
-  I — Input:      [Name] — question: [specific question]
-                  [Name] — question: [specific question]
+┌──────────────────── RECOMMENDATION SUMMARY  (filled by R) ───────────────────────┐
+│                                                                                   │
+│  Proposed action   ►  [one sentence describing the recommended course of action]  │
+│                                                                                   │
+│  Rationale         ●  [supporting point 1]                                        │
+│                    ●  [supporting point 2]                                        │
+│                    ●  [supporting point 3]                                        │
+│                                                                                   │
+│  Alternatives      ►  [brief summary of alternatives considered and ruled out]    │
+│                                                                                   │
+│  Key risks         ►  [brief summary of key risks and mitigations]                │
+│                                                                                   │
+│  P feasibility     ►  [ yes ]   [ no ]   [ conditional: ___________________ ]    │
+│                                                                                   │
+│  A sign-off        ►  [ yes ]   [ pending ]   [ not required ]                   │
+│                                                                                   │
+└───────────────────────────────────────────────────────────────────────────────────┘
 
-─────────────────────────────────────────────
-RECOMMENDATION SUMMARY (filled in by R)
-
-Proposed action: [one sentence]
-Supporting rationale: [2-4 bullets]
-Alternatives considered: [brief]
-Key risks: [brief]
-P feasibility confirmed: [yes / no / conditions]
-A sign-off received: [yes / pending / not required]
-
-─────────────────────────────────────────────
-DECISION (filled in by D)
-
-Outcome: [approved / modified / rejected]
-If modified: [what changed and why]
-Decision date: [YYYY-MM-DD]
-Next owner: [P — Name/team]
+┌──────────────────────────── DECISION  (filled by D) ─────────────────────────────┐
+│                                                                                   │
+│  Outcome       ►  [ approved ]     [ modified ]     [ rejected ]                 │
+│                                                                                   │
+│  If modified   ►  [what changed and why]                                          │
+│                                                                                   │
+│  Decision date ►  [YYYY-MM-DD]                                                    │
+│                                                                                   │
+│  Next owner    ►  P — [Name / team]                                               │
+│                                                                                   │
+└───────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+The **ROLES** panel shows the information flow: Input consultants feed the Recommender, who routes through the Agree gatekeeper before D makes the final call, which then passes to Perform for execution. The **RECOMMENDATION SUMMARY** is R's deliverable — a concrete proposal with rationale, not a menu of options. The **DECISION** block is D's record, capturing outcome, any modifications, and accountability handoff to P.
 
 ## Common Mistakes
 

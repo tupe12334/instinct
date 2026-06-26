@@ -80,39 +80,42 @@ Write a test script with specific tasks and success criteria before touching use
 ## Output Format
 
 ```
-DOUBLE DIAMOND: [project / challenge name]
-Date: [YYYY-MM-DD]   Owner: [name/role]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  DOUBLE DIAMOND  ●  [project / challenge name]                                              Date: [YYYY-MM-DD]  ·  Owner: [name]                           ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-─── DIAMOND 1 ───────────────────────────────────────────────
+                            ╱─────────────────────────────╲                              ╱─────────────────────────────╲
+                           ╱            DISCOVER            ╲                            ╱            DEVELOP            ╲
+                          ╱             (diverge)             ╲                          ╱             (diverge)           ╲
+                         ╱                                      ╲                        ╱                                   ╲
+  START ────────────────◆                                        ◆─────── HMW ───────── ◆                                    ◆ ──────────────────────── SHIP
+                         ╲                                      ╱                        ╲                                   ╱
+                          ╲             DEFINE                 ╱                          ╲             DELIVER             ╱
+                           ╲           (converge)             ╱                            ╲           (converge)          ╱
+                            ╲─────────────────────────────────╱                             ╲──────────────────────────────╱
+                                  ◄──────── Diamond 1 ─────────►                                 ◄──────── Diamond 2 ─────────►
+                              "Are we solving the right problem?"                            "Are we solving the problem right?"
 
-DISCOVER — Key Findings
-1. [Finding]: [evidence — source, quote, or data point]
-2. [Finding]: [evidence]
-3. [Finding]: [evidence]
-
-DEFINE — Problem Framing
-Insight themes:
-  - [Theme 1]: [what multiple findings have in common]
-  - [Theme 2]: [theme]
-HMW statement: "How might we [verb] [user] [goal] so that [outcome]?"
-Assumptions still to validate: [list remaining unknowns]
-
-─── DIAMOND 2 ───────────────────────────────────────────────
-
-DEVELOP — Concepts Explored
-  Concept A: [name] — [one-line description]
-  Concept B: [name] — [one-line description]
-  Concept C: [name] — [one-line description]
-Selected for testing: [concept name] — Reason: [why this over the others]
-
-DELIVER — Test Results
-Test setup: [who tested, how many users, what tasks, success criteria]
-Results:
-  - Task 1: [pass rate / key observation]
-  - Task 2: [pass rate / key observation]
-Verdict: [Ship / Iterate / Kill] — [one-sentence rationale]
-Next action: [specific step with owner and date]
+┌────────────────────────────────────────┐  ┌────────────────────────────────────────┐  ┌────────────────────────────────────────┐  ┌────────────────────────────────────────┐
+│ ▸ DISCOVER — Key Findings              │  │ ▸ DEFINE — Problem Framing             │  │ ▸ DEVELOP — Concepts Explored          │  │ ▸ DELIVER — Test Results               │
+├────────────────────────────────────────┤  ├────────────────────────────────────────┤  ├────────────────────────────────────────┤  ├────────────────────────────────────────┤
+│ 1. [Finding]                           │  │ Insight themes:                        │  │ Concept A: [name]                      │  │ Test setup:                            │
+│    └─ [evidence / source / quote]      │  │  ● [Theme 1]: [common thread]          │  │   └─ [one-line description]            │  │  [who / # users / tasks / criteria]    │
+│                                        │  │  ● [Theme 2]: [common thread]          │  │                                        │  │                                        │
+│ 2. [Finding]                           │  │                                        │  │ Concept B: [name]                      │  │ Results:                               │
+│    └─ [evidence / source / quote]      │  │ HMW statement:                         │  │   └─ [one-line description]            │  │  ► Task 1: [pass rate / observation]   │
+│                                        │  │  "How might we [verb]                  │  │                                        │  │  ► Task 2: [pass rate / observation]   │
+│ 3. [Finding]                           │  │   [user] [goal]                        │  │ Concept C: [name]                      │  │                                        │
+│    └─ [evidence / source / quote]      │  │   so that [outcome]?"                  │  │   └─ [one-line description]            │  │ Verdict:                               │
+│                                        │  │                                        │  │                                        │  │  [Ship / Iterate / Kill]               │
+│                                        │  │ Assumptions to validate:               │  │ ► Selected: [concept name]             │  │  └─ [one-sentence rationale]           │
+│                                        │  │  · [remaining unknown 1]               │  │   Reason: [why this over others]       │  │                                        │
+│                                        │  │  · [remaining unknown 2]               │  │                                        │  │ Next action:                           │
+│                                        │  │                                        │  │                                        │  │  [step] · [owner] · [date]             │
+└────────────────────────────────────────┘  └────────────────────────────────────────┘  └────────────────────────────────────────┘  └────────────────────────────────────────┘
 ```
+
+Each diamond half maps to one phase: the widening half captures divergent work (Discover / Develop) and the narrowing half captures convergent decisions (Define / Deliver). Fill the left two boxes before moving to the right pair — completing Diamond 1 first ensures you are solving the right problem before investing in solutions.
 
 ## Common Mistakes
 

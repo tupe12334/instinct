@@ -85,23 +85,49 @@ Projects shift quadrants as scope changes and priorities evolve.
 ## Output Format
 
 ```
-PROJECT PORTFOLIO ANALYSIS: [context / team / quarter]
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║  PROJECT PORTFOLIO ANALYSIS — [context / team / quarter]                        ║
+╚═════════════════════════════════════════════════════════════════════════════════╝
 
-QUICK WINS (High Value, Low Effort) — Do first
-- [project]: value=[X/10], effort=[Y/10] — [rationale, suggested owner]
+                  ◄─────────────────── EFFORT / RISK ───────────────────►
+                           LOW  (score < 6)          HIGH  (score ≥ 6)
+               ┌────────────────────────────────┬────────────────────────────────┐
+               │  ★  QUICK WINS                 │  ◆  MAJOR PROJECTS              │
+               │  ────────────────────────────  │  ────────────────────────────  │
+  HIGH (≥ 6)   │  ● [project]  V:[X/10] E:[Y/10]│  ● [project]  V:[X/10] E:[Y/10]│
+               │  ● [project]  V:[X/10] E:[Y/10]│  ● [project]  V:[X/10] E:[Y/10]│
+ STRATEGIC     │                                │                                │
+  VALUE        │  ► Do first — maximum ROI      │  ► Plan & staff with your best  │
+               │  ► Protect from being bumped   │  ► Set milestones + risk owners │
+               │  ► Watch for scope creep       │  ► Don't understaff             │
+  ─────────────├────────────────────────────────┼────────────────────────────────┤
+               │  ○  FILL-INS                   │  ✗  THANKLESS TASKS             │
+               │  ────────────────────────────  │  ────────────────────────────  │
+  LOW  (< 6)   │  ● [project]  V:[X/10] E:[Y/10]│  ● [project]  V:[X/10] E:[Y/10]│
+               │  ● [project]  V:[X/10] E:[Y/10]│  ● [project]  V:[X/10] E:[Y/10]│
+               │                                │                                │
+               │  ► Only if spare capacity      │  ► Eliminate, automate, or      │
+               │  ► Timebox strictly            │    outsource — never assign     │
+               │                                │    strategically key people     │
+               └────────────────────────────────┴────────────────────────────────┘
 
-MAJOR PROJECTS (High Value, High Effort) — Plan & staff
-- [project]: value=[X/10], effort=[Y/10] — [rationale, key risks, milestone]
-
-FILL-INS (Low Value, Low Effort) — Only if spare capacity
-- [project]: value=[X/10], effort=[Y/10] — [why defer]
-
-THANKLESS TASKS (Low Value, High Effort) — Eliminate
-- [project]: value=[X/10], effort=[Y/10] — [kill/automate/outsource recommendation]
-
-RESOURCE ALLOCATION RECOMMENDATION:
-[Staffing priorities and sequencing for next cycle]
+╔═════════════════════════════════════════════════════════════════════════════════╗
+║  RESOURCE ALLOCATION — [Staffing priorities and sequencing for next cycle]      ║
+╠══════════════════╦══════════════════════════════════════════════════════════════╣
+║  Priority 1      ║  Quick Wins   ►  [project list + suggested owners]           ║
+║  (Now)           ║                                                              ║
+╠══════════════════╬══════════════════════════════════════════════════════════════╣
+║  Priority 2      ║  Major Proj.  ►  [teams, milestone dates, sequencing]        ║
+║  (Plan)          ║                  [key risks, staffing plan]                  ║
+╠══════════════════╬══════════════════════════════════════════════════════════════╣
+║  Priority 3      ║  Fill-ins     ►  [projects, timeboxes, conditions to start]  ║
+║  (Later)         ║                                                              ║
+╠══════════════════╬══════════════════════════════════════════════════════════════╣
+║  Eliminate       ║  Thankless    ►  [kill / automate / outsource per project]   ║
+╚══════════════════╩══════════════════════════════════════════════════════════════╝
 ```
+
+The 2x2 grid maps every project by its scores — add more bullet rows per quadrant as needed. The resource allocation table drives the action: Priority 1 items should be staffed and started immediately, while Eliminate items need an explicit exit plan (cancel, automate, or hand off) to free capacity.
 
 ## Scoring Tips
 

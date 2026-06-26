@@ -109,25 +109,35 @@ Spoken star answers should run 90 seconds to 3 minutes. Written star responses s
 ## Output Format
 
 ```
-star RESPONSE: [competency or question being answered]
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  STAR RESPONSE  ►  [competency or question being answered]                                               ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-S — SITUATION
-[1–3 sentences: what was happening, what was at stake, relevant scale/constraints]
-
-T — TASK
-[1–2 sentences: your specific role and what you were accountable for]
-
-A — ACTION
-1. [First action + why you took it]
-2. [Second action + decision or pivot]
-3. [Third action + how you handled an obstacle or involved others]
-(add steps as needed; 3–5 is typical)
-
-R — RESULT
-Primary outcome: [metric — number, percentage, time, revenue, error rate, etc.]
-Secondary impact: [process change, team effect, or follow-on outcome]
-Reflection (optional): [what you would do differently]
+┌────────────────────┐     ┌────────────────────┐     ┌────────────────────────┐     ┌─────────────────────┐
+│ S — SITUATION      │ ──► │ T — TASK           │ ──► │ A — ACTION             │ ──► │ R — RESULT          │
+│ (context)          │     │ (accountability)   │     │ (your contribution)    │     │ (measurable outcome)│
+├────────────────────┤     ├────────────────────┤     ├────────────────────────┤     ├─────────────────────┤
+│                    │     │                    │     │                        │     │                     │
+│ [What was          │     │ Role: [your role   │     │ 1. [First action +     │     │ ● Primary outcome:  │
+│  happening and     │     │        or title    │     │    why you took it]    │     │   [metric: number,  │
+│  why it mattered;  │     │        at the      │     │                        │     │    %, time,         │
+│  what was at       │     │        time]       │     │ 2. [Second action +    │     │    revenue, rate]   │
+│  stake]            │     │                    │     │    decision or pivot   │     │                     │
+│                    │     │ Expected:          │     │    made]               │     │ ● Secondary impact: │
+│ Scale / scope:     │     │ [what was          │     │                        │     │   [process change,  │
+│ [team size,        │     │  explicitly        │     │ 3. [Third action +     │     │    team effect,     │
+│  revenue at risk,  │     │  expected of you]  │     │    obstacle handled    │     │    follow-on        │
+│  timeline]         │     │                    │     │    or others involved] │     │    outcome]         │
+│                    │     │ Constraints:       │     │                        │     │                     │
+│ Constraints:       │     │ [competing         │     │ ┄ add steps as ┄       │     │ ○ Reflection:       │
+│ [what audience     │     │  priorities you    │     │   needed (3–5 typical) │     │   [what you would   │
+│  needs to evaluate │     │  personally faced] │     │                        │     │    do differently]  │
+│  your response]    │     │                    │     │                        │     │   (optional)        │
+│                    │     │                    │     │                        │     │                     │
+└────────────────────┘     └────────────────────┘     └────────────────────────┘     └─────────────────────┘
 ```
+
+The four boxes flow left to right, each building on the last. **S** establishes context, **T** pins your personal accountability, **A** details the steps *you* took in sequence, and **R** quantifies what changed. Keep S and T concise to give A and R maximum room.
 
 ## Common Mistakes
 

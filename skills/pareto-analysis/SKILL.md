@@ -78,31 +78,64 @@ Once changes are in place, repeat the analysis. The distribution shifts. What wa
 ## Output Format
 
 ```
-PARETO ANALYSIS
-Context: [what problem you are analyzing]
-Effect metric: [the single measurable outcome]
-Data period / source: [date range and data source]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                               PARETO ANALYSIS                                        ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  Problem:        [what problem you are analyzing]                                    ║
+║  Effect Metric:  [the single measurable outcome]                                     ║
+║  Data Period:    [date range]                      Source: [data source]             ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-RANKED CAUSES
-| Rank | Cause               | Effect Value | % of Total | Cumulative % |
-|------|---------------------|-------------|------------|--------------|
-|  1   | [cause]             | [value]     | [##%]      | [##%]        |
-|  2   | [cause]             | [value]     | [##%]      | [##%]        |
-|  3   | [cause]             | [value]     | [##%]      | [##%]        |
-| ...  | ...                 | ...         | ...        | ...          |
-|  N   | [cause]             | [value]     | [##%]      | 100%         |
+ RANKED CAUSES
+┌──────┬───────────────────────┬──────────────┬────────────┬──────────────┬──────────────────────────────────┐
+│ Rank │ Cause                 │ Effect Value │ % of Total │ Cumulative % │ Contribution Bar                 │
+├──────┼───────────────────────┼──────────────┼────────────┼──────────────┼──────────────────────────────────┤
+│  1   │ [cause A]             │   [value]    │   [##%]    │    [##%]     │ ████████████████████░░░░░░░░░░░░ │
+│  2   │ [cause B]             │   [value]    │   [##%]    │    [##%]     │ ██████████████░░░░░░░░░░░░░░░░░░ │
+│  3   │ [cause C]             │   [value]    │   [##%]    │    [##%]     │ █████████░░░░░░░░░░░░░░░░░░░░░░░ │
+├ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─┼──────────────┼──────────────────────────────────┤
+│      │  ▲ vital few above    │              │            │  ~80% ◄──── │ ░ = remaining share              │
+├ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ─ ─┼──────────────┼──────────────────────────────────┤
+│  4   │ [cause D]             │   [value]    │   [##%]    │    [##%]     │ █████░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│  5   │ [cause E]             │   [value]    │   [##%]    │    [##%]     │ ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│  N   │ [cause N]             │   [value]    │   [##%]    │   100%       │ █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+└──────┴───────────────────────┴──────────────┴────────────┴──────────────┴──────────────────────────────────┘
 
-VITAL FEW (causes 1–[N] account for [##%] of total effect)
-- [Cause 1]: [value] — [one-line explanation of why this ranks here]
-- [Cause 2]: [value] — [one-line explanation]
-- [Cause N]: [value] — [one-line explanation]
+ CUMULATIVE EFFECT CURVE
+                                                                        
+ 100% ┤                                              ·················
+  90% ┤                                         ····
+  80% ┤· · · · · · · · · · · · · · · ·─ ─ ─ ─ ·    ← inflection point
+  70% ┤                            ··
+  60% ┤                         ··
+  50% ┤                      ··
+  40% ┤                   ··
+  20% ┤              ····
+   0% ┼──────────────────────────────────────────────────────────► Causes (ranked 1→N)
+      │◄────── vital few (≈20% of causes) ──────►◄──── trivial many (≈80% of causes) ────►
 
-ACTIONS
-- [Cause 1]: [specific intervention] — Owner: [name] — Target: [measurable outcome]
-- [Cause 2]: [specific intervention] — Owner: [name] — Target: [measurable outcome]
+┌──────────────────────────────────────────────────┐  ┌────────────────────────────────────────────────┐
+║  ● VITAL FEW                                     ║  ║  ○ TRIVIAL MANY                                ║
+║    causes 1–[N] → [##%] of total effect          ║  ║    causes [N+1]–[M] → [##%] of total effect   ║
+╠══════════════════════════════════════════════════╣  ╠════════════════════════════════════════════════╣
+│ ► [Cause A]: [value] — [why it ranks here]       │  │   [Cause D]: [value] — [brief note]            │
+│ ► [Cause B]: [value] — [why it ranks here]       │  │   [Cause E]: [value] — [brief note]            │
+│ ► [Cause C]: [value] — [why it ranks here]       │  │   … (lower-priority; address after vital few)  │
+└──────────────────────────────────────────────────┘  └────────────────────────────────────────────────┘
 
-NEXT REVIEW: [date to rerun analysis after interventions]
+ ACTIONS  (vital few only — do not dilute effort on trivial many)
+┌──────────────────────┬──────────────────────────────────────────┬──────────────────┬──────────────────────────┐
+│ Cause                │ Intervention                             │ Owner            │ Target                   │
+├──────────────────────┼──────────────────────────────────────────┼──────────────────┼──────────────────────────┤
+│ [Cause A]            │ [specific action to take]                │ [name / team]    │ [measurable outcome]     │
+│ [Cause B]            │ [specific action to take]                │ [name / team]    │ [measurable outcome]     │
+│ [Cause C]            │ [specific action to take]                │ [name / team]    │ [measurable outcome]     │
+└──────────────────────┴──────────────────────────────────────────┴──────────────────┴──────────────────────────┘
+
+ NEXT REVIEW: [date to rerun analysis after interventions]
 ```
+
+The ranked table and bar column let you see at a glance how steeply contributions drop off — a sharp drop after the first 2–3 causes signals a high-leverage 80/20 split. The cumulative curve section confirms where the natural inflection point sits, which is the true vital few / trivial many boundary regardless of whether it lands exactly at 80%.
 
 ## Common Mistakes
 

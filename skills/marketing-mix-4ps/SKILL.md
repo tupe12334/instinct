@@ -63,45 +63,66 @@ Do the four Ps tell the same story? A low price with premium promotion creates d
 ## Output Format
 
 ```
-4PS ANALYSIS: [product / company / campaign name]
-TARGET SEGMENT: [who — be specific]
-CORE JOB-TO-BE-DONE: [one sentence]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  4PS ANALYSIS  ►  [product / company / campaign name]                               ║
+║  TARGET SEGMENT:  [who — be specific]                                               ║
+║  JOB-TO-BE-DONE:  [one sentence]                                                    ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 
-PRODUCT
-  Offering:       [what it is and what it does]
-  Differentiator: [vs. closest alternative]
-  Lifecycle:      [launch / growth / maturity / decline]
-  Gaps:           [missing features or known weaknesses]
+┌───────────────────────────────────┬───────────────────────────────────┐
+│  ● PRODUCT                        │  ● PRICE                          │
+│                                   │                                   │
+│  Offering:       [what it is and  │  Model:       [subscription /     │
+│                  what it does]    │               one-time / usage /  │
+│                                   │               freemium / hybrid]  │
+│  Differentiator: [vs. closest     │                                   │
+│                  alternative]     │  Price point: [specific number    │
+│                                   │               or range]           │
+│  Lifecycle:      [launch /        │                                   │
+│                  growth /         │  Rationale:   [value-based /      │
+│                  maturity /       │               competitor-anchored │
+│                  decline]         │               / cost-plus]        │
+│                                   │                                   │
+│  Gaps:           [missing         │  Floor:       [unit cost]         │
+│                  features or      │  Ceiling:     [max WTP]           │
+│                  known weaknesses]│                                   │
+│                                   │  Discounting: [policy]            │
+├───────────────────────────────────┼───────────────────────────────────┤
+│  ● PLACE                          │  ● PROMOTION                      │
+│                                   │                                   │
+│  Primary:   [channel] — [owner]   │  Awareness    → [tactic] via      │
+│             — [margin/cost]       │    [channel]  KPI: [metric]       │
+│                                   │       │                           │
+│  Secondary: [channel] — [owner]   │       ▼                           │
+│             — [margin/cost]       │  Consideration → [tactic] via     │
+│                                   │    [channel]  KPI: [metric]       │
+│  Conflict:  [yes / no —           │       │                           │
+│             describe if yes]      │       ▼                           │
+│                                   │  Decision     → [tactic] via      │
+│  Last-mile: [fulfillment or       │    [channel]  KPI: [metric]       │
+│             experience issue]     │       │                           │
+│                                   │       ▼                           │
+│                                   │  Retention    → [tactic] via      │
+│                                   │    [channel]  KPI: [metric]       │
+│                                   │                                   │
+│                                   │  Theme: [brand/product promise]   │
+└───────────────────────────────────┴───────────────────────────────────┘
 
-PRICE
-  Model:          [subscription / one-time / usage / freemium / hybrid]
-  Price point:    [specific number or range]
-  Rationale:      [value-based / competitor-anchored / cost-plus]
-  Floor / Ceiling:[unit cost → max WTP]
-  Discounting:    [policy]
-
-PLACE
-  Primary channel:  [channel name] — [owner] — [margin/cost]
-  Secondary:        [channel name] — [owner] — [margin/cost]
-  Channel conflict: [yes / no — describe if yes]
-  Last-mile gap:    [any fulfillment or experience issue]
-
-PROMOTION
-  Awareness:      [tactic] via [channel] → KPI: [metric]
-  Consideration:  [tactic] via [channel] → KPI: [metric]
-  Decision:       [tactic] via [channel] → KPI: [metric]
-  Retention:      [tactic] via [channel] → KPI: [metric]
-  Message theme:  [one-sentence brand/product promise]
-
-CONSISTENCY CHECK
-  Conflicts:      [list any P-vs-P mismatches]
-  Recommended fix:[one action per conflict]
-
-PRIORITY ACTIONS:
-1. [highest-impact change or decision]
-2. [second]
-3. [third]
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║  CONSISTENCY CHECK                                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  Conflicts:       [list any P-vs-P mismatches]                                      ║
+║  Recommended fix: [one action per conflict]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  PRIORITY ACTIONS                                                                   ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  1 ► [highest-impact change or decision]                                            ║
+║  2 ► [second]                                                                       ║
+║  3 ► [third]                                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
 ```
+
+The four-quadrant grid keeps each P side-by-side so misalignments between them are immediately visible. The Promotion quadrant shows the buyer journey as a vertical arrow flow (Awareness → Consideration → Decision → Retention). The Consistency Check and Priority Actions panels at the bottom force an explicit cross-P audit before the output is considered complete.
 
 ## Common Mistakes
 

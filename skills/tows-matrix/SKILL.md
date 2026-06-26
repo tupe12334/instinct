@@ -65,36 +65,40 @@ Score each initiative by impact and feasibility. Select 1–2 initiatives per qu
 ## Output Format
 
 ```
-TOWS MATRIX: [subject]
-DATE: [date]
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  TOWS MATRIX ▸ [subject]                                              DATE: [date]          ║
+╠══════════════════════════════════════════════════════════════════════════════════════════════╣
+║  SWOT INPUTS                                                                                 ║
+║  S: [S1] · [S2] · [S3]                              W: [W1] · [W2] · [W3]                  ║
+║  O: [O1] · [O2] · [O3]                              T: [T1] · [T2] · [T3]                  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 
-SWOT INPUTS (top items per quadrant)
-S: [S1], [S2], [S3]
-W: [W1], [W2], [W3]
-O: [O1], [O2], [O3]
-T: [T1], [T2], [T3]
+╔══════════════════╦═════════════════════════════════════╦═════════════════════════════════════╗
+║                  ║       ▲  OPPORTUNITIES (O)          ║       ▼  THREATS (T)                ║
+╠══════════════════╬═════════════════════════════════════╬═════════════════════════════════════╣
+║  STRENGTHS  ►    ║  SO ● AGGRESSIVE    [Maxi-Maxi]     ║  ST ● DEFENSIVE     [Maxi-Mini]     ║
+║    (S)           ║  1. [S] × [O] → [initiative]       ║  1. [S] × [T] → [initiative]       ║
+║                  ║     Owner: [name]  Due: [date]      ║     Owner: [name]  Due: [date]      ║
+║                  ║  2. [S] × [O] → [initiative]       ║  2. [S] × [T] → [initiative]       ║
+║                  ║     Owner: [name]  Due: [date]      ║     Owner: [name]  Due: [date]      ║
+╠══════════════════╬═════════════════════════════════════╬═════════════════════════════════════╣
+║  WEAKNESSES  ►   ║  WO ● TURNAROUND    [Mini-Maxi]     ║  WT ● SURVIVAL      [Mini-Mini]     ║
+║    (W)           ║  1. [W] blocks [O] → [action]      ║  1. [W] × [T] → [action]           ║
+║                  ║     Owner: [name]  Due: [date]      ║     Owner: [name]  Due: [date]      ║
+║                  ║  2. [W] blocks [O] → [action]      ║  2. [W] × [T] → [action]           ║
+║                  ║     Owner: [name]  Due: [date]      ║     Owner: [name]  Due: [date]      ║
+╚══════════════════╩═════════════════════════════════════╩═════════════════════════════════════╝
 
-SO — AGGRESSIVE STRATEGIES (use strengths to exploit opportunities)
-1. [Strength] x [Opportunity] → [specific initiative] | Owner: [name] | Checkpoint: [date]
-2. [Strength] x [Opportunity] → [specific initiative] | Owner: [name] | Checkpoint: [date]
-
-ST — DEFENSIVE STRATEGIES (use strengths to counter threats)
-1. [Strength] x [Threat] → [specific initiative] | Owner: [name] | Checkpoint: [date]
-2. [Strength] x [Threat] → [specific initiative] | Owner: [name] | Checkpoint: [date]
-
-WO — TURNAROUND STRATEGIES (fix weaknesses to capture opportunities)
-1. [Weakness] blocks [Opportunity] → [gap-closing action] | Owner: [name] | Checkpoint: [date]
-2. [Weakness] blocks [Opportunity] → [gap-closing action] | Owner: [name] | Checkpoint: [date]
-
-WT — SURVIVAL STRATEGIES (minimize weakness + threat overlap)
-1. [Weakness] x [Threat] → [reduce/exit/hedge action] | Owner: [name] | Checkpoint: [date]
-2. [Weakness] x [Threat] → [reduce/exit/hedge action] | Owner: [name] | Checkpoint: [date]
-
-PRIORITY INITIATIVES (top 3 across all quadrants)
-1. [initiative] — [quadrant] — [rationale for priority]
-2. [initiative] — [quadrant] — [rationale for priority]
-3. [initiative] — [quadrant] — [rationale for priority]
+╔════╦══════════════════════════════════════════╦══════════════╦═══════════════════════════════╗
+║  # ║  PRIORITY INITIATIVE                     ║   QUADRANT   ║  RATIONALE                    ║
+╠════╬══════════════════════════════════════════╬══════════════╬═══════════════════════════════╣
+║  1 ║  [initiative]                            ║     [SO]     ║  [rationale for priority]     ║
+║  2 ║  [initiative]                            ║     [ST]     ║  [rationale for priority]     ║
+║  3 ║  [initiative]                            ║     [WO]     ║  [rationale for priority]     ║
+╚════╩══════════════════════════════════════════╩══════════════╩═══════════════════════════════╝
 ```
+
+The header box summarises all four SWOT inputs in one place; the central 2×2 grid maps each internal–external crossing to its named strategy type with concrete initiative slots and ownership; the priority table surfaces the top cross-quadrant initiatives ranked for immediate execution.
 
 ## Common Mistakes
 
