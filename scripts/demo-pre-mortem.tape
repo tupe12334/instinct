@@ -7,6 +7,7 @@ Set Height 580
 Set Theme "Catppuccin Mocha"
 Set Padding 20
 Set TypingSpeed 50ms
+Set Framerate 8
 
 Hide
 Type "clear"
@@ -14,7 +15,9 @@ Enter
 Show
 
 Sleep 500ms
-Type `claude -p --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin "/pre-mortem mobile app launch in 8 weeks"`
-Sleep 400ms
+Type `claude --allowedTools "" --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin`
 Enter
-Sleep 28s
+Sleep 5s
+Type `/pre-mortem mobile app launch in 8 weeks`
+Enter
+Sleep 25s
