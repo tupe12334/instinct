@@ -17,3 +17,10 @@ skills/
 ├── CLEAR/
 └── SMEAC/
 ```
+
+## Installation
+
+```
+/plugin marketplace add tupe12334/instinct
+/plugin install instinct@instinct
+```

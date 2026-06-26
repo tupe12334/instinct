@@ -1,0 +1,13 @@
+{
+  "name": "instinct",
+  "owner": {
+    "name": "tupe12334"
+  },
+  "plugins": [
+    {
+      "name": "instinct",
+      "source": ".",
+      "description": "Skills and tools to help agents and users make better, calculated decisions."
+    }
+  ]
+}
