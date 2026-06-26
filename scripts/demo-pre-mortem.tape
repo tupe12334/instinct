@@ -15,7 +15,7 @@ Enter
 Show
 
 Sleep 500ms
-Type `claude --allowedTools "" --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin`
+Type `claude --allowedTools "Read" --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin`
 Enter
 Sleep 5s
 Type `/pre-mortem mobile app launch in 8 weeks`
