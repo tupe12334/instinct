@@ -22,6 +22,19 @@ Run SWOT, OKR, First Principles, Pre-Mortem, RICE, and 49 more — directly in y
 
 ### `/swot` — Analyze a strategic decision
 
+![swot demo](assets/demo-swot.gif)
+
+```
+              HELPFUL           HARMFUL
+         ┌──────────────┬──────────────────┐
+INTERNAL │  STRENGTHS   │   WEAKNESSES     │
+         │  (leverage)  │   (address)      │
+         ├──────────────┼──────────────────┤
+EXTERNAL │ OPPORTUNITIES│    THREATS       │
+         │  (exploit)   │   (mitigate)     │
+         └──────────────┴──────────────────┘
+```
+
 > *"Should we rewrite our monolith into microservices?"*
 
 ```
@@ -63,6 +76,21 @@ PRIORITY ACTIONS:
 
 ### `/first-principles` — Challenge an assumption
 
+![first-principles demo](assets/demo-first-principles.gif)
+
+```
+Conventional thinking:        First-principles thinking:
+  "Others do X, so we do X"     Problem
+         ↓                         ↓
+    Analogy / copy            Ask: what is fundamentally true here?
+         ↓                         ↓
+   Incremental tweak          Strip assumptions → bedrock facts
+                                   ↓
+                              Rebuild solution from facts up
+                                   ↓
+                              Novel or superior solution
+```
+
 > *"We can't ship faster than bi-weekly — our release process takes two weeks."*
 
 ```
@@ -103,6 +131,21 @@ Stress-test: Coverage must reach >80% before removing manual QA or we trade spee
 ---
 
 ### `/pre-mortem` — Kill failure before it kills your project
+
+![pre-mortem demo](assets/demo-pre-mortem.gif)
+
+```
+NOW ──────────────────────────────────────────► FUTURE
+
+  [Project              [Imagined          [Real
+   Kickoff]              Failure Date]      Launch]
+       │                      │                │
+       │   Pre-Mortem         │                │
+       │   runs HERE ◄────────┘                │
+       │   "It failed. Why?"                   │
+       │                                       │
+       └──── fixes applied ───────────────────►│
+```
 
 > *"We're launching our mobile app in 8 weeks."*
 

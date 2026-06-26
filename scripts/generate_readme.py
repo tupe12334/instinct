@@ -23,6 +23,20 @@ def parse_frontmatter(path):
     return fm
 
 
+def extract_overview_diagram(skill_name):
+    """Extract first code block from ## Overview section of a SKILL.md."""
+    path = os.path.join(SKILLS_DIR, skill_name, "SKILL.md")
+    with open(path, encoding="utf-8") as f:
+        content = f.read()
+    overview = re.search(r"## Overview\n(.*?)(?=\n## |\Z)", content, re.DOTALL)
+    if not overview:
+        return None
+    block = re.search(r"```[^\n]*\n(.*?)```", overview.group(1), re.DOTALL)
+    if not block:
+        return None
+    return block.group(1).rstrip()
+
+
 def load_skills():
     skills = []
     for name in sorted(os.listdir(SKILLS_DIR)):
@@ -45,6 +59,14 @@ def build_skills_table(skills):
 def build_readme(skills):
     count = len(skills)
     skills_table = build_skills_table(skills)
+
+    swot_diagram = extract_overview_diagram("swot")
+    fp_diagram = extract_overview_diagram("first-principles")
+    pm_diagram = extract_overview_diagram("pre-mortem")
+
+    swot_diagram_block = f"```\n{swot_diagram}\n```\n\n" if swot_diagram else ""
+    fp_diagram_block = f"```\n{fp_diagram}\n```\n\n" if fp_diagram else ""
+    pm_diagram_block = f"```\n{pm_diagram}\n```\n\n" if pm_diagram else ""
 
     return f"""# instinct
 
@@ -70,7 +92,9 @@ Run SWOT, OKR, First Principles, Pre-Mortem, RICE, and {count - 5} more — dire
 
 ### `/swot` — Analyze a strategic decision
 
-> *"Should we rewrite our monolith into microservices?"*
+![swot demo](assets/demo-swot.gif)
+
+{swot_diagram_block}> *"Should we rewrite our monolith into microservices?"*
 
 ```
 SWOT ANALYSIS: Monolith → Microservices migration
@@ -111,7 +135,9 @@ PRIORITY ACTIONS:
 
 ### `/first-principles` — Challenge an assumption
 
-> *"We can't ship faster than bi-weekly — our release process takes two weeks."*
+![first-principles demo](assets/demo-first-principles.gif)
+
+{fp_diagram_block}> *"We can't ship faster than bi-weekly — our release process takes two weeks."*
 
 ```
 FIRST-PRINCIPLES ANALYSIS
@@ -152,7 +178,9 @@ Stress-test: Coverage must reach >80% before removing manual QA or we trade spee
 
 ### `/pre-mortem` — Kill failure before it kills your project
 
-> *"We're launching our mobile app in 8 weeks."*
+![pre-mortem demo](assets/demo-pre-mortem.gif)
+
+{pm_diagram_block}> *"We're launching our mobile app in 8 weeks."*
 
 ```
 PRE-MORTEM: Mobile app launch
