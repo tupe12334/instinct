@@ -15,9 +15,9 @@ Enter
 Show
 
 Sleep 500ms
-Type `claude --allowedTools "Bash,Read,Edit,Write" --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin`
+Type `claude --allowedTools "" --model claude-haiku-4-5-20251001 --plugin-dir .claude-plugin`
 Enter
 Sleep 5s
 Type `/swot monolith vs microservices`
 Enter
-Sleep 35s
+Sleep 25s
