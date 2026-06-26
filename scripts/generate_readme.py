@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Generate README.md from skills directory."""
+"""Generate README.md and demo GIFs from skills directory."""
 
 import os
 import re
+import subprocess
+import sys
+import threading
 
 REPO_ROOT = os.path.dirname(os.path.dirname(__file__))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -258,9 +261,47 @@ See any existing skill for the format.
 """
 
 
+DEMOS = [
+    {"tape": "scripts/demo-swot.tape",            "gif": "assets/demo-swot.gif"},
+    {"tape": "scripts/demo-first-principles.tape", "gif": "assets/demo-first-principles.gif"},
+    {"tape": "scripts/demo-pre-mortem.tape",       "gif": "assets/demo-pre-mortem.gif"},
+]
+
+
+def generate_gif(demo):
+    tape = os.path.join(REPO_ROOT, demo["tape"])
+    gif  = os.path.join(REPO_ROOT, demo["gif"])
+    if os.path.exists(gif):
+        os.remove(gif)
+    result = subprocess.run(
+        ["vhs", tape],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        print(f"vhs failed for {demo['tape']}:\n{result.stderr}", file=sys.stderr)
+    else:
+        print(f"Generated {demo['gif']}")
+
+
+def generate_gifs():
+    threads = [threading.Thread(target=generate_gif, args=(d,)) for d in DEMOS]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+
+
 if __name__ == "__main__":
+    gifs = "--gifs" in sys.argv
+
     skills = load_skills()
     readme = build_readme(skills)
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme)
     print(f"Generated README.md with {len(skills)} skills.")
+
+    if gifs:
+        print("Recording demo GIFs (parallel)...")
+        generate_gifs()
