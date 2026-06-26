@@ -1,0 +1,23 @@
+{
+  "name": "instinct",
+  "version": "1.0.3",
+  "description": "Skills and tools to help agents and users make better, calculated decisions.",
+  "author": {
+    "name": "tupe12334",
+    "url": "https://github.com/tupe12334"
+  },
+  "homepage": "https://github.com/tupe12334/instinct",
+  "repository": "https://github.com/tupe12334/instinct",
+  "license": "MIT",
+  "keywords": ["strategy", "frameworks", "decision-making", "analysis", "productivity"],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Instinct",
+    "shortDescription": "54 strategy and decision frameworks as slash commands.",
+    "longDescription": "Run SWOT, OKR, First Principles, Pre-Mortem, RICE, and 49 more frameworks directly in your terminal. No tab switching. No blank-page paralysis. Type a command, describe your situation, get a structured analysis.",
+    "developerName": "tupe12334",
+    "category": "productivity",
+    "capabilities": ["skills"],
+    "websiteURL": "https://github.com/tupe12334/instinct"
+  }
+}
