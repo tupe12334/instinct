@@ -6,7 +6,7 @@ platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [feedback, learning, self-improvement, decision-making, analysis, reflection, strengths]
-    related_skills: [swot, the-GROW-model, SMART]
+    related_skills: [swot, the-grow-model, smart]
 ---
 
 # Feedback Analysis

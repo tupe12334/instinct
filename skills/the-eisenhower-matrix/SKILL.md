@@ -6,7 +6,7 @@ platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [prioritization, tasks, urgency, importance, productivity, decision-making]
-    related_skills: [SMART, CLEAR, the-project-portfolio-matrix]
+    related_skills: [smart, clear, the-project-portfolio-matrix]
 ---
 
 # The Eisenhower Matrix

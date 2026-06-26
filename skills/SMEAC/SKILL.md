@@ -1,19 +1,19 @@
 ---
-name: SMEAC
+name: smeac
 description: "Structure briefings as Situation, Mission, Execution, Administration/Logistics, Command/Communications."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [briefing, planning, military, execution, communication, SMEAC, operations, team]
-    related_skills: [SMART, the-GROW-model, the-eisenhower-matrix]
+    tags: [briefing, planning, military, execution, communication, smeac, operations, team]
+    related_skills: [smart, the-grow-model, the-eisenhower-matrix]
 ---
 
-# SMEAC Briefing Format
+# smeac Briefing Format
 
 ## Overview
 
-SMEAC is a military operations briefing structure used to communicate complex plans clearly and completely. Adapted for business, project management, and high-stakes operational contexts.
+smeac is a military operations briefing structure used to communicate complex plans clearly and completely. Adapted for business, project management, and high-stakes operational contexts.
 
 | Section | What it covers |
 |---------|---------------|
@@ -23,7 +23,7 @@ SMEAC is a military operations briefing structure used to communicate complex pl
 | **A** | Administration/Logistics | Resources, supplies, support |
 | **C** | Command/Communications | Who's in charge, how we communicate |
 
-SMEAC ensures every participant has full context (Situation), clear purpose (Mission), a concrete plan (Execution), the resources they need (Administration), and knows who to contact and who decides (Command).
+smeac ensures every participant has full context (Situation), clear purpose (Mission), a concrete plan (Execution), the resources they need (Administration), and knows who to contact and who decides (Command).
 
 ## Section Breakdowns
 
@@ -90,7 +90,7 @@ Cover:
 
 ## How to Apply
 
-### Use SMEAC when:
+### Use smeac when:
 - Kicking off a project or operation with multiple teams
 - Running a war room / incident response
 - Onboarding a new team to an initiative
@@ -106,12 +106,12 @@ Read or present each section. Pause for questions at each section, not just at t
 At the end, ask: "What is our mission?" One person states it. If they can't, the briefing failed.
 
 ### Step 4 — Distribute written record
-SMEAC briefings should be written and distributed — verbal-only briefings lose fidelity.
+smeac briefings should be written and distributed — verbal-only briefings lose fidelity.
 
 ## Output Format
 
 ```
-SMEAC BRIEFING: [operation/project name]
+smeac BRIEFING: [operation/project name]
 Date: [YYYY-MM-DD]
 Briefed by: [name/role]
 

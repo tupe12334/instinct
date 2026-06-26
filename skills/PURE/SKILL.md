@@ -1,19 +1,19 @@
 ---
-name: PURE
+name: pure
 description: "Validate goals are Positively stated, Understood, Relevant, Ethical."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [goals, PURE, objectives, ethics, planning, NLP, coaching]
-    related_skills: [SMART, CLEAR, the-GROW-model]
+    tags: [goals, pure, objectives, ethics, planning, NLP, coaching]
+    related_skills: [smart, clear, the-grow-model]
 ---
 
-# PURE Goals
+# pure Goals
 
 ## Overview
 
-PURE is a complementary goal-quality filter, often used alongside SMART. It originates from NLP (neuro-linguistic programming) coaching and emphasizes the psychological and ethical framing of goals, not just their structure.
+pure is a complementary goal-quality filter, often used alongside smart. It originates from NLP (neuro-linguistic programming) coaching and emphasizes the psychological and ethical framing of goals, not just their structure.
 
 | Letter | Criterion | Core question |
 |--------|-----------|---------------|
@@ -55,7 +55,7 @@ Ask:
 - Is the timing right? (If a dependency isn't ready, the goal may be premature)
 - Does pursuing this crowd out a higher-priority goal?
 
-Unlike SMART's R, PURE's R also asks about **timing** — a relevant goal poorly timed can still be a mistake.
+Unlike smart's R, pure's R also asks about **timing** — a relevant goal poorly timed can still be a mistake.
 
 ### E — Ethical
 Does achieving this goal align with your values, your organization's principles, and avoid harm to others?
@@ -75,17 +75,17 @@ Write what you want to achieve.
 ### Step 2 — Run each criterion
 Test the goal against P, U, R, E and rewrite to resolve any failures.
 
-### Step 3 — Combine with SMART (recommended)
-PURE filters for psychological framing and ethics; SMART structures the mechanics. Use both:
+### Step 3 — Combine with smart (recommended)
+pure filters for psychological framing and ethics; smart structures the mechanics. Use both:
 - Write goal
-- PURE filter: does it clear P, U, R, E?
-- SMART filter: does it clear S, M, A, R, T?
+- pure filter: does it clear P, U, R, E?
+- smart filter: does it clear S, M, A, R, T?
 - Final goal passes all 9 criteria
 
 ## Output Format
 
 ```
-PURE GOAL ANALYSIS
+pure GOAL ANALYSIS
 
 Draft Goal: [original statement]
 
@@ -110,15 +110,15 @@ Stakeholders affected: [who else is impacted]
 Trade-offs: [any ethical tensions]
 Verdict: [proceed / modify / reject]
 
-FINAL PURE GOAL:
+FINAL pure GOAL:
 "[Revised goal that passes all 4 criteria]"
 
 COMBINED SCORE:
-PURE: [P✓ U✓ R✓ E✓] | SMART: [run separately]
+pure: [P✓ U✓ R✓ E✓] | smart: [run separately]
 ```
 
 ## Common Mistakes
 
 - Skipping E because the goal seems routine — ethical issues are often subtle (privacy, fairness, incentive misalignment)
 - Assuming U without testing it — ask a team member to explain the goal back in their own words
-- Mixing PURE and SMART criteria — they complement, not duplicate each other
+- Mixing pure and smart criteria — they complement, not duplicate each other

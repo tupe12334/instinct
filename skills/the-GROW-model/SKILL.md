@@ -1,12 +1,12 @@
 ---
-name: the-GROW-model
+name: the-grow-model
 description: "Coaching framework: Goal → Reality → Options → Will. Structure any problem-solving or coaching conversation."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [coaching, goal-setting, problem-solving, GROW, planning, decisions, mentoring]
-    related_skills: [SMART, PURE, CLEAR, feedback-analysis]
+    related_skills: [smart, pure, clear, feedback-analysis]
 ---
 
 # The GROW Model
@@ -41,7 +41,7 @@ Key questions:
 Tips:
 - Distinguish between **end goals** (ultimate outcome) and **performance goals** (what you directly control)
 - Make it challenging but believable
-- Apply SMART/PURE/CLEAR criteria to sharpen the goal
+- Apply smart/pure/clear criteria to sharpen the goal
 
 ### R — Reality
 

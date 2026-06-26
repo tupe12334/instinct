@@ -1,19 +1,19 @@
 ---
-name: SMART
+name: smart
 description: "Define goals as Specific, Measurable, Achievable, Relevant, Time-bound."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [goals, SMART, planning, objectives, OKR, decision-making, productivity]
-    related_skills: [PURE, CLEAR, the-GROW-model, SMEAC]
+    tags: [goals, smart, planning, objectives, OKR, decision-making, productivity]
+    related_skills: [pure, clear, the-grow-model, smeac]
 ---
 
-# SMART Goals
+# smart Goals
 
 ## Overview
 
-SMART is a criteria checklist for well-formed goals. A goal passing all 5 criteria is actionable, trackable, and achievable.
+smart is a criteria checklist for well-formed goals. A goal passing all 5 criteria is actionable, trackable, and achievable.
 
 | Letter | Criterion | Question to test |
 |--------|-----------|-----------------|
@@ -77,7 +77,7 @@ Good: "Publish internal API docs for all public endpoints by [date], with draft 
 Write what you want to achieve in plain language.
 
 ### Step 2 — Run each criterion
-Ask the SMART questions for your draft. Rewrite the goal to satisfy each criterion.
+Ask the smart questions for your draft. Rewrite the goal to satisfy each criterion.
 
 ### Step 3 — Stress test
 - **Achievable**: "What would have to go right for this to succeed?" If the list is long, re-scope.
@@ -85,12 +85,12 @@ Ask the SMART questions for your draft. Rewrite the goal to satisfy each criteri
 - **Measurable**: "Could two people independently agree whether this was achieved?" If not, sharpen the metric.
 
 ### Step 4 — Document and review
-Write the final SMART goal, share with stakeholders, and schedule review checkpoints.
+Write the final smart goal, share with stakeholders, and schedule review checkpoints.
 
 ## Output Format
 
 ```
-SMART GOAL ANALYSIS
+smart GOAL ANALYSIS
 
 Raw Goal: [original statement]
 
@@ -117,7 +117,7 @@ Milestones:
   - [date]: [checkpoint]
   - [date]: [checkpoint]
 
-FINAL SMART GOAL:
+FINAL smart GOAL:
 "[Complete, refined goal statement that satisfies all 5 criteria]"
 ```
 

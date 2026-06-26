@@ -1,19 +1,19 @@
 ---
-name: CLEAR
+name: clear
 description: "Set goals that are Collaborative, Limited, Emotional, Appreciable, Refinable — built for dynamic environments."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [goals, CLEAR, agile, collaboration, team, planning, objectives]
-    related_skills: [SMART, PURE, the-GROW-model]
+    tags: [goals, clear, agile, collaboration, team, planning, objectives]
+    related_skills: [smart, pure, the-grow-model]
 ---
 
-# CLEAR Goals
+# clear Goals
 
 ## Overview
 
-CLEAR is a goal-setting framework designed for fast-moving, collaborative environments where SMART goals can feel too rigid. Developed by Adam Kreek. CLEAR emphasizes team alignment, emotional engagement, and adaptability.
+clear is a goal-setting framework designed for fast-moving, collaborative environments where smart goals can feel too rigid. Developed by Adam Kreek. clear emphasizes team alignment, emotional engagement, and adaptability.
 
 | Letter | Criterion | Core principle |
 |--------|-----------|----------------|
@@ -65,7 +65,7 @@ In practice:
 Test: Can a team member point to specific work they'll complete this week toward this goal?
 
 ### R — Refinable
-In dynamic environments, rigid goals become obstacles. CLEAR goals are living commitments — reviewed and adjusted as new information arrives.
+In dynamic environments, rigid goals become obstacles. clear goals are living commitments — reviewed and adjusted as new information arrives.
 
 In practice:
 - Build in explicit review cadence (weekly or sprint-end)
@@ -80,27 +80,27 @@ Test: Is there a scheduled time to revisit and adjust this goal?
 Start with the outcome you're pursuing.
 
 ### Step 2 — Test each criterion
-Run the CLEAR checklist. Rewrite to satisfy any failing criterion.
+Run the clear checklist. Rewrite to satisfy any failing criterion.
 
 ### Step 3 — Set review rhythm
-CLEAR goals need a cadence — weekly or biweekly review is typical. Schedule it now.
+clear goals need a cadence — weekly or biweekly review is typical. Schedule it now.
 
-### Step 4 — Combine with SMART (optional)
-SMART provides structural rigor (measurability, deadlines). CLEAR provides team and environment fit. Use SMART for the "what"; use CLEAR for the "how it lands with people."
+### Step 4 — Combine with smart (optional)
+smart provides structural rigor (measurability, deadlines). clear provides team and environment fit. Use smart for the "what"; use clear for the "how it lands with people."
 
-## SMART vs CLEAR — When to use which
+## smart vs clear — When to use which
 
 | Situation | Use |
 |-----------|-----|
-| Individual goal, stable environment | SMART |
-| Team goal, fast-moving environment | CLEAR |
+| Individual goal, stable environment | smart |
+| Team goal, fast-moving environment | clear |
 | Want both rigor and team engagement | Both |
-| Coaching/personal development context | PURE + GROW |
+| Coaching/personal development context | pure + GROW |
 
 ## Output Format
 
 ```
-CLEAR GOAL ANALYSIS
+clear GOAL ANALYSIS
 
 Draft Goal: [original statement]
 
@@ -131,7 +131,7 @@ What triggers a refinement? [conditions]
 Direction (stable): [the core intent that won't change]
 Target (adjustable): [the specific number/scope that may change]
 
-FINAL CLEAR GOAL:
+FINAL clear GOAL:
 "[Revised goal statement]"
 Review checkpoint: [date]
 ```
