@@ -1,0 +1,9 @@
+{
+  "name": "instinct",
+  "description": "Skills and tools to help agents and users make better, calculated decisions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tupe12334"
+  },
+  "repository": "https://github.com/tupe12334/instinct"
+}
