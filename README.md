@@ -293,3 +293,9 @@ Works with Claude Code CLI, desktop app, and IDE extensions (VS Code, JetBrains)
 New framework? Open a PR. Each skill is a single `SKILL.md` file in `skills/<name>/`.
 
 See any existing skill for the format.
+
+---
+
+## Related projects
+
+[moadim](https://moadim.io/) — loop engineering: build, schedule & run agent loops.
