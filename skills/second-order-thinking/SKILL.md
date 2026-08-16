@@ -1,6 +1,6 @@
 ---
 name: second-order-thinking
-description: "Anticipate downstream consequences of decisions by asking "and then what?" beyond the immediate effect."
+description: "Anticipate downstream consequences of decisions by asking \"and then what?\" beyond the immediate effect."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:
