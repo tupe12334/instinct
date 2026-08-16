@@ -1,6 +1,6 @@
 ---
 name: five-whys
-description: "Find root cause of a problem by asking "Why?" five times — moving from symptom to systemic cause."
+description: "Find root cause of a problem by asking \"Why?\" five times — moving from symptom to systemic cause."
 version: 1.0.0
 platforms: [linux, macos, windows]
 metadata:

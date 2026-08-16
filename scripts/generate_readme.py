@@ -7,6 +7,8 @@ import subprocess
 import sys
 import threading
 
+import yaml
+
 REPO_ROOT = os.path.dirname(os.path.dirname(__file__))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
 README_PATH = os.path.join(REPO_ROOT, "README.md")
@@ -18,12 +20,7 @@ def parse_frontmatter(path):
     match = re.match(r"^---\n(.*?)\n---", content, re.DOTALL)
     if not match:
         return {}
-    fm = {}
-    for line in match.group(1).splitlines():
-        if ":" in line:
-            key, _, val = line.partition(":")
-            fm[key.strip()] = val.strip().strip('"')
-    return fm
+    return yaml.safe_load(match.group(1)) or {}
 
 
 def extract_overview_diagram(skill_name):
