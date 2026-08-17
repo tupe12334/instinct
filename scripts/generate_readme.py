@@ -78,7 +78,7 @@ def build_readme(skills):
 Run SWOT, OKR, First Principles, Pre-Mortem, RICE, and {count - 5} more — directly in your terminal. No tab switching. No blank-page paralysis. Type a command, describe your situation, get a structured analysis.
 
 [![GitHub stars](https://img.shields.io/github/stars/tupe12334/instinct?style=flat-square)](https://github.com/tupe12334/instinct/stargazers)
-[![Version](https://img.shields.io/badge/version-1.0.3-blue?style=flat-square)](https://github.com/tupe12334/instinct)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue?style=flat-square)](https://github.com/tupe12334/instinct)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-blueviolet?style=flat-square)](https://claude.ai/code)
 
 ---
